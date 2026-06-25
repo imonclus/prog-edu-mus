@@ -1,0 +1,26 @@
+{
+  "titol": "La programació",
+  "apartats": [
+    {
+      "titol": "Què implica?",
+      "elements": [
+        "Incloure els elements del currículum: competències específiques i transversals, criteris d’avaluació, sabers i situacions d’aprenentatge.",
+        "Integrar els vectors com a eix de les decisions de l’equip docent.",
+        "Construir un instrument flexible, obert, en revisió i millora constants.",
+        "La coordinació entre els i les docents.",
+        "Tenir en compte la variabilitat en l’aprenentatge de l’alumnat.",
+        "Promoure aprenentatges amb sentit per a l'alumnat."
+      ]
+    },
+    {
+      "titol": "Com ho fem?",
+      "elements": [
+        "Dissenyant les situacions d’aprenentatge que promoguin l’aprenentatge amb sentit i l’assoliment de les competències.",
+        "Reflexionant i prenent decisions de manera consensuada.",
+        "Definint uns objectius d’aprenentatge/competències funcionals i significatius.",
+        "Seleccionant estratègies i instruments d’avaluació per obtenir informació i ajustar la programació.",
+        "Considerant les capacitats i els coneixements previs dels alumnes i adaptant el procés d’ensenyament a través de mesures i suports d’atenció educativa."
+      ]
+    }
+  ]
+}

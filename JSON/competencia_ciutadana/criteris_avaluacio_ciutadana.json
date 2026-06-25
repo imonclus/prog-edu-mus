@@ -1,0 +1,474 @@
+[
+  {
+    "id": "CD1.1",
+    "competencia_id": 1,
+    "competencia_codi": "CD1",
+    "criteri_num": 1,
+    "criteris_per_cicle": [
+      {
+        "cicle": "inicial",
+        "cursos": [
+          "1r",
+          "2n"
+        ],
+        "criteri": "Trobar, de manera guiada, dades, informació i continguts a través d’una cerca en entorns digitals, que doni resposta a la necessitat inicial."
+      },
+      {
+        "cicle": "mitjà",
+        "cursos": [
+          "3r",
+          "4t"
+        ],
+        "criteri": "Utilitzar, de manera guiada, cercadors genèrics fent ús d’opcions i d’estratègies senzilles a Internet en relació amb el repte plantejat."
+      },
+      {
+        "cicle": "superior",
+        "cursos": [
+          "5è",
+          "6è"
+        ],
+        "criteri": "Utilitzar de forma autònoma cercadors genèrics fent ús d’opcions i d’estratègies senzilles en relació amb el repte plantejat."
+      }
+    ]
+  },
+  {
+    "id": "CD1.2",
+    "competencia_id": 1,
+    "competencia_codi": "CD1",
+    "criteri_num": 2,
+    "criteris_per_cicle": [
+      {
+        "cicle": "mitjà",
+        "cursos": [
+          "3r",
+          "4t"
+        ],
+        "criteri": "Identificar, de manera guiada, criteris de validesa (font digital, autoria, data d’actualització, etc.) per verificar la informació obtinguda a les cerques a Internet."
+      },
+      {
+        "cicle": "superior",
+        "cursos": [
+          "5è",
+          "6è"
+        ],
+        "criteri": "Verificar, de manera guiada, la validesa (font digital, autoria, data d’actualització, etc.) i la fiabilitat de la informació en relació amb el repte plantejat."
+      }
+    ]
+  },
+  {
+    "id": "CD1.3",
+    "competencia_id": 1,
+    "competencia_codi": "CD1",
+    "criteri_num": 3,
+    "criteris_per_cicle": [
+      {
+        "cicle": "mitjà",
+        "cursos": [
+          "3r",
+          "4t"
+        ],
+        "criteri": "Utilitzar, de manera guiada, recursos digitals organitzant i emmagatzemant la informació obtinguda a les cerques a Internet amb una actitud crítica sobre els continguts que s’obtenen."
+      },
+      {
+        "cicle": "superior",
+        "cursos": [
+          "5è",
+          "6è"
+        ],
+        "criteri": "Organitzar i emmagatzemar, de manera guiada, la informació trobada amb recursos digitals, amb una actitud crítica sobre els continguts que s’obtenen."
+      }
+    ]
+  },
+  {
+    "id": "CD1.4",
+    "competencia_id": 1,
+    "competencia_codi": "CD1",
+    "criteri_num": 4,
+    "criteris_per_cicle": [
+      {
+        "cicle": "superior",
+        "cursos": [
+          "5è",
+          "6è"
+        ],
+        "criteri": "Recuperar, de manera guiada, la informació emmagatzemada necessària per donar resposta al repte plantejat."
+      }
+    ]
+  },
+  {
+    "id": "CD2.1",
+    "competencia_id": 2,
+    "competencia_codi": "CD2",
+    "criteri_num": 1,
+    "criteris_per_cicle": [
+      {
+        "cicle": "inicial",
+        "cursos": [
+          "1r",
+          "2n"
+        ],
+        "criteri": "Crear i editar documents i presentacions pròpies utilitzant les eines de format (processador de textos i aplicacions) en activitats dirigides pel o per la docent."
+      },
+      {
+        "cicle": "mitjà",
+        "cursos": [
+          "3r",
+          "4t"
+        ],
+        "criteri": "Crear i editar documents i presentacions pròpies utilitzant les eines de format (processador de textos i aplicacions) i incorporant taules en activitats basades en un context real i proper."
+      },
+      {
+        "cicle": "superior",
+        "cursos": [
+          "5è",
+          "6è"
+        ],
+        "criteri": "Seleccionar el format (text, taula, imatge, àudio, vídeo, esquemes i mapes conceptuals) més adient de les produccions digitals que es desenvoluparan en activitats pròpies del context escolar."
+      }
+    ]
+  },
+  {
+    "id": "CD2.2",
+    "competencia_id": 2,
+    "competencia_codi": "CD2",
+    "criteri_num": 2,
+    "criteris_per_cicle": [
+      {
+        "cicle": "inicial",
+        "cursos": [
+          "1r",
+          "2n"
+        ],
+        "criteri": "Crear vídeos, imatges i àudios (sense edició) i programes informàtics senzills, en activitats basades en un context real i proper dirigides pel o per la docent."
+      },
+      {
+        "cicle": "mitjà",
+        "cursos": [
+          "3r",
+          "4t"
+        ],
+        "criteri": "Crear i editar, amb la guia del o de la docent, vídeos, imatges, àudios i programes informàtics senzills en un context real i proper."
+      },
+      {
+        "cicle": "superior",
+        "cursos": [
+          "5è",
+          "6è"
+        ],
+        "criteri": "Crear i editar produccions digitals senzilles de manera autònoma en activitats pròpies del context escolar."
+      }
+    ]
+  },
+  {
+    "id": "CD2.3",
+    "competencia_id": 2,
+    "competencia_codi": "CD2",
+    "criteri_num": 3,
+    "criteris_per_cicle": [
+      {
+        "cicle": "mitjà",
+        "cursos": [
+          "3r",
+          "4t"
+        ],
+        "criteri": "Indicar la font dels textos i les imatges utilitzades en les produccions digitals."
+      },
+      {
+        "cicle": "superior",
+        "cursos": [
+          "5è",
+          "6è"
+        ],
+        "criteri": "Citar l’autoria en l’elaboració de produccions, tant si són de creació pròpia com d’altres persones."
+      }
+    ]
+  },
+  {
+    "id": "CD3.1",
+    "competencia_id": 3,
+    "competencia_codi": "CD3",
+    "criteri_num": 1,
+    "criteris_per_cicle": [
+      {
+        "cicle": "inicial",
+        "cursos": [
+          "1r",
+          "2n"
+        ],
+        "criteri": "Reconèixer diferents maneres de comunicació digital en situacions quotidianes."
+      },
+      {
+        "cicle": "mitjà",
+        "cursos": [
+          "3r",
+          "4t"
+        ],
+        "criteri": "Comunicar-se a través del correu electrònic amb els companys i companyes de classe i amb els i les docents utilitzant-ne les funcions bàsiques (destinatari, assumpte, cos, signatura i fitxers adjunts)."
+      },
+      {
+        "cicle": "superior",
+        "cursos": [
+          "5è",
+          "6è"
+        ],
+        "criteri": "Comunicar-se a través del correu electrònic amb els companys i companyes de classe i amb els i les docents utilitzantne les funcions avançades (signatura automàtica, organització de missatges, programació d’enviaments, etc.)."
+      }
+    ]
+  },
+  {
+    "id": "CD3.2",
+    "competencia_id": 3,
+    "competencia_codi": "CD3",
+    "criteri_num": 2,
+    "criteris_per_cicle": [
+      {
+        "cicle": "inicial",
+        "cursos": [
+          "1r",
+          "2n"
+        ],
+        "criteri": "Reconèixer diferents maneres de col·laboració digital en situacions quotidianes."
+      },
+      {
+        "cicle": "mitjà",
+        "cursos": [
+          "3r",
+          "4t"
+        ],
+        "criteri": "Utilitzar les funcions de col·laboració de les aplicacions que s’usen en les produccions digitals."
+      },
+      {
+        "cicle": "superior",
+        "cursos": [
+          "5è",
+          "6è"
+        ],
+        "criteri": "Realitzar productes digitals de manera col·laborativa, tant per a creacions digitals com per a l’organització del treball en grup"
+      }
+    ]
+  },
+  {
+    "id": "CD3.3",
+    "competencia_id": 3,
+    "competencia_codi": "CD3",
+    "criteri_num": 3,
+    "criteris_per_cicle": [
+      {
+        "cicle": "mitjà",
+        "cursos": [
+          "3r",
+          "4t"
+        ],
+        "criteri": "Fer servir les funcions bàsiques dels entorns virtuals d’aprenentatge (accedir-hi, lliurar tasques, rebre retroacció, etc.)."
+      },
+      {
+        "cicle": "superior",
+        "cursos": [
+          "5è",
+          "6è"
+        ],
+        "criteri": "Fer servir els entorns virtuals d’aprenentatge per interactuar amb els companys i companyes i els i les docents a través de fòrums, amb respecte i correcció."
+      }
+    ]
+  },
+  {
+    "id": "CD4.1",
+    "competencia_id": 4,
+    "competencia_codi": "CD4",
+    "criteri_num": 1,
+    "criteris_per_cicle": [
+      {
+        "cicle": "inicial",
+        "cursos": [
+          "1r",
+          "2n"
+        ],
+        "criteri": "Adoptar mesures de seguretat dels comptes i dels dispositius en entorns personals i educatius generant contrasenyes simples i tancant les sessions."
+      },
+      {
+        "cicle": "mitjà",
+        "cursos": [
+          "3r",
+          "4t"
+        ],
+        "criteri": "Adoptar mesures de seguretat dels comptes i dels dispositius en entorns personals i educatius, a partir d’accions senzilles (generant contrasenyes segures i privades, tancant les sessions, etc.)."
+      },
+      {
+        "cicle": "superior",
+        "cursos": [
+          "5è",
+          "6è"
+        ],
+        "criteri": "Adoptar mesures de seguretat dels comptes i dispositius en entorns personals i educatius, a partir d’accions senzilles (generant contrasenyes segures i privades, mantenint actualitzat el programari, tancant les sessions, no cedint dades sensibles, etc.)."
+      }
+    ]
+  },
+  {
+    "id": "CD4.2",
+    "competencia_id": 4,
+    "competencia_codi": "CD4",
+    "criteri_num": 2,
+    "criteris_per_cicle": [
+      {
+        "cicle": "inicial",
+        "cursos": [
+          "1r",
+          "2n"
+        ],
+        "criteri": "Prendre consciència de la necessitat de mantenir una postura saludable en l’ús de la tecnologia."
+      },
+      {
+        "cicle": "mitjà",
+        "cursos": [
+          "3r",
+          "4t"
+        ],
+        "criteri": "Evitar els riscos físics, de manera guiada, mantenint una postura saludable a partir de criteris ergonòmics en l’ús de tecnologies."
+      },
+      {
+        "cicle": "superior",
+        "cursos": [
+          "5è",
+          "6è"
+        ],
+        "criteri": "Evitar els riscos físics, de manera autònoma, mantenint una postura saludable a partir de criteris ergonòmics en l’ús de tecnologies."
+      }
+    ]
+  },
+  {
+    "id": "CD4.3",
+    "competencia_id": 4,
+    "competencia_codi": "CD4",
+    "criteri_num": 3,
+    "criteris_per_cicle": [
+      {
+        "cicle": "mitjà",
+        "cursos": [
+          "3r",
+          "4t"
+        ],
+        "criteri": "Identificar, de manera guiada, els riscos emocionals en l’ús de tecnologies"
+      },
+      {
+        "cicle": "superior",
+        "cursos": [
+          "5è",
+          "6è"
+        ],
+        "criteri": "Evitar els riscos emocionals, prevenint conductes addictives i d’assetjament de manera guiada, en l’ús de tecnologies."
+      }
+    ]
+  },
+  {
+    "id": "CD4.4",
+    "competencia_id": 4,
+    "competencia_codi": "CD4",
+    "criteri_num": 4,
+    "criteris_per_cicle": [
+      {
+        "cicle": "inicial",
+        "cursos": [
+          "1r",
+          "2n"
+        ],
+        "criteri": "Aplicar, de manera guiada, accions concretes dins de l’aula per preservar la sostenibilitat dels recursos digitals (apagar l’ordinador i les pantalles quan no s’utilitzen, regular la lluminositat de la pantalla, etc.)."
+      },
+      {
+        "cicle": "mitjà",
+        "cursos": [
+          "3r",
+          "4t"
+        ],
+        "criteri": "Utilitzar, de manera guiada, els recursos del centre i els recursos personals amb eficiència i sostenibilitat (impressions, optimització de l’espai virtual, malbaratament energètic, etc.)."
+      },
+      {
+        "cicle": "superior",
+        "cursos": [
+          "5è",
+          "6è"
+        ],
+        "criteri": "Utilitzar, de manera autònoma, els recursos del centre i els recursos personals amb eficiència i sostenibilitat (impressions, optimització de l’espai virtual, malbaratament energètic, etc.)."
+      }
+    ]
+  },
+  {
+    "id": "CD5.1",
+    "competencia_id": 5,
+    "competencia_codi": "CD5",
+    "criteri_num": 1,
+    "criteris_per_cicle": [
+      {
+        "cicle": "inicial",
+        "cursos": [
+          "1r",
+          "2n"
+        ],
+        "criteri": "Programar, amb l’orientació del o de la docent, seqüències simples amb dispositius digitals (robots i ordinadors) i sense, per resoldre un repte concret."
+      },
+      {
+        "cicle": "mitjà",
+        "cursos": [
+          "3r",
+          "4t"
+        ],
+        "criteri": "Programar, amb l’orientació del o de la docent, seqüències simples amb programació per blocs amb dispositius digitals (robots, plaques programables i ordinadors) per resoldre un repte concret."
+      },
+      {
+        "cicle": "superior",
+        "cursos": [
+          "5è",
+          "6è"
+        ],
+        "criteri": "Desenvolupar algorismes senzills amb programació per blocs per resoldre de manera creativa un problema concret."
+      }
+    ]
+  },
+  {
+    "id": "CD5.2",
+    "competencia_id": 5,
+    "competencia_codi": "CD5",
+    "criteri_num": 2,
+    "criteris_per_cicle": [
+      {
+        "cicle": "mitjà",
+        "cursos": [
+          "3r",
+          "4t"
+        ],
+        "criteri": "Identificar els elements que formen els robots i les plaques programables (peces estructurals, sensors i actuadors)."
+      },
+      {
+        "cicle": "superior",
+        "cursos": [
+          "5è",
+          "6è"
+        ],
+        "criteri": "Dissenyar i implementar construccions i estructures senzilles per resoldre reptes proposats a través de la robòtica"
+      }
+    ]
+  },
+  {
+    "id": "CD5.3",
+    "competencia_id": 5,
+    "competencia_codi": "CD5",
+    "criteri_num": 3,
+    "criteris_per_cicle": [
+      {
+        "cicle": "mitjà",
+        "cursos": [
+          "3r",
+          "4t"
+        ],
+        "criteri": "Reutilitzar materials en el desenvolupament de les solucions a reptes proposats, valorant el seu impacte en la sostenibilitat."
+      },
+      {
+        "cicle": "superior",
+        "cursos": [
+          "5è",
+          "6è"
+        ],
+        "criteri": "Reutilitzar materials en el desenvolupament de les solucions a reptes proposats, valorant el seu impacte econòmic i en la sostenibilitat."
+      }
+    ]
+  }
+]

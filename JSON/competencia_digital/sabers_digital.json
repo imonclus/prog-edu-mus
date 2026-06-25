@@ -1,0 +1,289 @@
+{
+  "competencia": "Competència digital",
+  "tipus": "sabers",
+  "introduccio": "Sabers de la Competènca digital",
+  "organitzacio": {
+    "cicle_inicial_1r_2n": "1r i 2n",
+    "cicle_mitjà_3r_4t": "3r i 4t",
+    "cicle_superior_5e_6e": "5è i 6è"
+  },
+  "sabers": [
+    {
+      "bloc": "Navegadors i motors de cerca",
+      "cicle_inicial_1r_2n": [
+        "Identificació de les icones de navegadors.",
+        "Ús dels botons dels navegadors web.",
+        "Cerca d'informació a partir d'una paraula."
+      ],
+      "cicle_mitjà_3r_4t": [
+        "Utilització d'estratègies senzilles de cerca d'informació (paraules clau o frases concretes).",
+        "Utilització del menú de cerques (globals, imatges, vídeos, notícies...) i per veu.",
+        "Identificació i ús d'hipervincles.",
+        "Coneixement de les opcions d'accessibilitat dels cercadors (zoom).",
+        "Ús de diferents fonts d'informació digital per a la cerca d'informació (diccionaris digitals, enciclopèdies i llibres digitals)"
+      ],
+      "cicle_superior_5e_6e": [
+        "Utilització d'estratègies de cerca d'informació (cerques per dates, per llocs, per idioma).",
+        "Utilització dels menús de cerca d'imatges i vídeos amb característiques concretes (llicència lliure, mida, format, etc.).",
+        "Coneixement i ús de diferents navegadors.",
+        "Coneixement i ús de motors de cerca, tant generals com específics (inclosos banc d'imatges i sons).",
+        "Ús de tots tipus de fonts d'informació digital per a la cerca d'informació (premsa digital, diccionaris, revistes científiques, pàgines divulgatives)."
+      ]
+    },
+    {
+      "bloc": "Criteris de validesa de la informació",
+      "cicle_inicial_1r_2n": [
+        "Introducció del concepte de font fiable."
+      ],
+      "cicle_mitjà_3r_4t": [
+        "Identificació de la validesa i fiabilitat de la informació cercada (autoria, font digital, data d'actualització...)."
+      ],
+      "cicle_superior_5e_6e": [
+        "Reconeixement de les fonts consultades.",
+        "Reconeixement de la data d'actualització de la informació."
+      ]
+    },
+    {
+      "bloc": "Emmagatzematge de la informació",
+      "cicle_inicial_1r_2n": [],
+      "cicle_mitjà_3r_4t": [
+        "Utilització d'adreces d'interès suggerides pel docent (preferits)."
+      ],
+      "cicle_superior_5e_6e": [
+        "Organització de la informació emmagatzemada pel propi alumnat (marcadors, adreces d'interès, historial...)."
+      ]
+    },
+    {
+      "bloc": "Creació de documents i presentacions",
+      "cicle_inicial_1r_2n": [
+        "Identificació d'aplicacions per crear documents de text i presentacions.",
+        "Ús del teclat (lletres, números, signes de puntuació).",
+        "Ús de les eines de format (negreta, colors, alineació del text).",
+        "Utilització les funcions de desfer i refer canvis del document.",
+        "Inserció de text i imatges en documents de text i presentacions.",
+        "Utilització de les opcions de desar, anomenar i recuperar documents (en el núvol o en el dispositiu local si s'escau)",
+        "Utilització de funcionalitats bàsiques de les finestres de les aplicacions (minimitzar, maximitzar i restaurar)."
+      ],
+      "cicle_mitjà_3r_4t": [
+        "Ús del teclat (símbols, accents, apòstrofs, signes de puntuació)",
+        "Ús de les eines de format (mida del text, subratllat...).",
+        "Aplicació de les funcions per desfer i refer canvis del document",
+        "Inserció d'imatges, vídeos, taules o altres elements en els documents i presentacions",
+        "Guardar i anomenar documents i recuperar-los (en el núvol o en el dispositiu local si s'escau)",
+        "Organització d'arxius i documents en carpetes",
+        "Creació d'hipervincles en text i imatge.",
+        "Ús de funcionalitats bàsiques de les presentacions (duplicar diapositiva, amagar diapositiva, canviar el fons)"
+      ],
+      "cicle_superior_5e_6e": [
+        "Ús de dreceres de teclat bàsiques per copiar, enganxar, retallar (ctrl+C, ctrl+V, ctrl+X) i cercar (drecera subjecta a programari).",
+        "Ús d'eines avançades de format (orientació del document, numeració de pàgines, gràfics, taules, llistes numerades i vinyetes...)",
+        "Aplicació de funcions avançades a les presentacions (Animacions, transicions, efectes)",
+        "Utilització de les funcions avançades de les taules: (Combinar cel·les, canviar mida files i columnes, formats...)",
+        "Configuració de la impressió de documents",
+        "Ús d'eines de correcció (correcció ortogràfica i canvi d'idioma).",
+        "Utilització de les funcions avançades de copiar i enganxar (copiar format, enganxar amb i sense format)",
+        "Inserció de símbols especials i formes.",
+        "Inserció d'elements gràfics (imatges, gràfiques, esquemes, mapes conceptuals, vídeos) i sonors.",
+        "Aplicació del salt de pàgina en els documents de text."
+      ]
+    },
+    {
+      "bloc": "Creació de contingut multimèdia",
+      "cicle_inicial_1r_2n": [
+        "Identificació de dispositius i programaris per crear vídeos, imatges, fotografies i àudios",
+        "Ús de les funcions bàsiques dels dispositius o programari per l'enregistrament de vídeos i àudios, per la presa de fotografies i la creació d'imatges."
+      ],
+      "cicle_mitjà_3r_4t": [
+        "Identificació de dispositius i programaris per editar vídeos, imatges i àudios",
+        "Utilització de dispositius d'enregistrament.",
+        "Utilització de funcions senzilles d'edició de vídeo (retallar el clip, inserir àudio i text)",
+        "Utilització de funcions senzilles d'edició d'imatge (retallar, redimensionar, girar)",
+        "Utilització de funcions per retallar pistes d'àudio."
+      ],
+      "cicle_superior_5e_6e": [
+        "Importació de fitxers en aplicacions d'edició multimèdia.",
+        "Utilització de funcions senzilles d'edició de vídeo.",
+        "Utilització de funcions senzilles d'edició d'imatge.",
+        "Utilització de funcions per retallar pistes d'àudio.",
+        "Utilització d'aplicacions per la creació de mapes conceptuals.",
+        "Emmagatzematge del producte final (al núvol, en local, en dispositius externs, etc.)"
+      ]
+    },
+    {
+      "bloc": "Autoria de la informació",
+      "cicle_inicial_1r_2n": [],
+      "cicle_mitjà_3r_4t": [
+        "Citació de les fonts de textos i imatges."
+      ],
+      "cicle_superior_5e_6e": [
+        "Citació de les fonts de textos i imatges."
+      ]
+    },
+    {
+      "bloc": "Comunicació en digital",
+      "cicle_inicial_1r_2n": [
+        "Identificació de formes de comunicació en digital (correu electrònic, videotrucades, webs, blogs, canal de comunicació del centre...)."
+      ],
+      "cicle_mitjà_3r_4t": [
+        "Identificació i ús dels elements bàsics del correu electrònic (destinatari, assumpte, cos del missatge, signatura).",
+        "Adjunció d'arxius des del núvol i en local en els correus electrònics."
+      ],
+      "cicle_superior_5e_6e": [
+        "Identificació i ús dels diferents camps de destinataris (en còpia, en còpia oculta).",
+        "Utilització de les funcions avançades d'enviament del correu electrònic (programació d'enviament, signatura automàtica).",
+        "Utilització de les funcions avançades per a l'organització dels missatges del correu electrònic (marcador prioritari, d'etiquetes i carpetes)."
+      ]
+    },
+    {
+      "bloc": "Producció digital col·laborativa",
+      "cicle_inicial_1r_2n": [
+        "Identificació d'espais per a la col·laboració en digital (blogs, entorn virtual d'aprenentatge, fòrums, murs virtuals...)"
+      ],
+      "cicle_mitjà_3r_4t": [
+        "Utilització de les funcions de col·laboració (imatges, arxius multimèdia, edició de text, comentaris, suggeriments, format) en aplicacions per a la creació digital com ara textos, presentacions, infografies, fulls de càlcul, etc."
+      ],
+      "cicle_superior_5e_6e": [
+        "Utilització de les funcionalitats de seguiment de la col·laboració en digital (historial de canvis, comentaris...).",
+        "Assignació de permisos d'edició en produccions col·laboratives (visualització, edició, propietat...)."
+      ]
+    },
+    {
+      "bloc": "Entorns virtuals",
+      "cicle_inicial_1r_2n": [],
+      "cicle_mitjà_3r_4t": [
+        "Utilització de les funcions bàsiques dels entorns virtuals d’aprenentatge (accés, consulta de tasques i material, publicació, entrega de tasques, retroacció, missatgeria interna...)."
+      ],
+      "cicle_superior_5e_6e": [
+        "Utilització de les eines d'interacció dels entorns virtuals d'aprenentatge per la compartició de coneixement, idees, opinions o gestió de les tasques (wiki, glossari, repositoris, fòrum...).",
+        "Aplicació de les normes de comportament cívic en les comunicacions en digital (presentar-se de forma adequada, respectar la privacitat d'altri, compartir coneixement, verificar les fonts, respectar els i les companyes, respondre els missatges...) dins dels entorns virtuals d'aprenentatge.",
+        "Diferenciació entre comunicació pública i comunicació privada en la comunicació en digital (comentaris al tauler, comentaris personals...) dins dels entorns virtuals d'aprenentatge."
+      ]
+    },
+    {
+      "bloc": "Protecció de dispositius",
+      "cicle_inicial_1r_2n": [
+        "Identificació de mesures de protecció dels dispositius (ordinador i tauletes) (contrasenya, PIN, patró)",
+        "Tancament de sessió en dispositius digitals per evitar riscos."
+      ],
+      "cicle_mitjà_3r_4t": [
+        "Creació i ús de contrasenyes segures i privades (contrasenyes alfanumèriques)."
+      ],
+      "cicle_superior_5e_6e": [
+        "Creació i ús de contrasenyes segures i privades (contrasenyes alfanumèriques i amb símbols).",
+        "Ús de gestors de contrasenyes."
+      ]
+    },
+    {
+      "bloc": "Protecció de dades",
+      "cicle_inicial_1r_2n": [
+        "Identificació de dades personals properes a l'alumnat (nom, cognom, contrasenya, adreça del domicili, fotografies personals)."
+      ],
+      "cicle_mitjà_3r_4t": [
+        "Protecció de les dades personals en entorns virtuals i a Internet."
+      ],
+      "cicle_superior_5e_6e": [
+        "Protecció de les dades personals i dades sensibles en entorns virtuals i a Internet."
+      ]
+    },
+    {
+      "bloc": "Ús de programari i recursos digitals",
+      "cicle_inicial_1r_2n": [],
+      "cicle_mitjà_3r_4t": [],
+      "cicle_superior_5e_6e": [
+        "Identificació i respecte dels diferents tipus de llicències (lliures, copyright, creative common, etc.). Aplicació dels procediments d'actualització del sistema operatiu i del programari."
+      ]
+    },
+    {
+      "bloc": "Benestar físic",
+      "cicle_inicial_1r_2n": [
+        "Identificació de les postures ergonòmiques saludables (postura corporal, distància en què es mira el dispositiu)."
+      ],
+      "cicle_mitjà_3r_4t": [
+        "Aplicació d'hàbits saludables en l'ús de la tecnologia (postura corporal, temps d'ús, intensitat de la llum)."
+      ],
+      "cicle_superior_5e_6e": [
+        "Adopció d'hàbits saludables en l'ús de la tecnologia (postura corporal, temps d'ús, intensitat de la llum)."
+      ]
+    },
+    {
+      "bloc": "Benestar emocional",
+      "cicle_inicial_1r_2n": [],
+      "cicle_mitjà_3r_4t": [
+        "Identificació de riscos emocionals lligats a l'ús de la tecnologia (conductes addictives)."
+      ],
+      "cicle_superior_5e_6e": [
+        "Detecció de signes d'alerta en conductes addictives a les tecnologies digitals.",
+        "Identificació i prevenció del ciberassetjament.",
+        "Identificació i prevenció de conductes inadequades."
+      ]
+    },
+    {
+      "bloc": "Sostenibilitat",
+      "cicle_inicial_1r_2n": [
+        "Aplicació d'estratègies eficients d'estalvi energètic (apagar dispositius, regular la lluminositat de la pantalla)."
+      ],
+      "cicle_mitjà_3r_4t": [
+        "Aplicació d'estratègies eficients d'estalvi energètic (reducció del nombre d'impressions, optimització de l'espai al núvol...)."
+      ],
+      "cicle_superior_5e_6e": [
+        "Aplicació d'estratègies eficients en la protecció del medi ambient (configuració del mode repòs dels dispositius, reciclatge dels dispositius als punts verds...)."
+      ]
+    },
+    {
+      "bloc": "Pensament computacional i programació",
+      "cicle_inicial_1r_2n": [
+        "Identificació d'estructures bàsiques de programació (instruccions seqüencials, bucles i condicionals) en algoritmes senzills amb o sense dispositius digitals."
+      ],
+      "cicle_mitjà_3r_4t": [
+        "Descomposició de reptes en parts més petites i manejables.",
+        "Reconeixement de patrons: cerca de reptes o parts de reptes similars resolts anteriorment o cerca de seqüències que es repeteixen en el programa",
+        "Utilització d'entorns de programació mitjànçant blocs.",
+        "Identificació de categories de blocs de programació (aspecte, control, operadors...).",
+        "Identificació de la funcionalitat i ús dels blocs de programació que executen instruccions (moviment, so, llum...).",
+        "Identificació i ús d'esdeveniments (inici de programa, fer clic amb el ratolí, prémer botons...).",
+        "Identificació de processos no seqüencials (paral·lels o condicionals).",
+        "Identificació i ús de valors constants i variables.",
+        "Identificació i ús de seqüències repetitives i condicionals."
+      ],
+      "cicle_superior_5e_6e": [
+        "Aplicació d’estratègies pròpies del pensament computacional (descomposició, identificació de patrons, abstracció i elaboració d'algorismes).",
+        "Interpretació de seqüències simples fent servir diagrames de flux o esquemes que descriuen processos senzills.",
+        "Declaració i utilització de constants i variables.",
+        "Assignació i modificació de valors a variables.",
+        "Utilització d'operadors matemàtics i lògics.",
+        "Aplicació d'estructures condicionals.",
+        "Aplicació d'estructures de repeticions de seqüències.",
+        "Utilització d'esdeveniments i missatges.",
+        "Definició i utilització de procediments i funcions."
+      ]
+    },
+    {
+      "bloc": "Robòtica educativa",
+      "cicle_inicial_1r_2n": [
+        "Utilització de les funcionalitats dels robots educatius compactes amb polsadors (moviment, so, llum...) per descoberta o amb orientació."
+      ],
+      "cicle_mitjà_3r_4t": [
+        "Identificació i ús dels sensors i actuadors que incorporen els robots educatius (micròfons, motors, altaveus, leds...).",
+        "Ús d'elements constructius en la creació de solucions (maquetes, prototips, etc.)."
+      ],
+      "cicle_superior_5e_6e": [
+        "Utilització dels sensors i actuadors integrats de robots educatius.",
+        "Utilització dels sensors integrats i externs de plaques programables educatives."
+      ]
+    },
+    {
+      "bloc": "Desenvolupament de solucions",
+      "cicle_inicial_1r_2n": [
+        "Identificació de problemes solucionables mitjànçant seqüències simples."
+      ],
+      "cicle_mitjà_3r_4t": [
+        "Presa de consciència de l'impacte de la reutilització de materials en la construcció de maquetes i solucions tecnològiques.",
+        "Identificació i resolució de problemes tècnics comuns derivats de la manipulació de dispositius i ús d'entorns digitals (problemes de connectivitat, accés a plataformes amb contrasenya, problemes en la navegació, accessibilitat, configuració bàsica del sistema, etc.)."
+      ],
+      "cicle_superior_5e_6e": [
+        "Coneixement i aplicació d'accions per a la reparació i reutilització de materials en desús en la creació de prototips i maquetes.",
+        "Identificació i resolució de problemes tècnics comuns derivats de la manipulació de dispositius i ús d'entorns digitals (problemes de connectivitat, accés a plataformes amb contrasenya, problemes en la navegació, accessibilitat, configuració bàsica del sistema, etc.)."
+      ]
+    }
+  ]
+}

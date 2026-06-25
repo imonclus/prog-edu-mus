@@ -1,0 +1,100 @@
+{
+  "titol": "La programació de les situacions d’aprenentatge",
+  "aprenentatge_basat_en_situacions": {
+    "titol": "L’aprenentatge basat en situacions",
+    "que_es": [
+      "L’aprenentatge basat en situacions promou l’estudi dels processos i dels fenòmens com a entitats completes, en la seva globalitat i en el seu context real, i es prioritzen aquelles inquietuds derivades de l’experiència.",
+      "Situa l’alumnat en una posició activa respecte del seu propi aprenentatge."
+    ],
+    "com_es_concreta": [
+      "Partint d’un tema d’interès, d’una problemàtica social o de l’entorn proper, d’una observació de fenòmens o d’una controvèrsia d’un fet, entre altres.",
+      "Organitzant les activitats que integren la situació segons el cicle d'aprenentatge.",
+      "Promovent que l’aprenent raoni, imagini, planifiqui, explori, investigui, gestioni recursos, treballi de forma col·laborativa, avaluï i comuniqui els seus aprenentatges, afrontant reptes complexos i significatius."
+    ]
+  },
+  "elements_programacio_situacio_aprenentatge": [
+    "Títol, curs (nivell educatiu)",
+    "Àrea, matèria o àmbit",
+    "Descripció de la situació d’aprenentatge (context i repte)",
+    "Competències específiques",
+    "Competències transversals",
+    "Objectius d’aprenentatge",
+    "Criteris d’avaluació",
+    "Sabers",
+    "Desenvolupament de la situació d’aprenentatge (temporització, estratègies metodològiques, recursos i materials didàctics, …)",
+    "Activitats d’aprenentatge i d’avaluació",
+    "Els vectors",
+    "Mesures i suports d’atenció educativa inclusiva"
+  ],
+  "possibles_contextos_generals": [
+    "L’impacte de les forces naturals (inundacions, terratrèmols, huracans, erupcions volcàniques…).",
+    "La diversitat cultural.",
+    "La gent gran a la nostra societat.",
+    "L’art que ens envolta.",
+    "La millora dels espais públics.",
+    "Els problemes associats amb les dietes “miracle” i la seva influència en la salut.",
+    "L’experiència lectora.",
+    "La millora del benestar social i comunitari.",
+    "La seducció de les xarxes.",
+    "La gestió de residus i el seu impacte en l'entorn."
+  ],
+  "exemples_reptes_generals": [
+    "Investigar a partir d’un tema d’interès plantejat per l’alumnat.",
+    "Verificar hipòtesis.",
+    "Investigar a partir de l’observació d’un fenomen.",
+    "Resoldre un problema investigable de diferent naturalesa.",
+    "Participar en una polèmica entorn d'un fet o situació.",
+    "Prestar un servei a un agent extern.",
+    "Resoldre un problema relatiu a una informació que crida l’atenció a la ciutadania.",
+    "Posicionar-se amb relació a un cas o a un dilema.",
+    "Resoldre un problema que afecta la societat o l’entorn de l’alumnat.",
+    "Elaborar un producte (audiovisual, artístic, literari…) per demanda externa."
+  ],
+  "cicle_aprenentatge": {
+    "activitats_inicials": [
+      "Explorar la situació (context, repte)",
+      "Concretar els aprenentatges",
+      "Anticipar els resultats"
+    ],
+    "activitats_de_desenvolupament": [
+      "Planificar les accions",
+      "Executar les accions",
+      "Elaborar les conclusions",
+      "Elaborar el producte, prestar servei"
+    ],
+    "activitats_de_reflexio": "Activitats de reflexió sobre el que es va aprenent",
+    "activitats_d_estructuracio": [
+      "Reflexió sobre els aprenentatges",
+      "Concretar quines són les competències desenvolupades",
+      "Enunciar significats i les relacions entre els diferents conceptes apresos"
+    ],
+    "activitats_d_aplicacio": [
+      "Resoldre situacions complexes",
+      "Nous contextos",
+      "Nous problemes"
+    ],
+    "avaluacio": "Avaluació formadora i formativa"
+  },
+  "exemples_activitats_desenvolupament_generics": [
+    "Pluja d’idees",
+    "Intercanvi de resultats, treball en grup",
+    "Formulació de preguntes",
+    "Instrucció directa — a tot el grup, a grups de treball, individual",
+    "Recerca d’informació — internet, entorn, persones…",
+    "Elaboració de conclusions",
+    "Lectura",
+    "Exposició oral",
+    "Processament de la informació. Anàlisi de dades",
+    "Debat — tot el grup, grup de treball"
+  ],
+  "exemples_productes_resposta_repte": [
+    "La participació en un debat en relació amb una polèmica",
+    "Una exposició d’objectes",
+    "La presa de posició argumentada davant d’un cas",
+    "Un servei prestat a altres persones",
+    "Un document — text, presentació de diapositives, clip de vídeo, pòdcast…",
+    "Una proposta — recorregut per la natura, usos de solar, estalvi energètic…",
+    "Un objecte o una col·lecció d’objectes",
+    "Una campanya — sensibilització, denúncia…"
+  ]
+}

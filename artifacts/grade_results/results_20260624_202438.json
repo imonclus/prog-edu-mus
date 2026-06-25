@@ -1,0 +1,1074 @@
+{
+  "eval_case_results": [
+    {
+      "eval_case_index": 0,
+      "response_candidate_results": [
+        {
+          "response_index": 0,
+          "metric_results": {
+            "final_response_quality_v1": {
+              "metric_name": "final_response_quality_v1",
+              "score": 1.0,
+              "explanation": "",
+              "rubric_verdicts": [
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": null,
+                    "content": {
+                      "property": {
+                        "description": "The final answer provides a musical learning situation ('situaci\u00f3 d'aprenentatge')."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "The final answer explicitly states that it is providing a \"Situaci\u00f3 d'Aprenentatge\"."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": null,
+                    "content": {
+                      "property": {
+                        "description": "The theme of the learning situation is the autumn season ('la tardor')."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "The final answer clearly establishes the autumn season as the theme of the learning situation."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": null,
+                    "content": {
+                      "property": {
+                        "description": "The learning situation is specified for 2nd grade of primary school ('2n de prim\u00e0ria')."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "The final answer explicitly states the grade level as \"2n / Cicle Inicial de Prim\u00e0ria\", which is consistent with the prompt."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": null,
+                    "content": {
+                      "property": {
+                        "description": "The structure and pedagogical principles of the learning situation are consistent with the methodology that would be provided by the 'llegir_metodologia_situacio_aprenentatge' tool."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "The agent successfully used the `llegir_metodologia_situacio_aprenentatge` tool and structured its response precisely according to the \"Plantilla Obligat\u00f2ria\" and adhered to the \"Directrius de Redacci\u00f3\" provided in the tool's output."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": null,
+                    "content": {
+                      "property": {
+                        "description": "The learning situation includes musical resources (e.g., songs, listening pieces) appropriate for the specified grade level."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "The agent correctly identified and integrated a specific song, \"La tempesta\", from the provided list of musical resources for 2nd grade into the learning situation, using it as a central element for the activities."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": null,
+                    "content": {
+                      "property": {
+                        "description": "The final answer is written entirely in Catalan."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "All words and phrases used in the final answer are in Catalan, as requested by the `developer_instruction`."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": null,
+                    "content": {
+                      "property": {
+                        "description": "The final answer is formatted using Markdown."
+                      }
+                    },
+                    "type": "",
+                    "importance": "MEDIUM"
+                  },
+                  "verdict": true,
+                  "reasoning": "The final answer clearly utilizes Markdown elements for its structure and formatting."
+                }
+              ],
+              "raw_output": null,
+              "error_message": null
+            },
+            "multi_turn_tool_use_quality_v1": {
+              "metric_name": "multi_turn_tool_use_quality_v1",
+              "score": 1.0,
+              "explanation": "",
+              "rubric_verdicts": [
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": "317bd1b3",
+                    "content": {
+                      "property": {
+                        "description": "The agent calls the `llegir_metodologia_situacio_aprenentatge` function to retrieve the required methodology and structure."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "Locate the relevant tool call in the conversation history. In Turn 1, the agent calls `llegir_metodologia_situacio_aprenentatge({})`.\nStep 2: Compare the function name against the requirement. The function name matches exactly.\nStep 3: Check for validity. The call is made at the beginning of the turn to inform the subsequent generation of the learning situation, which adheres to the system instructions."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": "38f265c1",
+                    "content": {
+                      "property": {
+                        "description": "The `llegir_metodologia_situacio_aprenentatge` tool call adheres to the schema (valid JSON)."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "Locate the tool call `llegir_metodologia_situacio_aprenentatge({})` in Turn 1.\nStep 2: Compare the arguments against the tool definition. The definition shows no parameters are required.\nStep 3: Check for schema validity. Passing an empty JSON object `{}` is a valid way to call a function with no parameters."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": "f4c9dea1",
+                    "content": {
+                      "property": {
+                        "description": "The agent calls the `cercar_cancons_per_curs` function to find musical resources for the specified grade."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "Locate the tool call `cercar_cancons_per_curs({\"curs\": \"2n\"})` in Turn 1.\nStep 2: Compare the function name and intent. The agent calls this tool to retrieve specific songs/auditions for the 2nd-grade project it is designing.\nStep 3: Check for validity. The call is correctly placed and the results (e.g., \"La tempesta\") are used in the final output."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": "b20cbdc2",
+                    "content": {
+                      "property": {
+                        "description": "The `cercar_cancons_per_curs` tool call adheres to the schema (valid JSON, `curs` parameter present)."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "Locate the tool call `cercar_cancons_per_curs({\"curs\": \"2n\"})` in Turn 1.\nStep 2: Check for the presence of the required parameter `curs` in a valid JSON format.\nStep 3: The parameter `curs` is present and the JSON structure is correct."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": "44de805b",
+                    "content": {
+                      "property": {
+                        "description": "The `curs` parameter in the `cercar_cancons_per_curs` call is set to '2n' to match the 2nd grade requirement."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "Locate the tool call `cercar_cancons_per_curs({\"curs\": \"2n\"})` in Turn 1.\nStep 2: Compare the value of the `curs` parameter with the requirement. The value is '2n'.\nStep 3: The agent's subsequent response explicitly states it is for \"2n de prim\u00e0ria\", confirming the semantic requirement is met."
+                }
+              ],
+              "raw_output": null,
+              "error_message": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "eval_case_index": 1,
+      "response_candidate_results": [
+        {
+          "response_index": 0,
+          "metric_results": {
+            "final_response_quality_v1": {
+              "metric_name": "final_response_quality_v1",
+              "score": 1.0,
+              "explanation": "",
+              "rubric_verdicts": [
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": null,
+                    "content": {
+                      "property": {
+                        "description": "The final answer provides a proposal for a \"Situaci\u00f3 d'Aprenentatge\" (Learning Situation)."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "The final answer clearly presents itself as a proposal for a \"Situaci\u00f3 d'Aprenentatge\", consistent with the instructions and the methodology provided by the tool."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": null,
+                    "content": {
+                      "property": {
+                        "description": "The proposed Learning Situation is focused on the theme of rhythm and body percussion."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "The entire proposal revolves around the theme of rhythm and body percussion, directly addressing the user's request."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": null,
+                    "content": {
+                      "property": {
+                        "description": "The proposed Learning Situation is explicitly designed for 4th-grade primary school students."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "The final answer explicitly states the target grade level as 4th grade, matching the user's prompt."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": null,
+                    "content": {
+                      "property": {
+                        "description": "The proposal includes suggestions for songs and/or musical auditions suitable for the specified grade level."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "The agent successfully called the `cercar_cancons_per_curs` tool for the correct grade and then integrated specific suggestions from the tool's output into the proposed activities, referencing \"Rooftop\", \"Stomp House\", and \"Rock al voltant del rellotge\"."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": null,
+                    "content": {
+                      "property": {
+                        "description": "The proposal is structured according to the required format and pedagogical principles for a \"Situaci\u00f3 d'Aprenentatge\" under the LOMLOE curriculum."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "The agent correctly used the `llegir_metodologia_situacio_aprenentatge` tool and meticulously followed the provided mandatory template and pedagogical guidelines in structuring its final answer."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": null,
+                    "content": {
+                      "property": {
+                        "description": "The final answer is written entirely in Catalan."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "All text in the final answer is in Catalan, fulfilling the instruction."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": null,
+                    "content": {
+                      "property": {
+                        "description": "The final answer is formatted using Markdown."
+                      }
+                    },
+                    "type": "",
+                    "importance": "MEDIUM"
+                  },
+                  "verdict": true,
+                  "reasoning": "The final answer utilizes Markdown formatting, including headers, bold text, and bullet points, as requested."
+                }
+              ],
+              "raw_output": null,
+              "error_message": null
+            },
+            "multi_turn_tool_use_quality_v1": {
+              "metric_name": "multi_turn_tool_use_quality_v1",
+              "score": 1.0,
+              "explanation": "",
+              "rubric_verdicts": [
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": "5b5f0c02",
+                    "content": {
+                      "property": {
+                        "description": "The agent calls the `llegir_metodologia_situacio_aprenentatge` function to retrieve the methodology and structure for the learning situation."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "Locate the relevant tool call in the conversation history. In Turn 1, the agent (orquestrador) calls `llegir_metodologia_situacio_aprenentatge({})`.\nStep 2: Compare the actual function name against the property requirement. The function name matches exactly.\nStep 3: Check for validity. The call is correctly made at the beginning of the process as instructed by the system guidelines."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": "ba630cfb",
+                    "content": {
+                      "property": {
+                        "description": "The `llegir_metodologia_situacio_aprenentatge` tool call adheres to the schema (valid JSON)."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "Locate the tool call `llegir_metodologia_situacio_aprenentatge({})` in Turn 1.\nStep 2: Compare the arguments against the schema. The tool definition shows no parameters are required. The agent passed an empty JSON object `{}`.\nStep 3: Check for schema validity. Passing an empty object for a tool with no defined parameters is valid JSON and technically correct."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": "8351c70e",
+                    "content": {
+                      "property": {
+                        "description": "The agent calls the `cercar_cancons_per_curs` function to find musical resources for the specified grade."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "Locate the relevant tool call in the conversation history. In Turn 1, the agent calls `cercar_cancons_per_curs({\"curs\": \"4t\"})`.\nStep 2: Compare the actual function name against the property requirement. The function name matches exactly.\nStep 3: Check for validity. The call is made to retrieve resources for the 4th-grade level used in the final response."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": "12f51fe0",
+                    "content": {
+                      "property": {
+                        "description": "The `cercar_cancons_per_curs` tool call adheres to the schema (valid JSON, `curs` parameter present)."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "Locate the tool call `cercar_cancons_per_curs({\"curs\": \"4t\"})` in Turn 1.\nStep 2: Compare the arguments against the schema. The tool definition requires the argument `curs` of type string.\nStep 3: Check for schema validity. The agent provided `{\"curs\": \"4t\"}`, which is a valid JSON object containing the required parameter."
+                },
+                {
+                  "evaluated_rubric": {
+                    "rubric_id": "951fe549",
+                    "content": {
+                      "property": {
+                        "description": "The `curs` parameter in the `cercar_cancons_per_curs` call is set to '4t' or an equivalent representation of 4th grade."
+                      }
+                    },
+                    "type": "",
+                    "importance": "HIGH"
+                  },
+                  "verdict": true,
+                  "reasoning": "Locate the tool call `cercar_cancons_per_curs({\"curs\": \"4t\"})` in Turn 1.\nStep 2: Compare the value of the `curs` argument against the property requirement. The agent used \"4t\".\nStep 3: Check for semantic match. \"4t\" is the standard Catalan abbreviation for \"quart\" (4th), which matches the requirement."
+                }
+              ],
+              "raw_output": null,
+              "error_message": null
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "summary_metrics": [
+    {
+      "metric_name": "final_response_quality_v1",
+      "num_cases_total": 2,
+      "num_cases_valid": 2,
+      "num_cases_error": 0,
+      "mean_score": 1.0,
+      "stdev_score": 0.0,
+      "pass_rate": 1.0
+    },
+    {
+      "metric_name": "multi_turn_tool_use_quality_v1",
+      "num_cases_total": 2,
+      "num_cases_valid": 2,
+      "num_cases_error": 0,
+      "mean_score": 1.0,
+      "stdev_score": 0.0,
+      "pass_rate": 1.0
+    }
+  ],
+  "win_rates": null,
+  "evaluation_dataset": [
+    {
+      "bigquery_source": null,
+      "gcs_source": null,
+      "eval_cases": [
+        {
+          "prompt": {
+            "parts": [
+              {
+                "media_resolution": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "inline_data": null,
+                "text": "Crea una situaci\u00f3 d'aprenentatge musical sobre l'estaci\u00f3 de la tardor per a 2n de prim\u00e0ria",
+                "thought": null,
+                "thought_signature": null,
+                "video_metadata": null,
+                "tool_call": null,
+                "tool_response": null,
+                "part_metadata": null
+              }
+            ],
+            "role": "user"
+          },
+          "responses": [
+            {
+              "response": {
+                "parts": [
+                  {
+                    "media_resolution": null,
+                    "code_execution_result": null,
+                    "executable_code": null,
+                    "file_data": null,
+                    "function_call": null,
+                    "function_response": null,
+                    "inline_data": null,
+                    "text": "Perfecte! Aqu\u00ed tens una proposta de Situaci\u00f3 d'Aprenentatge sobre la tardor, dissenyada espec\u00edficament per a 2n de prim\u00e0ria i seguint la metodologia requerida.\n\n### **1. Dades B\u00e0siques**\n*   **T\u00edtol:** Sons de Tardor: Creem una Tempesta Musical!\n*   **Curs/Cicle:** 2n / Cicle Inicial de Prim\u00e0ria\n*   **\u00c0rea:** Educaci\u00f3 Art\u00edstica (M\u00fasica)\n\n### **2. Context i Repte**\n*   **Context:** L'arribada de la tardor transforma el paisatge i els sons del nostre entorn. Les fulles cauen, el vent bufa i, de vegades, esclaten fortes tempestes. Aquests sons naturals s\u00f3n una font d'inspiraci\u00f3 per a la m\u00fasica. A l'aula de m\u00fasica, hem estat parlant dels canvis que veiem i sentim a la tardor.\n*   **Repte:** Com podem representar una tempesta de tardor utilitzant la nostra veu, el nostre cos i els instruments de l'aula? El nostre repte ser\u00e0 crear col\u00b7lectivament un paisatge sonor que representi una tempesta, inspirant-nos en la can\u00e7\u00f3 \"La tempesta\", i compartir la nostra creaci\u00f3 amb els companys i companyes de 1r.\n\n### **3. Connexi\u00f3 Curricular**\n*   **Compet\u00e8ncies Espec\u00edfiques:**\n    *   CE1: Explorar, seleccionar i combinar diverses t\u00e8cniques, recursos i materials per a la creaci\u00f3 de propostes art\u00edstiques i culturals, individuals o col\u00b7lectives, a trav\u00e9s del joc i la improvisaci\u00f3.\n    *   CE2: Desenvolupar propostes art\u00edstiques i culturals, individuals o col\u00b7lectives, a partir de l\u2019assaig i la descoberta, per tal de donar resposta a un repte creatiu.\n    *   CE3: Compartir les experi\u00e8ncies i creacions art\u00edstiques i culturals, a partir de l\u2019intercanvi i el di\u00e0leg, per tal de generar espais de gaudi compartit i de foment de la conviv\u00e8ncia.\n*   **Sabers B\u00e0sics:**\n    *   Reconeixement i representaci\u00f3 de l'entorn sonor natural (paisatge sonor).\n    *   Exploraci\u00f3 de les qualitats del so (intensitat, durada, timbre) amb la veu, el cos i instruments.\n    *   Interpretaci\u00f3 de can\u00e7ons i \u00fas de la percussi\u00f3 corporal.\n    *   \u00das d'instruments de petita percussi\u00f3 (convencionals i no convencionals).\n    *   La improvisaci\u00f3 i la creaci\u00f3 musical col\u00b7lectiva.\n*   **Criteris d'Avaluaci\u00f3:**\n    *   1.1. Experimentar amb els par\u00e0metres del so, el silenci i les seves possibilitats expressives.\n    *   2.1. Participar en la creaci\u00f3, disseny i desenvolupament de propostes art\u00edstiques col\u00b7lectives.\n    *   3.1. Descriure de manera senzilla les propostes art\u00edstiques pr\u00f2pies i alienes.\n\n### **4. Seq\u00fc\u00e8ncia Did\u00e0ctica (El Cicle d'Aprenentatge)**\n*   **Activitats Inicials:**\n    *   **Qu\u00e8 se sent a la tardor?** (Grup classe, 1 sessi\u00f3). Iniciem un di\u00e0leg: Qu\u00e8 passa a la tardor? Quins sons podem sentir? (vent, pluja, fulles seques...). Fem una pluja d'idees i els anotem o dibuixem a la pissarra. Activem coneixements previs sobre l'estaci\u00f3.\n    *   **Audici\u00f3 activa \"La tempesta\":** (Individual/Grup classe, 1 sessi\u00f3). Escoltem la can\u00e7\u00f3 \"La tempesta\" (I. Segarra, F. Bofill, A. Puig, F. Serrat). Mentre sona, demanem que es moguin lliurement per l'espai imaginant que s\u00f3n fulles, el vent o la pluja. Despr\u00e9s de l'audici\u00f3, preguntem: Qu\u00e8 heu sentit? A qu\u00e8 us recorda aquesta m\u00fasica?\n*   **Activitats de Desenvolupament:**\n    *   **Aprenem la can\u00e7\u00f3:** (Grup classe, 2 sessions). Aprenem la lletra i la melodia de la can\u00e7\u00f3 \"La tempesta\" mitjan\u00e7ant el m\u00e8tode d'eco i repetici\u00f3. La cantem amb diferents intencions i intensitats (suau com les primeres gotes, fort com el tro).\n    *   **Laboratori de sons de tempesta:** (Grups petits, 2 sessions). Dividim la classe en \"equips de so\". Cada equip ha d'explorar com crear un so de la tempesta utilitzant diferents fonts:\n        *   **Equip Vent:** Amb la veu (bufar, xiular), papers de diari, tubs...\n        *   **Equip Pluja:** Amb percussi\u00f3 corporal (picar de dits), instruments de petita percussi\u00f3 (maraques, pals de pluja), o objectes (llegums dins d'un pot).\n        *   **Equip Trons:** Amb instruments de percussi\u00f3 de membrana (panderos, tambors), peus a terra, o colpejant superf\u00edcies amb les mans.\n    *   **Creem el nostre paisatge sonor:** (Grup classe, 2 sessions). Un cop cada equip ha explorat i triat els seus sons, els ajuntem per crear la nostra pe\u00e7a musical. El/la mestre/a actua com a director/a d'orquestra. Practiquem l'estructura: calma -> comen\u00e7a la pluja (suau) -> vent -> pluja forta -> trons -> torna la calma. Assagem la seq\u00fc\u00e8ncia diverses vegades.\n*   **Activitats d'Estructuraci\u00f3 i Reflexi\u00f3:**\n    *   **El mapa de la nostra tempesta:** (Grups petits / Grup Classe, 1 sessi\u00f3). Creem un musicograma o partitura no convencional a la pissarra o en un paper gran. Dibuixem s\u00edmbols per a cada so (una espiral pel vent, punts per la pluja, un llamp pel tro). Repassem la seq\u00fc\u00e8ncia sonora seguint el mapa visual. Reflexionem: Com hem aconseguit que soni m\u00e9s fort? Qu\u00e8 passa quan tots sonem alhora?\n    *   **Diari de so:** (Individual, 10 min al final de la sessi\u00f3). Cada alumne/a t\u00e9 una petita llibreta on dibuixa l'instrument o el so que m\u00e9s li ha agradat fer durant la sessi\u00f3 i per qu\u00e8.\n*   **Activitats d'Aplicaci\u00f3:**\n    *   **Concert de Tardor:** (Grup classe, 1 sessi\u00f3). El producte final. Convidem a la classe de 1r a la nostra aula. Els expliquem breument qu\u00e8 hem apr\u00e8s sobre els sons de la tardor i interpretem la nostra creaci\u00f3: primer cantem la can\u00e7\u00f3 \"La tempesta\" i despr\u00e9s representem el nostre paisatge sonor de la tempesta, seguint el nostre director/a i el musicograma.\n\n### **5. Atenci\u00f3 Educativa Inclusiva**\nS'ha dissenyat la SdA tenint en compte el Disseny Universal per a l'Aprenentatge (DUA):\n*   **M\u00faltiples formes de representaci\u00f3:** S'utilitzen canals auditius (can\u00e7\u00f3, sons), visuals (dibuixos, musicograma) i cinest\u00e8sics (moviment, percussi\u00f3 corporal).\n*   **M\u00faltiples formes d'acci\u00f3 i expressi\u00f3:** L'alumnat pot triar com participar: cantant, movent-se, tocant un instrument senzill, creant sons amb el cos o objectes. No hi ha una \u00fanica manera correcta d'expressar-se. Els agrupaments flexibles permeten que cadasc\u00fa trobi el seu lloc.\n*   **M\u00faltiples formes d'implicaci\u00f3:** El tema de la tardor \u00e9s proper i f\u00e0cil de connectar amb les seves viv\u00e8ncies. El repte de crear un \"concert\" \u00e9s motivador. L'elecci\u00f3 en els \"equips de so\" fomenta l'autonomia. Per a l'alumnat amb m\u00e9s necessitats, es proporcionaran instruments m\u00e9s f\u00e0cils de manipular (ex: un pal de pluja) o se'ls donar\u00e0 un rol de suport (ex: ajudar al director/a a senyalar el musicograma).\n\n### **6. Vectors del Curr\u00edculum**\n*   **Enfocament competencial:** La SdA no se centra a aprendre una can\u00e7\u00f3 de mem\u00f2ria, sin\u00f3 a utilitzar-la com a pretext per explorar, crear i col\u00b7laborar per resoldre un repte real i tangible (crear un paisatge sonor).\n*   **Benestar emocional:** Les activitats de moviment lliure, l'exploraci\u00f3 sonora i el treball en equip en un ambient de joc i sense judici fomenten un clima d'aula positiu i segur, on l'error es considera part de l'aprenentatge.\n*   **Perspectiva de g\u00e8nere:** Es vetllar\u00e0 perqu\u00e8 en la distribuci\u00f3 de rols (director/a, solistes, instrumentistes) i en les intervencions a l'aula hi hagi una participaci\u00f3 equitativa de nens i nenes.\n\n### **7. Avaluaci\u00f3 Formadora i Formativa**\n*   **Observaci\u00f3 directa:** El/la docent pren notes al llarg de les sessions sobre la participaci\u00f3, l'experimentaci\u00f3, la col\u00b7laboraci\u00f3 en grup i l'\u00fas de les qualitats del so, utilitzant una graella d'observaci\u00f3 senzilla.\n*   **Coavaluaci\u00f3:** Despr\u00e9s del treball en grups petits (\"Laboratori de sons\"), cada equip mostra el seu so a la resta. Els altres grups diuen qu\u00e8 els ha agradat m\u00e9s o qu\u00e8 els suggereix aquell so, fomentant l'escolta respectuosa.\n*   **Autoavaluaci\u00f3:** El \"Diari de so\" actua com una eina d'autoavaluaci\u00f3 senzilla i visual, on l'alumnat reflexiona sobre el seu propi proc\u00e9s i prefer\u00e8ncies.\n*   **Avaluaci\u00f3 del producte final:** S'utilitzar\u00e0 una diana d'avaluaci\u00f3 senzilla despr\u00e9s del \"Concert de Tardor\", on els mateixos alumnes valoraran (amb gomets de colors, per exemple) aspectes com: \"Hem escoltat al director/a?\", \"Ha sonat com una tempesta?\", \"Ens ho hem passat b\u00e9?\".",
+                    "thought": null,
+                    "thought_signature": null,
+                    "video_metadata": null,
+                    "tool_call": null,
+                    "tool_response": null,
+                    "part_metadata": null
+                  }
+                ],
+                "role": "model"
+              }
+            }
+          ],
+          "reference": null,
+          "system_instruction": null,
+          "conversation_history": null,
+          "rubric_groups": null,
+          "eval_case_id": "situacio_tardor_2n",
+          "intermediate_events": null,
+          "agent_info": null,
+          "agent_data": {
+            "agents": {
+              "orquestrador": {
+                "agent_id": "orquestrador",
+                "agent_type": "LlmAgent",
+                "description": "",
+                "instruction": "Ets l'Agent Orquestrador Pedag\u00f2gic, un expert en l'elaboraci\u00f3 de Situacions d'Aprenentatge de m\u00fasica per a educaci\u00f3 prim\u00e0ria a Catalunya, complint la LOMLOE.\nAbans de redactar la teva proposta, has d'utilitzar l'eina 'llegir_metodologia_situacio_aprenentatge' per con\u00e8ixer exactament el format i els principis pedag\u00f2gics requerits. Si l'usuari et demana recursos musicals per un curs concret, utilitza 'cercar_cancons_per_curs' per trobar idees del banc de recursos local.\nRespon sempre en catal\u00e0 i en format Markdown.",
+                "tools": [
+                  {
+                    "retrieval": null,
+                    "computer_use": null,
+                    "file_search": null,
+                    "google_search": null,
+                    "google_maps": null,
+                    "code_execution": null,
+                    "enterprise_web_search": null,
+                    "function_declarations": [
+                      {
+                        "description": "Cerca al banc de recursos de can\u00e7ons i audicions les propostes adients per al curs especificat.\n\nArgs:\n    curs: Curs de prim\u00e0ria (ex: '3r', '4t', '5\u00e8', '6\u00e8', '1r', '2n').\n    \nReturns:\n    Un text en format markdown amb les propostes de can\u00e7ons i audicions.",
+                        "name": "cercar_cancons_per_curs",
+                        "parameters": null,
+                        "parameters_json_schema": {
+                          "properties": {
+                            "curs": {
+                              "title": "Curs",
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "curs"
+                          ],
+                          "title": "cercar_cancons_per_cursParams",
+                          "type": "object"
+                        },
+                        "response": null,
+                        "response_json_schema": {
+                          "type": "string"
+                        },
+                        "behavior": null
+                      }
+                    ],
+                    "google_search_retrieval": null,
+                    "parallel_ai_search": null,
+                    "url_context": null,
+                    "mcp_servers": null
+                  },
+                  {
+                    "retrieval": null,
+                    "computer_use": null,
+                    "file_search": null,
+                    "google_search": null,
+                    "google_maps": null,
+                    "code_execution": null,
+                    "enterprise_web_search": null,
+                    "function_declarations": [
+                      {
+                        "description": "Llegeix la Skill de metodologia per dissenyar situacions d'aprenentatge.\n\nReturns:\n    El text amb la metodologia i estructura requerida a aplicar.",
+                        "name": "llegir_metodologia_situacio_aprenentatge",
+                        "parameters": null,
+                        "parameters_json_schema": null,
+                        "response": null,
+                        "response_json_schema": {
+                          "type": "string"
+                        },
+                        "behavior": null
+                      }
+                    ],
+                    "google_search_retrieval": null,
+                    "parallel_ai_search": null,
+                    "url_context": null,
+                    "mcp_servers": null
+                  }
+                ],
+                "sub_agents": []
+              }
+            },
+            "turns": [
+              {
+                "turn_index": 0,
+                "turn_id": "turn_0",
+                "events": [
+                  {
+                    "author": "orquestrador",
+                    "content": {
+                      "parts": [
+                        {
+                          "media_resolution": null,
+                          "code_execution_result": null,
+                          "executable_code": null,
+                          "file_data": null,
+                          "function_call": {
+                            "id": "adk-fbae55df-b37e-46a1-ae9e-769f4aec2323",
+                            "args": {},
+                            "name": "llegir_metodologia_situacio_aprenentatge",
+                            "partial_args": null,
+                            "will_continue": null
+                          },
+                          "function_response": null,
+                          "inline_data": null,
+                          "text": null,
+                          "thought": null,
+                          "thought_signature": null,
+                          "video_metadata": null,
+                          "tool_call": null,
+                          "tool_response": null,
+                          "part_metadata": null
+                        }
+                      ],
+                      "role": "model"
+                    },
+                    "event_time": null,
+                    "state_delta": null,
+                    "active_tools": null
+                  },
+                  {
+                    "author": "orquestrador",
+                    "content": {
+                      "parts": [
+                        {
+                          "media_resolution": null,
+                          "code_execution_result": null,
+                          "executable_code": null,
+                          "file_data": null,
+                          "function_call": null,
+                          "function_response": {
+                            "will_continue": null,
+                            "scheduling": null,
+                            "parts": null,
+                            "id": "adk-fbae55df-b37e-46a1-ae9e-769f4aec2323",
+                            "name": "llegir_metodologia_situacio_aprenentatge",
+                            "response": {
+                              "result": "---\nname: generador-situacions-aprenentatge\ndescription: Skill per redactar pas a pas una situaci\u00f3 d'aprenentatge competencial i inclusiva, aplicant el cicle d'aprenentatge actiu segons la LOMLOE.\n---\n\n# Instruccions per a l'Agent Redactor de Situacions d'Aprenentatge\n\nEts un expert en pedagogia i educaci\u00f3 musical. La teva tasca \u00e9s redactar una **Situaci\u00f3 d'Aprenentatge (SdA)** completa en catal\u00e0 per a l'educaci\u00f3 prim\u00e0ria, complint rigorosament amb els criteris normatius i metodol\u00f2gics actuals.\n\n## Directrius de Redacci\u00f3\n1. **Llenguatge:** Empra un to professional i pedag\u00f2gic, centrat en l'alumnat. Usa exclusivament el catal\u00e0 i la terminologia oficial. Abst\u00e9n-te de fer servir expressions obsoletes com \"unitats did\u00e0ctiques\", \"objectius generals\" o \"coneixements\" purs. Fes servir sempre \"situacions d'aprenentatge\", \"compet\u00e8ncies\", \"sabers\" i \"criteris d'avaluaci\u00f3\".\n2. **Enfocament Musical i Metodol\u00f2gic:** Les activitats han de ser eminentment vivencials i pr\u00e0ctiques. Has d'integrar org\u00e0nicament l'expressi\u00f3 musical mitjan\u00e7ant: el moviment, el cant, l'educaci\u00f3 de l'o\u00efda i la pr\u00e0ctica instrumental. Evita dissenyar classes magistrals o purament te\u00f2riques. Fomenta metodologies actives (com les basades en Orff, Kod\u00e1ly, Dalcroze, etc.).\n3. **Cicle d'Aprenentatge:** Has de seq\u00fcenciar i estructurar les activitats de la SdA de forma rigorosa utilitzant les fases descrites a la plantilla (Inicials, Desenvolupament, Estructuraci\u00f3, Aplicaci\u00f3).\n\n## Informaci\u00f3 d'Entrada (Input)\nRebr\u00e0s la informaci\u00f3 curricular pr\u00e8viament filtrada per part de l'Agent Expert Curricular. Aix\u00f2 inclour\u00e0, com a m\u00ednim:\n- La tem\u00e0tica, repte o el curs proposat per l'usuari.\n- Compet\u00e8ncies Espec\u00edfiques.\n- Criteris d'Avaluaci\u00f3 associats.\n- Sabers B\u00e0sics (Sabers).\n- Vectors Transversals seleccionats per treballar.\n\n## Plantilla Obligat\u00f2ria (Output)\nPer a cada SdA que generis, has d'estructurar el document final en format **Markdown**, respectant escrupolosament el seg\u00fcent esquema:\n\n### 1. Dades B\u00e0siques\n- **T\u00edtol:** (Un t\u00edtol atractiu, suggeridor i proper per a l'alumnat).\n- **Curs/Cicle:** (Nivell educatiu indicat al qual va adre\u00e7at).\n- **\u00c0rea:** Educaci\u00f3 Art\u00edstica (M\u00fasica).\n\n### 2. Context i Repte\n- **Context:** Descripci\u00f3 de l'escenari, centre d'inter\u00e8s, problema social, o observaci\u00f3 d'un fenomen que d\u00f3na lloc a la situaci\u00f3 d'aprenentatge. Ha de connectar amb la realitat de l'alumnat (ex: impacte a l'entorn, diversitat cultural, benestar).\n- **Repte:** Quin \u00e9s el problema, pregunta a resoldre o demanda externa a atendre? Aquest repte ha de concloure sempre en un producte final tangible (ex: participar en un debat, una representaci\u00f3 musical, la creaci\u00f3 d'un p\u00f2dcast, construir un instrument, o prestar un servei).\n\n### 3. Connexi\u00f3 Curricular\nEnumera clarament quins elements s'estan treballant, basant-te en els inputs rebuts:\n- **Compet\u00e8ncies Espec\u00edfiques.**\n- **Compet\u00e8ncies Transversals** (si n'hi ha).\n- **Sabers B\u00e0sics.**\n- **Criteris d'Avaluaci\u00f3.**\n\n### 4. Seq\u00fc\u00e8ncia Did\u00e0ctica (El Cicle d'Aprenentatge)\nRedacta les activitats detallant breument la durada, l'agrupament (treball individual, grups petits, grup classe) i la metodologia. Agrupa-les obligat\u00f2riament en aquestes fases:\n- **Activitats Inicials:** Exploraci\u00f3 de la situaci\u00f3/repte, pluja d'idees, formulaci\u00f3 de preguntes, activaci\u00f3 de coneixements previs i anticipaci\u00f3 de resultats.\n- **Activitats de Desenvolupament:** Planificaci\u00f3, execuci\u00f3 de les accions i elaboraci\u00f3 del producte. Activitats purament musicals de recerca, cant, percussi\u00f3, audici\u00f3 activa. Fes servir estrat\u00e8gies de treball col\u00b7laboratiu i d'intercanvi de resultats.\n- **Activitats d'Estructuraci\u00f3 i Reflexi\u00f3:** Reflexi\u00f3 sobre qu\u00e8 s'est\u00e0 aprenent, elaboraci\u00f3 de conclusions, enunciaci\u00f3 de significats i de les relacions entre els diversos conceptes musicals apresos.\n- **Activitats d'Aplicaci\u00f3:** Utilitzaci\u00f3 d'all\u00f2 apr\u00e8s per resoldre situacions complexes o aplicar-ho a nous contextos.\n\n### 5. Atenci\u00f3 Educativa Inclusiva\nDetalla com s'ha dissenyat la SdA tenint en compte el Disseny Universal per a l'Aprenentatge (DUA) i esmenta les mesures concretes per garantir la pres\u00e8ncia, participaci\u00f3 i progr\u00e9s de tot l'alumnat a l'aula de m\u00fasica (materials accessibles, diversitat d'opcions d'expressi\u00f3, agrupaments flexibles, etc.).\n\n### 6. Vectors del Curr\u00edculum\nIndica i descriu com s'integren els vectors transversals en la situaci\u00f3 (ex: com l'enfocament competencial ajuda a la resoluci\u00f3 d'un repte real, com s'ha tingut en compte l'especial atenci\u00f3 al benestar emocional durant el proc\u00e9s, o la integraci\u00f3 de la perspectiva de g\u00e8nere en l'elecci\u00f3 de referents musicals).\n\n### 7. Avaluaci\u00f3 Formadora i Formativa\nDetalla els moments, eines i instruments d'avaluaci\u00f3 que s'utilitzaran *al llarg de tot el proc\u00e9s d'aprenentatge* (no nom\u00e9s per qualificar al final), per obtenir informaci\u00f3 i ajustar la programaci\u00f3. Inclou pr\u00e0ctiques d'autoavaluaci\u00f3 i coavaluaci\u00f3 entre iguals (ex: diaris d'aprenentatge, r\u00fabriques per a l'execuci\u00f3 d'un patr\u00f3 r\u00edtmic, dianes d'avaluaci\u00f3).\n"
+                            }
+                          },
+                          "inline_data": null,
+                          "text": null,
+                          "thought": null,
+                          "thought_signature": null,
+                          "video_metadata": null,
+                          "tool_call": null,
+                          "tool_response": null,
+                          "part_metadata": null
+                        }
+                      ],
+                      "role": "user"
+                    },
+                    "event_time": null,
+                    "state_delta": null,
+                    "active_tools": null
+                  },
+                  {
+                    "author": "orquestrador",
+                    "content": {
+                      "parts": [
+                        {
+                          "media_resolution": null,
+                          "code_execution_result": null,
+                          "executable_code": null,
+                          "file_data": null,
+                          "function_call": {
+                            "id": "adk-866351b3-3a41-49e9-8f73-b0bdd9fb003d",
+                            "args": {
+                              "curs": "2n"
+                            },
+                            "name": "cercar_cancons_per_curs",
+                            "partial_args": null,
+                            "will_continue": null
+                          },
+                          "function_response": null,
+                          "inline_data": null,
+                          "text": null,
+                          "thought": null,
+                          "thought_signature": null,
+                          "video_metadata": null,
+                          "tool_call": null,
+                          "tool_response": null,
+                          "part_metadata": null
+                        }
+                      ],
+                      "role": "model"
+                    },
+                    "event_time": null,
+                    "state_delta": null,
+                    "active_tools": null
+                  },
+                  {
+                    "author": "orquestrador",
+                    "content": {
+                      "parts": [
+                        {
+                          "media_resolution": null,
+                          "code_execution_result": null,
+                          "executable_code": null,
+                          "file_data": null,
+                          "function_call": null,
+                          "function_response": {
+                            "will_continue": null,
+                            "scheduling": null,
+                            "parts": null,
+                            "id": "adk-866351b3-3a41-49e9-8f73-b0bdd9fb003d",
+                            "name": "cercar_cancons_per_curs",
+                            "response": {
+                              "result": "### Fitxer: 02 - audios-cancons-segon-projecte-ninois.md\n\n# Projecte Ninois - M\u00fasica 2n\n\n## Llista dels \u00e0udios\n\n### CD 1\n\n- 1. El carreter (E. Mayans) [2.16]\n- 2. El carreter (base instrumental) [2.16]\n- 3. La tempesta* (I. Segarra, F. Bofill, A. Puig, F. Serrat) [1.05]\n- 4. La tempesta* (base instrumental) [1.05]\n- 5. Amb els esclops* (popular catalana) [2.09]\n- 6. Amb els esclops* (base instrumental) [2.09]\n- 7. Visca el foc* (popular francesa) [1.27]\n- 8. Visca el foc* (base instrumental) [1.27]\n- 9. El vaixell* (popular francesa) [1.08]\n- 10. El vaixell* (base instrumental) [1.08]\n- 11. Al jard\u00ed del pare* (popular francesa) [2.30]\n- 12. Al jard\u00ed del pare* (base instrumental) [2.30]\n- 13. V\u00e9s-te\u2019n, hivern!* (tradicional alemanya) [1.21]\n- 14. V\u00e9s-te\u2019n, hivern!* (base instrumental) [1.21]\n- 15. Fam\u00edlies instrumentals (piano) [1.06]\n- 16. Fam\u00edlies instrumentals (acordi\u00f3) [0.52]\n- 17. Fam\u00edlies instrumentals (orgue) [0.48]\n- 18. Fam\u00edlies instrumentals (gong) [0.32]\n- 19. Fam\u00edlies instrumentals (congues) [0.20]\n- 20. Fam\u00edlies instrumentals (bateria) [1.44]\n- 21. Fam\u00edlies instrumentals (violoncel) [1.34]\n- 22. Fam\u00edlies instrumentals (guitarra) [1:14]\n- 23. Fam\u00edlies instrumentals (arpa) [1.18]\n- 24. Fam\u00edlies instrumentals (trompeta) [0.42]\n- 25. Fam\u00edlies instrumentals (sax\u00f2fon) [0.59]\n- 26. Fam\u00edlies instrumentals (fagot) [0.30]\n- 27. Instruments de percussi\u00f3 d\u2019afinaci\u00f3 determinada (timbales) [0.41]\n- 28. Instruments de percussi\u00f3 d\u2019afinaci\u00f3 determinada (marimba) [0.25]\n- 29. Instruments de percussi\u00f3 d\u2019afinaci\u00f3 determinada (vibr\u00e0fon) [0.26]\n- 30. Instruments de percussi\u00f3 d\u2019afinaci\u00f3 determinada (campanes tubulars) [0.16]\n- 31. Instruments Orff de placa (xil\u00f2fons) [0.37]\n- 32. Instruments Orff de placa (metal\u00b7l\u00f2fons) [0.38]\n- 33. Instruments Orff de placa (carillons) [0.47]\n- 34. Orquestra d\u2019instruments Orff de placa [0.57]\n- 35. Hot cross buns* (popular anglesa) [1.52]\n- 36. Hot cross buns* (base instrumental) [1.52]\n- 37. La pastoreta* (popular catalana) [3.00]\n- 38. La pastoreta* (base instrumental) [3.06]\n- 39. Can\u00e7\u00f3 de l\u2019empi\n\n[...]"
+                            }
+                          },
+                          "inline_data": null,
+                          "text": null,
+                          "thought": null,
+                          "thought_signature": null,
+                          "video_metadata": null,
+                          "tool_call": null,
+                          "tool_response": null,
+                          "part_metadata": null
+                        }
+                      ],
+                      "role": "user"
+                    },
+                    "event_time": null,
+                    "state_delta": null,
+                    "active_tools": null
+                  },
+                  {
+                    "author": "orquestrador",
+                    "content": {
+                      "parts": [
+                        {
+                          "media_resolution": null,
+                          "code_execution_result": null,
+                          "executable_code": null,
+                          "file_data": null,
+                          "function_call": null,
+                          "function_response": null,
+                          "inline_data": null,
+                          "text": "Perfecte! Aqu\u00ed tens una proposta de Situaci\u00f3 d'Aprenentatge sobre la tardor, dissenyada espec\u00edficament per a 2n de prim\u00e0ria i seguint la metodologia requerida.\n\n### **1. Dades B\u00e0siques**\n*   **T\u00edtol:** Sons de Tardor: Creem una Tempesta Musical!\n*   **Curs/Cicle:** 2n / Cicle Inicial de Prim\u00e0ria\n*   **\u00c0rea:** Educaci\u00f3 Art\u00edstica (M\u00fasica)\n\n### **2. Context i Repte**\n*   **Context:** L'arribada de la tardor transforma el paisatge i els sons del nostre entorn. Les fulles cauen, el vent bufa i, de vegades, esclaten fortes tempestes. Aquests sons naturals s\u00f3n una font d'inspiraci\u00f3 per a la m\u00fasica. A l'aula de m\u00fasica, hem estat parlant dels canvis que veiem i sentim a la tardor.\n*   **Repte:** Com podem representar una tempesta de tardor utilitzant la nostra veu, el nostre cos i els instruments de l'aula? El nostre repte ser\u00e0 crear col\u00b7lectivament un paisatge sonor que representi una tempesta, inspirant-nos en la can\u00e7\u00f3 \"La tempesta\", i compartir la nostra creaci\u00f3 amb els companys i companyes de 1r.\n\n### **3. Connexi\u00f3 Curricular**\n*   **Compet\u00e8ncies Espec\u00edfiques:**\n    *   CE1: Explorar, seleccionar i combinar diverses t\u00e8cniques, recursos i materials per a la creaci\u00f3 de propostes art\u00edstiques i culturals, individuals o col\u00b7lectives, a trav\u00e9s del joc i la improvisaci\u00f3.\n    *   CE2: Desenvolupar propostes art\u00edstiques i culturals, individuals o col\u00b7lectives, a partir de l\u2019assaig i la descoberta, per tal de donar resposta a un repte creatiu.\n    *   CE3: Compartir les experi\u00e8ncies i creacions art\u00edstiques i culturals, a partir de l\u2019intercanvi i el di\u00e0leg, per tal de generar espais de gaudi compartit i de foment de la conviv\u00e8ncia.\n*   **Sabers B\u00e0sics:**\n    *   Reconeixement i representaci\u00f3 de l'entorn sonor natural (paisatge sonor).\n    *   Exploraci\u00f3 de les qualitats del so (intensitat, durada, timbre) amb la veu, el cos i instruments.\n    *   Interpretaci\u00f3 de can\u00e7ons i \u00fas de la percussi\u00f3 corporal.\n    *   \u00das d'instruments de petita percussi\u00f3 (convencionals i no convencionals).\n    *   La improvisaci\u00f3 i la creaci\u00f3 musical col\u00b7lectiva.\n*   **Criteris d'Avaluaci\u00f3:**\n    *   1.1. Experimentar amb els par\u00e0metres del so, el silenci i les seves possibilitats expressives.\n    *   2.1. Participar en la creaci\u00f3, disseny i desenvolupament de propostes art\u00edstiques col\u00b7lectives.\n    *   3.1. Descriure de manera senzilla les propostes art\u00edstiques pr\u00f2pies i alienes.\n\n### **4. Seq\u00fc\u00e8ncia Did\u00e0ctica (El Cicle d'Aprenentatge)**\n*   **Activitats Inicials:**\n    *   **Qu\u00e8 se sent a la tardor?** (Grup classe, 1 sessi\u00f3). Iniciem un di\u00e0leg: Qu\u00e8 passa a la tardor? Quins sons podem sentir? (vent, pluja, fulles seques...). Fem una pluja d'idees i els anotem o dibuixem a la pissarra. Activem coneixements previs sobre l'estaci\u00f3.\n    *   **Audici\u00f3 activa \"La tempesta\":** (Individual/Grup classe, 1 sessi\u00f3). Escoltem la can\u00e7\u00f3 \"La tempesta\" (I. Segarra, F. Bofill, A. Puig, F. Serrat). Mentre sona, demanem que es moguin lliurement per l'espai imaginant que s\u00f3n fulles, el vent o la pluja. Despr\u00e9s de l'audici\u00f3, preguntem: Qu\u00e8 heu sentit? A qu\u00e8 us recorda aquesta m\u00fasica?\n*   **Activitats de Desenvolupament:**\n    *   **Aprenem la can\u00e7\u00f3:** (Grup classe, 2 sessions). Aprenem la lletra i la melodia de la can\u00e7\u00f3 \"La tempesta\" mitjan\u00e7ant el m\u00e8tode d'eco i repetici\u00f3. La cantem amb diferents intencions i intensitats (suau com les primeres gotes, fort com el tro).\n    *   **Laboratori de sons de tempesta:** (Grups petits, 2 sessions). Dividim la classe en \"equips de so\". Cada equip ha d'explorar com crear un so de la tempesta utilitzant diferents fonts:\n        *   **Equip Vent:** Amb la veu (bufar, xiular), papers de diari, tubs...\n        *   **Equip Pluja:** Amb percussi\u00f3 corporal (picar de dits), instruments de petita percussi\u00f3 (maraques, pals de pluja), o objectes (llegums dins d'un pot).\n        *   **Equip Trons:** Amb instruments de percussi\u00f3 de membrana (panderos, tambors), peus a terra, o colpejant superf\u00edcies amb les mans.\n    *   **Creem el nostre paisatge sonor:** (Grup classe, 2 sessions). Un cop cada equip ha explorat i triat els seus sons, els ajuntem per crear la nostra pe\u00e7a musical. El/la mestre/a actua com a director/a d'orquestra. Practiquem l'estructura: calma -> comen\u00e7a la pluja (suau) -> vent -> pluja forta -> trons -> torna la calma. Assagem la seq\u00fc\u00e8ncia diverses vegades.\n*   **Activitats d'Estructuraci\u00f3 i Reflexi\u00f3:**\n    *   **El mapa de la nostra tempesta:** (Grups petits / Grup Classe, 1 sessi\u00f3). Creem un musicograma o partitura no convencional a la pissarra o en un paper gran. Dibuixem s\u00edmbols per a cada so (una espiral pel vent, punts per la pluja, un llamp pel tro). Repassem la seq\u00fc\u00e8ncia sonora seguint el mapa visual. Reflexionem: Com hem aconseguit que soni m\u00e9s fort? Qu\u00e8 passa quan tots sonem alhora?\n    *   **Diari de so:** (Individual, 10 min al final de la sessi\u00f3). Cada alumne/a t\u00e9 una petita llibreta on dibuixa l'instrument o el so que m\u00e9s li ha agradat fer durant la sessi\u00f3 i per qu\u00e8.\n*   **Activitats d'Aplicaci\u00f3:**\n    *   **Concert de Tardor:** (Grup classe, 1 sessi\u00f3). El producte final. Convidem a la classe de 1r a la nostra aula. Els expliquem breument qu\u00e8 hem apr\u00e8s sobre els sons de la tardor i interpretem la nostra creaci\u00f3: primer cantem la can\u00e7\u00f3 \"La tempesta\" i despr\u00e9s representem el nostre paisatge sonor de la tempesta, seguint el nostre director/a i el musicograma.\n\n### **5. Atenci\u00f3 Educativa Inclusiva**\nS'ha dissenyat la SdA tenint en compte el Disseny Universal per a l'Aprenentatge (DUA):\n*   **M\u00faltiples formes de representaci\u00f3:** S'utilitzen canals auditius (can\u00e7\u00f3, sons), visuals (dibuixos, musicograma) i cinest\u00e8sics (moviment, percussi\u00f3 corporal).\n*   **M\u00faltiples formes d'acci\u00f3 i expressi\u00f3:** L'alumnat pot triar com participar: cantant, movent-se, tocant un instrument senzill, creant sons amb el cos o objectes. No hi ha una \u00fanica manera correcta d'expressar-se. Els agrupaments flexibles permeten que cadasc\u00fa trobi el seu lloc.\n*   **M\u00faltiples formes d'implicaci\u00f3:** El tema de la tardor \u00e9s proper i f\u00e0cil de connectar amb les seves viv\u00e8ncies. El repte de crear un \"concert\" \u00e9s motivador. L'elecci\u00f3 en els \"equips de so\" fomenta l'autonomia. Per a l'alumnat amb m\u00e9s necessitats, es proporcionaran instruments m\u00e9s f\u00e0cils de manipular (ex: un pal de pluja) o se'ls donar\u00e0 un rol de suport (ex: ajudar al director/a a senyalar el musicograma).\n\n### **6. Vectors del Curr\u00edculum**\n*   **Enfocament competencial:** La SdA no se centra a aprendre una can\u00e7\u00f3 de mem\u00f2ria, sin\u00f3 a utilitzar-la com a pretext per explorar, crear i col\u00b7laborar per resoldre un repte real i tangible (crear un paisatge sonor).\n*   **Benestar emocional:** Les activitats de moviment lliure, l'exploraci\u00f3 sonora i el treball en equip en un ambient de joc i sense judici fomenten un clima d'aula positiu i segur, on l'error es considera part de l'aprenentatge.\n*   **Perspectiva de g\u00e8nere:** Es vetllar\u00e0 perqu\u00e8 en la distribuci\u00f3 de rols (director/a, solistes, instrumentistes) i en les intervencions a l'aula hi hagi una participaci\u00f3 equitativa de nens i nenes.\n\n### **7. Avaluaci\u00f3 Formadora i Formativa**\n*   **Observaci\u00f3 directa:** El/la docent pren notes al llarg de les sessions sobre la participaci\u00f3, l'experimentaci\u00f3, la col\u00b7laboraci\u00f3 en grup i l'\u00fas de les qualitats del so, utilitzant una graella d'observaci\u00f3 senzilla.\n*   **Coavaluaci\u00f3:** Despr\u00e9s del treball en grups petits (\"Laboratori de sons\"), cada equip mostra el seu so a la resta. Els altres grups diuen qu\u00e8 els ha agradat m\u00e9s o qu\u00e8 els suggereix aquell so, fomentant l'escolta respectuosa.\n*   **Autoavaluaci\u00f3:** El \"Diari de so\" actua com una eina d'autoavaluaci\u00f3 senzilla i visual, on l'alumnat reflexiona sobre el seu propi proc\u00e9s i prefer\u00e8ncies.\n*   **Avaluaci\u00f3 del producte final:** S'utilitzar\u00e0 una diana d'avaluaci\u00f3 senzilla despr\u00e9s del \"Concert de Tardor\", on els mateixos alumnes valoraran (amb gomets de colors, per exemple) aspectes com: \"Hem escoltat al director/a?\", \"Ha sonat com una tempesta?\", \"Ens ho hem passat b\u00e9?\".",
+                          "thought": null,
+                          "thought_signature": null,
+                          "video_metadata": null,
+                          "tool_call": null,
+                          "tool_response": null,
+                          "part_metadata": null
+                        }
+                      ],
+                      "role": "model"
+                    },
+                    "event_time": null,
+                    "state_delta": null,
+                    "active_tools": null
+                  }
+                ]
+              }
+            ]
+          },
+          "user_scenario": null
+        },
+        {
+          "prompt": {
+            "parts": [
+              {
+                "media_resolution": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "inline_data": null,
+                "text": "Vull una proposta de ritme i percussi\u00f3 corporal per a 4t de prim\u00e0ria",
+                "thought": null,
+                "thought_signature": null,
+                "video_metadata": null,
+                "tool_call": null,
+                "tool_response": null,
+                "part_metadata": null
+              }
+            ],
+            "role": "user"
+          },
+          "responses": [
+            {
+              "response": {
+                "parts": [
+                  {
+                    "media_resolution": null,
+                    "code_execution_result": null,
+                    "executable_code": null,
+                    "file_data": null,
+                    "function_call": null,
+                    "function_response": null,
+                    "inline_data": null,
+                    "text": "Perfecte! Aqu\u00ed tens una proposta de Situaci\u00f3 d'Aprenentatge (SdA) sobre ritme i percussi\u00f3 corporal per a 4t de prim\u00e0ria, dissenyada seguint l'enfocament competencial de la LOMLOE i aprofitant els recursos musicals disponibles.\n\n***\n\n### 1. Dades B\u00e0siques\n- **T\u00edtol:** Stomp a l'Escola: Creem Ritmes amb el Cos!\n- **Curs/Cicle:** 4t de Prim\u00e0ria\n- **\u00c0rea:** Educaci\u00f3 Art\u00edstica (M\u00fasica)\n\n### 2. Context i Repte\n- **Context:** Sab\u00edeu que el nostre cos pot ser un instrument musical incre\u00efble? Hi ha grups de m\u00fasica, com el fam\u00f3s \"Stomp\", que creen espectacles impressionants utilitzant nom\u00e9s els sons del seu cos i objectes quotidians. A la nostra escola, tamb\u00e9 podem convertir-nos en artistes del ritme!\n- **Repte:** El nostre repte ser\u00e0 crear, entre tota la classe, una composici\u00f3 de percussi\u00f3 corporal. Investigarem les possibilitats sonores del nostre cos, aprendrem a combinar ritmes i, finalment, dissenyarem una coreografia r\u00edtmica per presentar-la en un petit festival o mostra a la resta de l'escola. Serem el grup \"Stomp\" de 4t!\n\n### 3. Connexi\u00f3 Curricular\n- **Compet\u00e8ncies Espec\u00edfiques:**\n    - **CE2:** Interpretar propostes musicals i de dansa, a trav\u00e9s de la recepci\u00f3 i l'expressi\u00f3, per mostrar la comprensi\u00f3 i l'intercanvi d'idees i emocions.\n    - **CE3:** Crear i elaborar propostes musicals i multimodals, tot seleccionant i combinant els elements del llenguatge musical i les eines necess\u00e0ries, per enriquir i desenvolupar les pr\u00f2pies idees.\n- **Sabers B\u00e0sics:**\n    - Reconeixement, interpretaci\u00f3 i creaci\u00f3 de patrons r\u00edtmics senzills.\n    - L'exploraci\u00f3 de les possibilitats sonores del cos (percussi\u00f3 corporal).\n    - La interpretaci\u00f3 de repertori vocal i instrumental divers.\n    - L'escolta activa i el respecte per les produccions alienes.\n- **Criteris d'Avaluaci\u00f3:**\n    - 2.1. Interpretar propostes musicals, explorant les possibilitats expressives de la veu, el cos, els instruments i les eines digitals.\n    - 3.1. Participar en la creaci\u00f3 de propostes musicals senzilles, individuals i col\u00b7lectives, aplicant els elements del llenguatge musical.\n\n### 4. Seq\u00fc\u00e8ncia Did\u00e0ctica (El Cicle d'Aprenentatge)\n- **Activitats Inicials (Exploraci\u00f3):**\n    - **Audici\u00f3 i Di\u00e0leg:** Comencem veient alguns v\u00eddeos del grup \"Stomp\" (com \"Rooftop\" i \"Stomp House\" de la llista de recursos). Despr\u00e9s, fem una pluja d'idees: Quins sons fan? Amb quines parts del cos? Podr\u00edem fer-ho nosaltres?\n    - **Joc d'Escalfament:** Escoltem \"Rock al voltant del rellotge\" i seguim el pols amb palmades. Despr\u00e9s, fem un joc d'eco on el mestre/a proposa un ritme senzill amb el cos i el grup-classe el repeteix.\n    - **Inventari Sonor:** En grup classe, explorem tots els sons que podem fer amb el nostre cos: palmades (greus, agudes), pica amb els dits, cops al pit, cops a les cuixes, picar de peus... Creem un \"mapa sonor\" del cos a la pissarra.\n\n- **Activitats de Desenvolupament (Creaci\u00f3):**\n    - **Laboratori R\u00edtmic:** En petits grups de 4-5 alumnes, cada grup t\u00e9 la missi\u00f3 de crear una seq\u00fc\u00e8ncia r\u00edtmica de 8 temps combinant 3 sons corporals diferents. Es poden ajudar amb targetes de ritmes o notaci\u00f3 gr\u00e0fica senzilla.\n    - **Cadenes R\u00edtmiques:** Aprenem i practiquem patrons r\u00edtmics m\u00e9s complexos proposats pel mestre/a. Despr\u00e9s, en rotllana, cada alumne/a fa un ritme de 4 temps i el seg\u00fcent l'ha de continuar, creant una cadena.\n    - **Muntatge:** Cada grup ensenya la seva creaci\u00f3 a la resta de la classe. Amb l'ajuda del mestre/a, decidim com podem ordenar i ajuntar les diferents seq\u00fc\u00e8ncies per construir una pe\u00e7a m\u00e9s llarga i coherent. Hi podem afegir una introducci\u00f3 i un final potent.\n\n- **Activitats d'Estructuraci\u00f3 i Reflexi\u00f3 (An\u00e0lisi):**\n    - **Partitura Col\u00b7lectiva:** A la pissarra o en un paper gran, creem una partitura no convencional per a la nostra pe\u00e7a. Dibuixem s\u00edmbols senzills per a cada so corporal (ex: una m\u00e0 per palmada, un peu per cop de peu) i els ordenem en una l\u00ednia de temps. Aix\u00f2 ens ajuda a memoritzar l'estructura.\n    - **Di\u00e0leg Reflexiu:** Qu\u00e8 ha estat el m\u00e9s f\u00e0cil? I el m\u00e9s dif\u00edcil? Com hem solucionat els problemes quan no an\u00e0vem a la vegada? Aquesta reflexi\u00f3 ens ajuda a entendre el concepte de pols, ritme i treball en equip.\n\n- **Activitats d'Aplicaci\u00f3 (Assaig i Mostra):**\n    - **Assajos Generals:** Dediquem sessions a assajar la nostra composici\u00f3 completa, afegint-hi moviment i expressivitat. Ens gravem en v\u00eddeo per veure'ns des de fora i poder millorar aspectes de la coordinaci\u00f3 i la posada en escena.\n    - **L'Espectacle \"Stomp\":** Presentem la nostra creaci\u00f3 \"Stomp a l'Escola\" a un p\u00fablic (altres classes, durant una festa escolar, etc.).\n\n### 5. Atenci\u00f3 Educativa Inclusiva\nAquesta SdA es basa en els principis del DUA:\n- **M\u00faltiples formes de representaci\u00f3:** S'utilitzen est\u00edmuls visuals (v\u00eddeos, partitura gr\u00e0fica), auditius (audicions, demostracions) i cinest\u00e8sics (pr\u00f2pia pr\u00e0ctica).\n- **M\u00faltiples formes d'acci\u00f3 i expressi\u00f3:** L'alumnat pot escollir els sons amb qu\u00e8 se senti m\u00e9s c\u00f2mode, no hi ha una \u00fanica resposta correcta en les fases de creaci\u00f3. Es fomenta el treball en equip on cada membre pot aportar des de les seves fortaleses.\n- **M\u00faltiples formes d'implicaci\u00f3:** Es connecta amb un referent modern i motivador (Stomp), es fomenta l'autonomia dels grups i es treballa per a un objectiu final tangible i emocionant (l'actuaci\u00f3).\n\n### 6. Vectors del Curr\u00edculum\n- **Enfocament competencial:** Tota la seq\u00fc\u00e8ncia est\u00e0 dissenyada perqu\u00e8 l'alumnat apliqui els seus sabers musicals per resoldre un repte creatiu real.\n- **Benestar emocional:** Es treballa la confian\u00e7a, l'expressi\u00f3 personal no verbal, la cohesi\u00f3 de grup i la satisfacci\u00f3 de crear quelcom junts. Es gestiona l'error com una part de l'aprenentatge.\n- **Perspectiva de g\u00e8nere:** S'anima a tot l'alumnat per igual a explorar, liderar i expressar-se amb el cos, trencant qualsevol estereotip associat al moviment o la percussi\u00f3.\n\n### 7. Avaluaci\u00f3 Formadora i Formativa\n- **Observaci\u00f3 directa:** El/la mestre/a utilitza una graella d'observaci\u00f3 durant les sessions per valorar la participaci\u00f3, la capacitat de seguir el pols, la creativitat i el treball en equip.\n- **Autoavaluaci\u00f3:** Despr\u00e9s de la fase de creaci\u00f3, l'alumnat pot utilitzar una \"diana d'avaluaci\u00f3\" senzilla per reflexionar sobre la seva aportaci\u00f3 al grup i el seu aprenentatge.\n- **Coavaluaci\u00f3:** Els grups s'ofereixen comentaris constructius (\"dos estrelles i un desig\") despr\u00e9s de mostrar les seves primeres creacions.\n- **Avaluaci\u00f3 del producte final:** Es pot avaluar la representaci\u00f3 final mitjan\u00e7ant una r\u00fabrica senzilla que valori la coordinaci\u00f3 r\u00edtmica, l'originalitat i la posada en escena. La gravaci\u00f3 en v\u00eddeo \u00e9s una eina excel\u00b7lent per a l'autoavaluaci\u00f3 posterior.",
+                    "thought": null,
+                    "thought_signature": null,
+                    "video_metadata": null,
+                    "tool_call": null,
+                    "tool_response": null,
+                    "part_metadata": null
+                  }
+                ],
+                "role": "model"
+              }
+            }
+          ],
+          "reference": null,
+          "system_instruction": null,
+          "conversation_history": null,
+          "rubric_groups": null,
+          "eval_case_id": "percussio_4t",
+          "intermediate_events": null,
+          "agent_info": null,
+          "agent_data": {
+            "agents": {
+              "orquestrador": {
+                "agent_id": "orquestrador",
+                "agent_type": "LlmAgent",
+                "description": "",
+                "instruction": "Ets l'Agent Orquestrador Pedag\u00f2gic, un expert en l'elaboraci\u00f3 de Situacions d'Aprenentatge de m\u00fasica per a educaci\u00f3 prim\u00e0ria a Catalunya, complint la LOMLOE.\nAbans de redactar la teva proposta, has d'utilitzar l'eina 'llegir_metodologia_situacio_aprenentatge' per con\u00e8ixer exactament el format i els principis pedag\u00f2gics requerits. Si l'usuari et demana recursos musicals per un curs concret, utilitza 'cercar_cancons_per_curs' per trobar idees del banc de recursos local.\nRespon sempre en catal\u00e0 i en format Markdown.",
+                "tools": [
+                  {
+                    "retrieval": null,
+                    "computer_use": null,
+                    "file_search": null,
+                    "google_search": null,
+                    "google_maps": null,
+                    "code_execution": null,
+                    "enterprise_web_search": null,
+                    "function_declarations": [
+                      {
+                        "description": "Cerca al banc de recursos de can\u00e7ons i audicions les propostes adients per al curs especificat.\n\nArgs:\n    curs: Curs de prim\u00e0ria (ex: '3r', '4t', '5\u00e8', '6\u00e8', '1r', '2n').\n    \nReturns:\n    Un text en format markdown amb les propostes de can\u00e7ons i audicions.",
+                        "name": "cercar_cancons_per_curs",
+                        "parameters": null,
+                        "parameters_json_schema": {
+                          "properties": {
+                            "curs": {
+                              "title": "Curs",
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "curs"
+                          ],
+                          "title": "cercar_cancons_per_cursParams",
+                          "type": "object"
+                        },
+                        "response": null,
+                        "response_json_schema": {
+                          "type": "string"
+                        },
+                        "behavior": null
+                      }
+                    ],
+                    "google_search_retrieval": null,
+                    "parallel_ai_search": null,
+                    "url_context": null,
+                    "mcp_servers": null
+                  },
+                  {
+                    "retrieval": null,
+                    "computer_use": null,
+                    "file_search": null,
+                    "google_search": null,
+                    "google_maps": null,
+                    "code_execution": null,
+                    "enterprise_web_search": null,
+                    "function_declarations": [
+                      {
+                        "description": "Llegeix la Skill de metodologia per dissenyar situacions d'aprenentatge.\n\nReturns:\n    El text amb la metodologia i estructura requerida a aplicar.",
+                        "name": "llegir_metodologia_situacio_aprenentatge",
+                        "parameters": null,
+                        "parameters_json_schema": null,
+                        "response": null,
+                        "response_json_schema": {
+                          "type": "string"
+                        },
+                        "behavior": null
+                      }
+                    ],
+                    "google_search_retrieval": null,
+                    "parallel_ai_search": null,
+                    "url_context": null,
+                    "mcp_servers": null
+                  }
+                ],
+                "sub_agents": []
+              }
+            },
+            "turns": [
+              {
+                "turn_index": 0,
+                "turn_id": "turn_0",
+                "events": [
+                  {
+                    "author": "orquestrador",
+                    "content": {
+                      "parts": [
+                        {
+                          "media_resolution": null,
+                          "code_execution_result": null,
+                          "executable_code": null,
+                          "file_data": null,
+                          "function_call": {
+                            "id": "adk-2842ce2b-98f2-4f0e-a064-f5bcb1501df6",
+                            "args": {},
+                            "name": "llegir_metodologia_situacio_aprenentatge",
+                            "partial_args": null,
+                            "will_continue": null
+                          },
+                          "function_response": null,
+                          "inline_data": null,
+                          "text": null,
+                          "thought": null,
+                          "thought_signature": null,
+                          "video_metadata": null,
+                          "tool_call": null,
+                          "tool_response": null,
+                          "part_metadata": null
+                        }
+                      ],
+                      "role": "model"
+                    },
+                    "event_time": null,
+                    "state_delta": null,
+                    "active_tools": null
+                  },
+                  {
+                    "author": "orquestrador",
+                    "content": {
+                      "parts": [
+                        {
+                          "media_resolution": null,
+                          "code_execution_result": null,
+                          "executable_code": null,
+                          "file_data": null,
+                          "function_call": null,
+                          "function_response": {
+                            "will_continue": null,
+                            "scheduling": null,
+                            "parts": null,
+                            "id": "adk-2842ce2b-98f2-4f0e-a064-f5bcb1501df6",
+                            "name": "llegir_metodologia_situacio_aprenentatge",
+                            "response": {
+                              "result": "---\nname: generador-situacions-aprenentatge\ndescription: Skill per redactar pas a pas una situaci\u00f3 d'aprenentatge competencial i inclusiva, aplicant el cicle d'aprenentatge actiu segons la LOMLOE.\n---\n\n# Instruccions per a l'Agent Redactor de Situacions d'Aprenentatge\n\nEts un expert en pedagogia i educaci\u00f3 musical. La teva tasca \u00e9s redactar una **Situaci\u00f3 d'Aprenentatge (SdA)** completa en catal\u00e0 per a l'educaci\u00f3 prim\u00e0ria, complint rigorosament amb els criteris normatius i metodol\u00f2gics actuals.\n\n## Directrius de Redacci\u00f3\n1. **Llenguatge:** Empra un to professional i pedag\u00f2gic, centrat en l'alumnat. Usa exclusivament el catal\u00e0 i la terminologia oficial. Abst\u00e9n-te de fer servir expressions obsoletes com \"unitats did\u00e0ctiques\", \"objectius generals\" o \"coneixements\" purs. Fes servir sempre \"situacions d'aprenentatge\", \"compet\u00e8ncies\", \"sabers\" i \"criteris d'avaluaci\u00f3\".\n2. **Enfocament Musical i Metodol\u00f2gic:** Les activitats han de ser eminentment vivencials i pr\u00e0ctiques. Has d'integrar org\u00e0nicament l'expressi\u00f3 musical mitjan\u00e7ant: el moviment, el cant, l'educaci\u00f3 de l'o\u00efda i la pr\u00e0ctica instrumental. Evita dissenyar classes magistrals o purament te\u00f2riques. Fomenta metodologies actives (com les basades en Orff, Kod\u00e1ly, Dalcroze, etc.).\n3. **Cicle d'Aprenentatge:** Has de seq\u00fcenciar i estructurar les activitats de la SdA de forma rigorosa utilitzant les fases descrites a la plantilla (Inicials, Desenvolupament, Estructuraci\u00f3, Aplicaci\u00f3).\n\n## Informaci\u00f3 d'Entrada (Input)\nRebr\u00e0s la informaci\u00f3 curricular pr\u00e8viament filtrada per part de l'Agent Expert Curricular. Aix\u00f2 inclour\u00e0, com a m\u00ednim:\n- La tem\u00e0tica, repte o el curs proposat per l'usuari.\n- Compet\u00e8ncies Espec\u00edfiques.\n- Criteris d'Avaluaci\u00f3 associats.\n- Sabers B\u00e0sics (Sabers).\n- Vectors Transversals seleccionats per treballar.\n\n## Plantilla Obligat\u00f2ria (Output)\nPer a cada SdA que generis, has d'estructurar el document final en format **Markdown**, respectant escrupolosament el seg\u00fcent esquema:\n\n### 1. Dades B\u00e0siques\n- **T\u00edtol:** (Un t\u00edtol atractiu, suggeridor i proper per a l'alumnat).\n- **Curs/Cicle:** (Nivell educatiu indicat al qual va adre\u00e7at).\n- **\u00c0rea:** Educaci\u00f3 Art\u00edstica (M\u00fasica).\n\n### 2. Context i Repte\n- **Context:** Descripci\u00f3 de l'escenari, centre d'inter\u00e8s, problema social, o observaci\u00f3 d'un fenomen que d\u00f3na lloc a la situaci\u00f3 d'aprenentatge. Ha de connectar amb la realitat de l'alumnat (ex: impacte a l'entorn, diversitat cultural, benestar).\n- **Repte:** Quin \u00e9s el problema, pregunta a resoldre o demanda externa a atendre? Aquest repte ha de concloure sempre en un producte final tangible (ex: participar en un debat, una representaci\u00f3 musical, la creaci\u00f3 d'un p\u00f2dcast, construir un instrument, o prestar un servei).\n\n### 3. Connexi\u00f3 Curricular\nEnumera clarament quins elements s'estan treballant, basant-te en els inputs rebuts:\n- **Compet\u00e8ncies Espec\u00edfiques.**\n- **Compet\u00e8ncies Transversals** (si n'hi ha).\n- **Sabers B\u00e0sics.**\n- **Criteris d'Avaluaci\u00f3.**\n\n### 4. Seq\u00fc\u00e8ncia Did\u00e0ctica (El Cicle d'Aprenentatge)\nRedacta les activitats detallant breument la durada, l'agrupament (treball individual, grups petits, grup classe) i la metodologia. Agrupa-les obligat\u00f2riament en aquestes fases:\n- **Activitats Inicials:** Exploraci\u00f3 de la situaci\u00f3/repte, pluja d'idees, formulaci\u00f3 de preguntes, activaci\u00f3 de coneixements previs i anticipaci\u00f3 de resultats.\n- **Activitats de Desenvolupament:** Planificaci\u00f3, execuci\u00f3 de les accions i elaboraci\u00f3 del producte. Activitats purament musicals de recerca, cant, percussi\u00f3, audici\u00f3 activa. Fes servir estrat\u00e8gies de treball col\u00b7laboratiu i d'intercanvi de resultats.\n- **Activitats d'Estructuraci\u00f3 i Reflexi\u00f3:** Reflexi\u00f3 sobre qu\u00e8 s'est\u00e0 aprenent, elaboraci\u00f3 de conclusions, enunciaci\u00f3 de significats i de les relacions entre els diversos conceptes musicals apresos.\n- **Activitats d'Aplicaci\u00f3:** Utilitzaci\u00f3 d'all\u00f2 apr\u00e8s per resoldre situacions complexes o aplicar-ho a nous contextos.\n\n### 5. Atenci\u00f3 Educativa Inclusiva\nDetalla com s'ha dissenyat la SdA tenint en compte el Disseny Universal per a l'Aprenentatge (DUA) i esmenta les mesures concretes per garantir la pres\u00e8ncia, participaci\u00f3 i progr\u00e9s de tot l'alumnat a l'aula de m\u00fasica (materials accessibles, diversitat d'opcions d'expressi\u00f3, agrupaments flexibles, etc.).\n\n### 6. Vectors del Curr\u00edculum\nIndica i descriu com s'integren els vectors transversals en la situaci\u00f3 (ex: com l'enfocament competencial ajuda a la resoluci\u00f3 d'un repte real, com s'ha tingut en compte l'especial atenci\u00f3 al benestar emocional durant el proc\u00e9s, o la integraci\u00f3 de la perspectiva de g\u00e8nere en l'elecci\u00f3 de referents musicals).\n\n### 7. Avaluaci\u00f3 Formadora i Formativa\nDetalla els moments, eines i instruments d'avaluaci\u00f3 que s'utilitzaran *al llarg de tot el proc\u00e9s d'aprenentatge* (no nom\u00e9s per qualificar al final), per obtenir informaci\u00f3 i ajustar la programaci\u00f3. Inclou pr\u00e0ctiques d'autoavaluaci\u00f3 i coavaluaci\u00f3 entre iguals (ex: diaris d'aprenentatge, r\u00fabriques per a l'execuci\u00f3 d'un patr\u00f3 r\u00edtmic, dianes d'avaluaci\u00f3).\n"
+                            }
+                          },
+                          "inline_data": null,
+                          "text": null,
+                          "thought": null,
+                          "thought_signature": null,
+                          "video_metadata": null,
+                          "tool_call": null,
+                          "tool_response": null,
+                          "part_metadata": null
+                        }
+                      ],
+                      "role": "user"
+                    },
+                    "event_time": null,
+                    "state_delta": null,
+                    "active_tools": null
+                  },
+                  {
+                    "author": "orquestrador",
+                    "content": {
+                      "parts": [
+                        {
+                          "media_resolution": null,
+                          "code_execution_result": null,
+                          "executable_code": null,
+                          "file_data": null,
+                          "function_call": {
+                            "id": "adk-8b8d922a-dfd0-4b56-af85-e15db4ee0b06",
+                            "args": {
+                              "curs": "4t"
+                            },
+                            "name": "cercar_cancons_per_curs",
+                            "partial_args": null,
+                            "will_continue": null
+                          },
+                          "function_response": null,
+                          "inline_data": null,
+                          "text": null,
+                          "thought": null,
+                          "thought_signature": null,
+                          "video_metadata": null,
+                          "tool_call": null,
+                          "tool_response": null,
+                          "part_metadata": null
+                        }
+                      ],
+                      "role": "model"
+                    },
+                    "event_time": null,
+                    "state_delta": null,
+                    "active_tools": null
+                  },
+                  {
+                    "author": "orquestrador",
+                    "content": {
+                      "parts": [
+                        {
+                          "media_resolution": null,
+                          "code_execution_result": null,
+                          "executable_code": null,
+                          "file_data": null,
+                          "function_call": null,
+                          "function_response": {
+                            "will_continue": null,
+                            "scheduling": null,
+                            "parts": null,
+                            "id": "adk-8b8d922a-dfd0-4b56-af85-e15db4ee0b06",
+                            "name": "cercar_cancons_per_curs",
+                            "response": {
+                              "result": "### Fitxer: 04 - musica4t-llista-i-lletres.md\n\n# M\u00fasica 4t \u2014 Llista dels \u00e0udios i lletres de les can\u00e7ons\n\n## Llista dels \u00e0udios\n\n1. Rock al voltant del rellotge* (M. C. Freedman, J. DeKnight) [1.21]\n   Veu solista: Roc\u00edo Seligrat\n2. Rock al voltant del rellotge* (base instrumental) [1.21]\n3. Jolik\u00e0**** (popular) [1.38]\n   Veus solistes: Laia Riera i J\u00falia Rocas\n4. Jolik\u00e0**** (base instrumental) [1.38]\n5. Tata \u00e9* (popular cubana / Adapt.: R. M. Montserrat) [1.29]\n6. Tata \u00e9* (base instrumental) [1.29]\n7. Ombra mai fu (G. F. H\u00e4ndel) [3.08]\n   Interpreta: Yoshikarzu Mera\n8. Magic Trumpet (B. K\u00e4mfert) [2.26] Interpreta: Herb Alpert & Tijuana Brass\n9. De natura sonoris, n\u00fam. 1 (K. Penderecki) [3.44]\n   Interpreta: London Symphony Orchestra\n10. ABC (M. Parker) [5.16] Interpreta: Maceo Parker\n11. Efig\u00e8nia (C. Cases) [5.06] Interpreta: Carles Cases\n12. Smoke on the water (D. Purple) [2.20]\n   Interpreta: Deep Purple\n13. La can\u00e7\u00f3 del lladre* (tradicional catalana) [2.05]\n   Interpreta: Santi Arisa\n14. La can\u00e7\u00f3 del lladre* (base instrumental) [2.05]\n15. Dalt del diri** (tradicional catalana) [1.02]\n16. Caram, d\u2019on v\u00e9ns?***** (tradicional catalana) [1.28]\n17. Jo s\u00f3c un pobre m\u00fasic* (F. Lorenz / M. Martorell) [1.56]\n18. Jo s\u00f3c un pobre m\u00fasic* (base instrumental) [1.56]\n19. Exercici a dues veus (R. M. Montserrat) [0.59]\n   Interpreta: Rosa Maria Montserrat\n20. My baby just cares for me (W. Donaldson) [3.42]\n   Interpreta: Nina Simone\n21. Fr\u00e8re Jacques** (popular francesa) [2.20]\n   Interpreta: Eduard Mas\n22. Fr\u00e8re Jacques** (base instrumental) [2.20]\n23. Oh, Susanna! (S. Foster) [1.41]\n   Interpreta: Santi Arisa\n24. Heu sentit el rossinyol?*** (popular francesa) [1.12]\n   Interpreta: Josep Mas\n25. Rooftop (Stomp) [0.57] Interpreta: Stomp\n26. Stomp House (Stomp) [1.34]\n   Interpreta: Stomp\n27. Els ocells han arribat***** (H. von Fallersleben / Adapt.: M. Carbonell) [2.43]\n28. Els ocells han arribat***** (base instrumental) [2.43]\n29. Al Tirol som alegres* (tradicional austr\u00edaca / Adapt.: E. Anglada) [1.50]\n30. Al Tirol som ale\n\n[...]"
+                            }
+                          },
+                          "inline_data": null,
+                          "text": null,
+                          "thought": null,
+                          "thought_signature": null,
+                          "video_metadata": null,
+                          "tool_call": null,
+                          "tool_response": null,
+                          "part_metadata": null
+                        }
+                      ],
+                      "role": "user"
+                    },
+                    "event_time": null,
+                    "state_delta": null,
+                    "active_tools": null
+                  },
+                  {
+                    "author": "orquestrador",
+                    "content": {
+                      "parts": [
+                        {
+                          "media_resolution": null,
+                          "code_execution_result": null,
+                          "executable_code": null,
+                          "file_data": null,
+                          "function_call": null,
+                          "function_response": null,
+                          "inline_data": null,
+                          "text": "Perfecte! Aqu\u00ed tens una proposta de Situaci\u00f3 d'Aprenentatge (SdA) sobre ritme i percussi\u00f3 corporal per a 4t de prim\u00e0ria, dissenyada seguint l'enfocament competencial de la LOMLOE i aprofitant els recursos musicals disponibles.\n\n***\n\n### 1. Dades B\u00e0siques\n- **T\u00edtol:** Stomp a l'Escola: Creem Ritmes amb el Cos!\n- **Curs/Cicle:** 4t de Prim\u00e0ria\n- **\u00c0rea:** Educaci\u00f3 Art\u00edstica (M\u00fasica)\n\n### 2. Context i Repte\n- **Context:** Sab\u00edeu que el nostre cos pot ser un instrument musical incre\u00efble? Hi ha grups de m\u00fasica, com el fam\u00f3s \"Stomp\", que creen espectacles impressionants utilitzant nom\u00e9s els sons del seu cos i objectes quotidians. A la nostra escola, tamb\u00e9 podem convertir-nos en artistes del ritme!\n- **Repte:** El nostre repte ser\u00e0 crear, entre tota la classe, una composici\u00f3 de percussi\u00f3 corporal. Investigarem les possibilitats sonores del nostre cos, aprendrem a combinar ritmes i, finalment, dissenyarem una coreografia r\u00edtmica per presentar-la en un petit festival o mostra a la resta de l'escola. Serem el grup \"Stomp\" de 4t!\n\n### 3. Connexi\u00f3 Curricular\n- **Compet\u00e8ncies Espec\u00edfiques:**\n    - **CE2:** Interpretar propostes musicals i de dansa, a trav\u00e9s de la recepci\u00f3 i l'expressi\u00f3, per mostrar la comprensi\u00f3 i l'intercanvi d'idees i emocions.\n    - **CE3:** Crear i elaborar propostes musicals i multimodals, tot seleccionant i combinant els elements del llenguatge musical i les eines necess\u00e0ries, per enriquir i desenvolupar les pr\u00f2pies idees.\n- **Sabers B\u00e0sics:**\n    - Reconeixement, interpretaci\u00f3 i creaci\u00f3 de patrons r\u00edtmics senzills.\n    - L'exploraci\u00f3 de les possibilitats sonores del cos (percussi\u00f3 corporal).\n    - La interpretaci\u00f3 de repertori vocal i instrumental divers.\n    - L'escolta activa i el respecte per les produccions alienes.\n- **Criteris d'Avaluaci\u00f3:**\n    - 2.1. Interpretar propostes musicals, explorant les possibilitats expressives de la veu, el cos, els instruments i les eines digitals.\n    - 3.1. Participar en la creaci\u00f3 de propostes musicals senzilles, individuals i col\u00b7lectives, aplicant els elements del llenguatge musical.\n\n### 4. Seq\u00fc\u00e8ncia Did\u00e0ctica (El Cicle d'Aprenentatge)\n- **Activitats Inicials (Exploraci\u00f3):**\n    - **Audici\u00f3 i Di\u00e0leg:** Comencem veient alguns v\u00eddeos del grup \"Stomp\" (com \"Rooftop\" i \"Stomp House\" de la llista de recursos). Despr\u00e9s, fem una pluja d'idees: Quins sons fan? Amb quines parts del cos? Podr\u00edem fer-ho nosaltres?\n    - **Joc d'Escalfament:** Escoltem \"Rock al voltant del rellotge\" i seguim el pols amb palmades. Despr\u00e9s, fem un joc d'eco on el mestre/a proposa un ritme senzill amb el cos i el grup-classe el repeteix.\n    - **Inventari Sonor:** En grup classe, explorem tots els sons que podem fer amb el nostre cos: palmades (greus, agudes), pica amb els dits, cops al pit, cops a les cuixes, picar de peus... Creem un \"mapa sonor\" del cos a la pissarra.\n\n- **Activitats de Desenvolupament (Creaci\u00f3):**\n    - **Laboratori R\u00edtmic:** En petits grups de 4-5 alumnes, cada grup t\u00e9 la missi\u00f3 de crear una seq\u00fc\u00e8ncia r\u00edtmica de 8 temps combinant 3 sons corporals diferents. Es poden ajudar amb targetes de ritmes o notaci\u00f3 gr\u00e0fica senzilla.\n    - **Cadenes R\u00edtmiques:** Aprenem i practiquem patrons r\u00edtmics m\u00e9s complexos proposats pel mestre/a. Despr\u00e9s, en rotllana, cada alumne/a fa un ritme de 4 temps i el seg\u00fcent l'ha de continuar, creant una cadena.\n    - **Muntatge:** Cada grup ensenya la seva creaci\u00f3 a la resta de la classe. Amb l'ajuda del mestre/a, decidim com podem ordenar i ajuntar les diferents seq\u00fc\u00e8ncies per construir una pe\u00e7a m\u00e9s llarga i coherent. Hi podem afegir una introducci\u00f3 i un final potent.\n\n- **Activitats d'Estructuraci\u00f3 i Reflexi\u00f3 (An\u00e0lisi):**\n    - **Partitura Col\u00b7lectiva:** A la pissarra o en un paper gran, creem una partitura no convencional per a la nostra pe\u00e7a. Dibuixem s\u00edmbols senzills per a cada so corporal (ex: una m\u00e0 per palmada, un peu per cop de peu) i els ordenem en una l\u00ednia de temps. Aix\u00f2 ens ajuda a memoritzar l'estructura.\n    - **Di\u00e0leg Reflexiu:** Qu\u00e8 ha estat el m\u00e9s f\u00e0cil? I el m\u00e9s dif\u00edcil? Com hem solucionat els problemes quan no an\u00e0vem a la vegada? Aquesta reflexi\u00f3 ens ajuda a entendre el concepte de pols, ritme i treball en equip.\n\n- **Activitats d'Aplicaci\u00f3 (Assaig i Mostra):**\n    - **Assajos Generals:** Dediquem sessions a assajar la nostra composici\u00f3 completa, afegint-hi moviment i expressivitat. Ens gravem en v\u00eddeo per veure'ns des de fora i poder millorar aspectes de la coordinaci\u00f3 i la posada en escena.\n    - **L'Espectacle \"Stomp\":** Presentem la nostra creaci\u00f3 \"Stomp a l'Escola\" a un p\u00fablic (altres classes, durant una festa escolar, etc.).\n\n### 5. Atenci\u00f3 Educativa Inclusiva\nAquesta SdA es basa en els principis del DUA:\n- **M\u00faltiples formes de representaci\u00f3:** S'utilitzen est\u00edmuls visuals (v\u00eddeos, partitura gr\u00e0fica), auditius (audicions, demostracions) i cinest\u00e8sics (pr\u00f2pia pr\u00e0ctica).\n- **M\u00faltiples formes d'acci\u00f3 i expressi\u00f3:** L'alumnat pot escollir els sons amb qu\u00e8 se senti m\u00e9s c\u00f2mode, no hi ha una \u00fanica resposta correcta en les fases de creaci\u00f3. Es fomenta el treball en equip on cada membre pot aportar des de les seves fortaleses.\n- **M\u00faltiples formes d'implicaci\u00f3:** Es connecta amb un referent modern i motivador (Stomp), es fomenta l'autonomia dels grups i es treballa per a un objectiu final tangible i emocionant (l'actuaci\u00f3).\n\n### 6. Vectors del Curr\u00edculum\n- **Enfocament competencial:** Tota la seq\u00fc\u00e8ncia est\u00e0 dissenyada perqu\u00e8 l'alumnat apliqui els seus sabers musicals per resoldre un repte creatiu real.\n- **Benestar emocional:** Es treballa la confian\u00e7a, l'expressi\u00f3 personal no verbal, la cohesi\u00f3 de grup i la satisfacci\u00f3 de crear quelcom junts. Es gestiona l'error com una part de l'aprenentatge.\n- **Perspectiva de g\u00e8nere:** S'anima a tot l'alumnat per igual a explorar, liderar i expressar-se amb el cos, trencant qualsevol estereotip associat al moviment o la percussi\u00f3.\n\n### 7. Avaluaci\u00f3 Formadora i Formativa\n- **Observaci\u00f3 directa:** El/la mestre/a utilitza una graella d'observaci\u00f3 durant les sessions per valorar la participaci\u00f3, la capacitat de seguir el pols, la creativitat i el treball en equip.\n- **Autoavaluaci\u00f3:** Despr\u00e9s de la fase de creaci\u00f3, l'alumnat pot utilitzar una \"diana d'avaluaci\u00f3\" senzilla per reflexionar sobre la seva aportaci\u00f3 al grup i el seu aprenentatge.\n- **Coavaluaci\u00f3:** Els grups s'ofereixen comentaris constructius (\"dos estrelles i un desig\") despr\u00e9s de mostrar les seves primeres creacions.\n- **Avaluaci\u00f3 del producte final:** Es pot avaluar la representaci\u00f3 final mitjan\u00e7ant una r\u00fabrica senzilla que valori la coordinaci\u00f3 r\u00edtmica, l'originalitat i la posada en escena. La gravaci\u00f3 en v\u00eddeo \u00e9s una eina excel\u00b7lent per a l'autoavaluaci\u00f3 posterior.",
+                          "thought": null,
+                          "thought_signature": null,
+                          "video_metadata": null,
+                          "tool_call": null,
+                          "tool_response": null,
+                          "part_metadata": null
+                        }
+                      ],
+                      "role": "model"
+                    },
+                    "event_time": null,
+                    "state_delta": null,
+                    "active_tools": null
+                  }
+                ]
+              }
+            ]
+          },
+          "user_scenario": null
+        }
+      ],
+      "eval_dataset_df": null,
+      "candidate_name": null
+    }
+  ],
+  "metadata": {
+    "candidate_names": [
+      "candidate_1"
+    ],
+    "dataset_name": null,
+    "dataset_id": null,
+    "creation_timestamp": "2026-06-24T18:24:38.638951Z",
+    "dataset": [
+      {
+        "prompt_display_text": "Crea una situaci\u00f3 d'aprenentatge musical sobre l'estaci\u00f3 de la tardor per a 2n de prim\u00e0ria",
+        "prompt_raw_json": "{\n  \"parts\": [\n    {\n      \"text\": \"Crea una situaci\u00f3 d'aprenentatge musical sobre l'estaci\u00f3 de la tardor per a 2n de prim\u00e0ria\"\n    }\n  ],\n  \"role\": \"user\"\n}",
+        "reference": "",
+        "reference_raw_json": "",
+        "response_display_text": "Perfecte! Aqu\u00ed tens una proposta de Situaci\u00f3 d'Aprenentatge sobre la tardor, dissenyada espec\u00edficament per a 2n de prim\u00e0ria i seguint la metodologia requerida.\n\n### **1. Dades B\u00e0siques**\n*   **T\u00edtol:** Sons de Tardor: Creem una Tempesta Musical!\n*   **Curs/Cicle:** 2n / Cicle Inicial de Prim\u00e0ria\n*   **\u00c0rea:** Educaci\u00f3 Art\u00edstica (M\u00fasica)\n\n### **2. Context i Repte**\n*   **Context:** L'arribada de la tardor transforma el paisatge i els sons del nostre entorn. Les fulles cauen, el vent bufa i, de vegades, esclaten fortes tempestes. Aquests sons naturals s\u00f3n una font d'inspiraci\u00f3 per a la m\u00fasica. A l'aula de m\u00fasica, hem estat parlant dels canvis que veiem i sentim a la tardor.\n*   **Repte:** Com podem representar una tempesta de tardor utilitzant la nostra veu, el nostre cos i els instruments de l'aula? El nostre repte ser\u00e0 crear col\u00b7lectivament un paisatge sonor que representi una tempesta, inspirant-nos en la can\u00e7\u00f3 \"La tempesta\", i compartir la nostra creaci\u00f3 amb els companys i companyes de 1r.\n\n### **3. Connexi\u00f3 Curricular**\n*   **Compet\u00e8ncies Espec\u00edfiques:**\n    *   CE1: Explorar, seleccionar i combinar diverses t\u00e8cniques, recursos i materials per a la creaci\u00f3 de propostes art\u00edstiques i culturals, individuals o col\u00b7lectives, a trav\u00e9s del joc i la improvisaci\u00f3.\n    *   CE2: Desenvolupar propostes art\u00edstiques i culturals, individuals o col\u00b7lectives, a partir de l\u2019assaig i la descoberta, per tal de donar resposta a un repte creatiu.\n    *   CE3: Compartir les experi\u00e8ncies i creacions art\u00edstiques i culturals, a partir de l\u2019intercanvi i el di\u00e0leg, per tal de generar espais de gaudi compartit i de foment de la conviv\u00e8ncia.\n*   **Sabers B\u00e0sics:**\n    *   Reconeixement i representaci\u00f3 de l'entorn sonor natural (paisatge sonor).\n    *   Exploraci\u00f3 de les qualitats del so (intensitat, durada, timbre) amb la veu, el cos i instruments.\n    *   Interpretaci\u00f3 de can\u00e7ons i \u00fas de la percussi\u00f3 corporal.\n    *   \u00das d'instruments de petita percussi\u00f3 (convencionals i no convencionals).\n    *   La improvisaci\u00f3 i la creaci\u00f3 musical col\u00b7lectiva.\n*   **Criteris d'Avaluaci\u00f3:**\n    *   1.1. Experimentar amb els par\u00e0metres del so, el silenci i les seves possibilitats expressives.\n    *   2.1. Participar en la creaci\u00f3, disseny i desenvolupament de propostes art\u00edstiques col\u00b7lectives.\n    *   3.1. Descriure de manera senzilla les propostes art\u00edstiques pr\u00f2pies i alienes.\n\n### **4. Seq\u00fc\u00e8ncia Did\u00e0ctica (El Cicle d'Aprenentatge)**\n*   **Activitats Inicials:**\n    *   **Qu\u00e8 se sent a la tardor?** (Grup classe, 1 sessi\u00f3). Iniciem un di\u00e0leg: Qu\u00e8 passa a la tardor? Quins sons podem sentir? (vent, pluja, fulles seques...). Fem una pluja d'idees i els anotem o dibuixem a la pissarra. Activem coneixements previs sobre l'estaci\u00f3.\n    *   **Audici\u00f3 activa \"La tempesta\":** (Individual/Grup classe, 1 sessi\u00f3). Escoltem la can\u00e7\u00f3 \"La tempesta\" (I. Segarra, F. Bofill, A. Puig, F. Serrat). Mentre sona, demanem que es moguin lliurement per l'espai imaginant que s\u00f3n fulles, el vent o la pluja. Despr\u00e9s de l'audici\u00f3, preguntem: Qu\u00e8 heu sentit? A qu\u00e8 us recorda aquesta m\u00fasica?\n*   **Activitats de Desenvolupament:**\n    *   **Aprenem la can\u00e7\u00f3:** (Grup classe, 2 sessions). Aprenem la lletra i la melodia de la can\u00e7\u00f3 \"La tempesta\" mitjan\u00e7ant el m\u00e8tode d'eco i repetici\u00f3. La cantem amb diferents intencions i intensitats (suau com les primeres gotes, fort com el tro).\n    *   **Laboratori de sons de tempesta:** (Grups petits, 2 sessions). Dividim la classe en \"equips de so\". Cada equip ha d'explorar com crear un so de la tempesta utilitzant diferents fonts:\n        *   **Equip Vent:** Amb la veu (bufar, xiular), papers de diari, tubs...\n        *   **Equip Pluja:** Amb percussi\u00f3 corporal (picar de dits), instruments de petita percussi\u00f3 (maraques, pals de pluja), o objectes (llegums dins d'un pot).\n        *   **Equip Trons:** Amb instruments de percussi\u00f3 de membrana (panderos, tambors), peus a terra, o colpejant superf\u00edcies amb les mans.\n    *   **Creem el nostre paisatge sonor:** (Grup classe, 2 sessions). Un cop cada equip ha explorat i triat els seus sons, els ajuntem per crear la nostra pe\u00e7a musical. El/la mestre/a actua com a director/a d'orquestra. Practiquem l'estructura: calma -> comen\u00e7a la pluja (suau) -> vent -> pluja forta -> trons -> torna la calma. Assagem la seq\u00fc\u00e8ncia diverses vegades.\n*   **Activitats d'Estructuraci\u00f3 i Reflexi\u00f3:**\n    *   **El mapa de la nostra tempesta:** (Grups petits / Grup Classe, 1 sessi\u00f3). Creem un musicograma o partitura no convencional a la pissarra o en un paper gran. Dibuixem s\u00edmbols per a cada so (una espiral pel vent, punts per la pluja, un llamp pel tro). Repassem la seq\u00fc\u00e8ncia sonora seguint el mapa visual. Reflexionem: Com hem aconseguit que soni m\u00e9s fort? Qu\u00e8 passa quan tots sonem alhora?\n    *   **Diari de so:** (Individual, 10 min al final de la sessi\u00f3). Cada alumne/a t\u00e9 una petita llibreta on dibuixa l'instrument o el so que m\u00e9s li ha agradat fer durant la sessi\u00f3 i per qu\u00e8.\n*   **Activitats d'Aplicaci\u00f3:**\n    *   **Concert de Tardor:** (Grup classe, 1 sessi\u00f3). El producte final. Convidem a la classe de 1r a la nostra aula. Els expliquem breument qu\u00e8 hem apr\u00e8s sobre els sons de la tardor i interpretem la nostra creaci\u00f3: primer cantem la can\u00e7\u00f3 \"La tempesta\" i despr\u00e9s representem el nostre paisatge sonor de la tempesta, seguint el nostre director/a i el musicograma.\n\n### **5. Atenci\u00f3 Educativa Inclusiva**\nS'ha dissenyat la SdA tenint en compte el Disseny Universal per a l'Aprenentatge (DUA):\n*   **M\u00faltiples formes de representaci\u00f3:** S'utilitzen canals auditius (can\u00e7\u00f3, sons), visuals (dibuixos, musicograma) i cinest\u00e8sics (moviment, percussi\u00f3 corporal).\n*   **M\u00faltiples formes d'acci\u00f3 i expressi\u00f3:** L'alumnat pot triar com participar: cantant, movent-se, tocant un instrument senzill, creant sons amb el cos o objectes. No hi ha una \u00fanica manera correcta d'expressar-se. Els agrupaments flexibles permeten que cadasc\u00fa trobi el seu lloc.\n*   **M\u00faltiples formes d'implicaci\u00f3:** El tema de la tardor \u00e9s proper i f\u00e0cil de connectar amb les seves viv\u00e8ncies. El repte de crear un \"concert\" \u00e9s motivador. L'elecci\u00f3 en els \"equips de so\" fomenta l'autonomia. Per a l'alumnat amb m\u00e9s necessitats, es proporcionaran instruments m\u00e9s f\u00e0cils de manipular (ex: un pal de pluja) o se'ls donar\u00e0 un rol de suport (ex: ajudar al director/a a senyalar el musicograma).\n\n### **6. Vectors del Curr\u00edculum**\n*   **Enfocament competencial:** La SdA no se centra a aprendre una can\u00e7\u00f3 de mem\u00f2ria, sin\u00f3 a utilitzar-la com a pretext per explorar, crear i col\u00b7laborar per resoldre un repte real i tangible (crear un paisatge sonor).\n*   **Benestar emocional:** Les activitats de moviment lliure, l'exploraci\u00f3 sonora i el treball en equip en un ambient de joc i sense judici fomenten un clima d'aula positiu i segur, on l'error es considera part de l'aprenentatge.\n*   **Perspectiva de g\u00e8nere:** Es vetllar\u00e0 perqu\u00e8 en la distribuci\u00f3 de rols (director/a, solistes, instrumentistes) i en les intervencions a l'aula hi hagi una participaci\u00f3 equitativa de nens i nenes.\n\n### **7. Avaluaci\u00f3 Formadora i Formativa**\n*   **Observaci\u00f3 directa:** El/la docent pren notes al llarg de les sessions sobre la participaci\u00f3, l'experimentaci\u00f3, la col\u00b7laboraci\u00f3 en grup i l'\u00fas de les qualitats del so, utilitzant una graella d'observaci\u00f3 senzilla.\n*   **Coavaluaci\u00f3:** Despr\u00e9s del treball en grups petits (\"Laboratori de sons\"), cada equip mostra el seu so a la resta. Els altres grups diuen qu\u00e8 els ha agradat m\u00e9s o qu\u00e8 els suggereix aquell so, fomentant l'escolta respectuosa.\n*   **Autoavaluaci\u00f3:** El \"Diari de so\" actua com una eina d'autoavaluaci\u00f3 senzilla i visual, on l'alumnat reflexiona sobre el seu propi proc\u00e9s i prefer\u00e8ncies.\n*   **Avaluaci\u00f3 del producte final:** S'utilitzar\u00e0 una diana d'avaluaci\u00f3 senzilla despr\u00e9s del \"Concert de Tardor\", on els mateixos alumnes valoraran (amb gomets de colors, per exemple) aspectes com: \"Hem escoltat al director/a?\", \"Ha sonat com una tempesta?\", \"Ens ho hem passat b\u00e9?\".",
+        "response_raw_json": "{\n  \"parts\": [\n    {\n      \"text\": \"Perfecte! Aqu\u00ed tens una proposta de Situaci\u00f3 d'Aprenentatge sobre la tardor, dissenyada espec\u00edficament per a 2n de prim\u00e0ria i seguint la metodologia requerida.\\n\\n### **1. Dades B\u00e0siques**\\n*   **T\u00edtol:** Sons de Tardor: Creem una Tempesta Musical!\\n*   **Curs/Cicle:** 2n / Cicle Inicial de Prim\u00e0ria\\n*   **\u00c0rea:** Educaci\u00f3 Art\u00edstica (M\u00fasica)\\n\\n### **2. Context i Repte**\\n*   **Context:** L'arribada de la tardor transforma el paisatge i els sons del nostre entorn. Les fulles cauen, el vent bufa i, de vegades, esclaten fortes tempestes. Aquests sons naturals s\u00f3n una font d'inspiraci\u00f3 per a la m\u00fasica. A l'aula de m\u00fasica, hem estat parlant dels canvis que veiem i sentim a la tardor.\\n*   **Repte:** Com podem representar una tempesta de tardor utilitzant la nostra veu, el nostre cos i els instruments de l'aula? El nostre repte ser\u00e0 crear col\u00b7lectivament un paisatge sonor que representi una tempesta, inspirant-nos en la can\u00e7\u00f3 \\\"La tempesta\\\", i compartir la nostra creaci\u00f3 amb els companys i companyes de 1r.\\n\\n### **3. Connexi\u00f3 Curricular**\\n*   **Compet\u00e8ncies Espec\u00edfiques:**\\n    *   CE1: Explorar, seleccionar i combinar diverses t\u00e8cniques, recursos i materials per a la creaci\u00f3 de propostes art\u00edstiques i culturals, individuals o col\u00b7lectives, a trav\u00e9s del joc i la improvisaci\u00f3.\\n    *   CE2: Desenvolupar propostes art\u00edstiques i culturals, individuals o col\u00b7lectives, a partir de l\u2019assaig i la descoberta, per tal de donar resposta a un repte creatiu.\\n    *   CE3: Compartir les experi\u00e8ncies i creacions art\u00edstiques i culturals, a partir de l\u2019intercanvi i el di\u00e0leg, per tal de generar espais de gaudi compartit i de foment de la conviv\u00e8ncia.\\n*   **Sabers B\u00e0sics:**\\n    *   Reconeixement i representaci\u00f3 de l'entorn sonor natural (paisatge sonor).\\n    *   Exploraci\u00f3 de les qualitats del so (intensitat, durada, timbre) amb la veu, el cos i instruments.\\n    *   Interpretaci\u00f3 de can\u00e7ons i \u00fas de la percussi\u00f3 corporal.\\n    *   \u00das d'instruments de petita percussi\u00f3 (convencionals i no convencionals).\\n    *   La improvisaci\u00f3 i la creaci\u00f3 musical col\u00b7lectiva.\\n*   **Criteris d'Avaluaci\u00f3:**\\n    *   1.1. Experimentar amb els par\u00e0metres del so, el silenci i les seves possibilitats expressives.\\n    *   2.1. Participar en la creaci\u00f3, disseny i desenvolupament de propostes art\u00edstiques col\u00b7lectives.\\n    *   3.1. Descriure de manera senzilla les propostes art\u00edstiques pr\u00f2pies i alienes.\\n\\n### **4. Seq\u00fc\u00e8ncia Did\u00e0ctica (El Cicle d'Aprenentatge)**\\n*   **Activitats Inicials:**\\n    *   **Qu\u00e8 se sent a la tardor?** (Grup classe, 1 sessi\u00f3). Iniciem un di\u00e0leg: Qu\u00e8 passa a la tardor? Quins sons podem sentir? (vent, pluja, fulles seques...). Fem una pluja d'idees i els anotem o dibuixem a la pissarra. Activem coneixements previs sobre l'estaci\u00f3.\\n    *   **Audici\u00f3 activa \\\"La tempesta\\\":** (Individual/Grup classe, 1 sessi\u00f3). Escoltem la can\u00e7\u00f3 \\\"La tempesta\\\" (I. Segarra, F. Bofill, A. Puig, F. Serrat). Mentre sona, demanem que es moguin lliurement per l'espai imaginant que s\u00f3n fulles, el vent o la pluja. Despr\u00e9s de l'audici\u00f3, preguntem: Qu\u00e8 heu sentit? A qu\u00e8 us recorda aquesta m\u00fasica?\\n*   **Activitats de Desenvolupament:**\\n    *   **Aprenem la can\u00e7\u00f3:** (Grup classe, 2 sessions). Aprenem la lletra i la melodia de la can\u00e7\u00f3 \\\"La tempesta\\\" mitjan\u00e7ant el m\u00e8tode d'eco i repetici\u00f3. La cantem amb diferents intencions i intensitats (suau com les primeres gotes, fort com el tro).\\n    *   **Laboratori de sons de tempesta:** (Grups petits, 2 sessions). Dividim la classe en \\\"equips de so\\\". Cada equip ha d'explorar com crear un so de la tempesta utilitzant diferents fonts:\\n        *   **Equip Vent:** Amb la veu (bufar, xiular), papers de diari, tubs...\\n        *   **Equip Pluja:** Amb percussi\u00f3 corporal (picar de dits), instruments de petita percussi\u00f3 (maraques, pals de pluja), o objectes (llegums dins d'un pot).\\n        *   **Equip Trons:** Amb instruments de percussi\u00f3 de membrana (panderos, tambors), peus a terra, o colpejant superf\u00edcies amb les mans.\\n    *   **Creem el nostre paisatge sonor:** (Grup classe, 2 sessions). Un cop cada equip ha explorat i triat els seus sons, els ajuntem per crear la nostra pe\u00e7a musical. El/la mestre/a actua com a director/a d'orquestra. Practiquem l'estructura: calma -> comen\u00e7a la pluja (suau) -> vent -> pluja forta -> trons -> torna la calma. Assagem la seq\u00fc\u00e8ncia diverses vegades.\\n*   **Activitats d'Estructuraci\u00f3 i Reflexi\u00f3:**\\n    *   **El mapa de la nostra tempesta:** (Grups petits / Grup Classe, 1 sessi\u00f3). Creem un musicograma o partitura no convencional a la pissarra o en un paper gran. Dibuixem s\u00edmbols per a cada so (una espiral pel vent, punts per la pluja, un llamp pel tro). Repassem la seq\u00fc\u00e8ncia sonora seguint el mapa visual. Reflexionem: Com hem aconseguit que soni m\u00e9s fort? Qu\u00e8 passa quan tots sonem alhora?\\n    *   **Diari de so:** (Individual, 10 min al final de la sessi\u00f3). Cada alumne/a t\u00e9 una petita llibreta on dibuixa l'instrument o el so que m\u00e9s li ha agradat fer durant la sessi\u00f3 i per qu\u00e8.\\n*   **Activitats d'Aplicaci\u00f3:**\\n    *   **Concert de Tardor:** (Grup classe, 1 sessi\u00f3). El producte final. Convidem a la classe de 1r a la nostra aula. Els expliquem breument qu\u00e8 hem apr\u00e8s sobre els sons de la tardor i interpretem la nostra creaci\u00f3: primer cantem la can\u00e7\u00f3 \\\"La tempesta\\\" i despr\u00e9s representem el nostre paisatge sonor de la tempesta, seguint el nostre director/a i el musicograma.\\n\\n### **5. Atenci\u00f3 Educativa Inclusiva**\\nS'ha dissenyat la SdA tenint en compte el Disseny Universal per a l'Aprenentatge (DUA):\\n*   **M\u00faltiples formes de representaci\u00f3:** S'utilitzen canals auditius (can\u00e7\u00f3, sons), visuals (dibuixos, musicograma) i cinest\u00e8sics (moviment, percussi\u00f3 corporal).\\n*   **M\u00faltiples formes d'acci\u00f3 i expressi\u00f3:** L'alumnat pot triar com participar: cantant, movent-se, tocant un instrument senzill, creant sons amb el cos o objectes. No hi ha una \u00fanica manera correcta d'expressar-se. Els agrupaments flexibles permeten que cadasc\u00fa trobi el seu lloc.\\n*   **M\u00faltiples formes d'implicaci\u00f3:** El tema de la tardor \u00e9s proper i f\u00e0cil de connectar amb les seves viv\u00e8ncies. El repte de crear un \\\"concert\\\" \u00e9s motivador. L'elecci\u00f3 en els \\\"equips de so\\\" fomenta l'autonomia. Per a l'alumnat amb m\u00e9s necessitats, es proporcionaran instruments m\u00e9s f\u00e0cils de manipular (ex: un pal de pluja) o se'ls donar\u00e0 un rol de suport (ex: ajudar al director/a a senyalar el musicograma).\\n\\n### **6. Vectors del Curr\u00edculum**\\n*   **Enfocament competencial:** La SdA no se centra a aprendre una can\u00e7\u00f3 de mem\u00f2ria, sin\u00f3 a utilitzar-la com a pretext per explorar, crear i col\u00b7laborar per resoldre un repte real i tangible (crear un paisatge sonor).\\n*   **Benestar emocional:** Les activitats de moviment lliure, l'exploraci\u00f3 sonora i el treball en equip en un ambient de joc i sense judici fomenten un clima d'aula positiu i segur, on l'error es considera part de l'aprenentatge.\\n*   **Perspectiva de g\u00e8nere:** Es vetllar\u00e0 perqu\u00e8 en la distribuci\u00f3 de rols (director/a, solistes, instrumentistes) i en les intervencions a l'aula hi hagi una participaci\u00f3 equitativa de nens i nenes.\\n\\n### **7. Avaluaci\u00f3 Formadora i Formativa**\\n*   **Observaci\u00f3 directa:** El/la docent pren notes al llarg de les sessions sobre la participaci\u00f3, l'experimentaci\u00f3, la col\u00b7laboraci\u00f3 en grup i l'\u00fas de les qualitats del so, utilitzant una graella d'observaci\u00f3 senzilla.\\n*   **Coavaluaci\u00f3:** Despr\u00e9s del treball en grups petits (\\\"Laboratori de sons\\\"), cada equip mostra el seu so a la resta. Els altres grups diuen qu\u00e8 els ha agradat m\u00e9s o qu\u00e8 els suggereix aquell so, fomentant l'escolta respectuosa.\\n*   **Autoavaluaci\u00f3:** El \\\"Diari de so\\\" actua com una eina d'autoavaluaci\u00f3 senzilla i visual, on l'alumnat reflexiona sobre el seu propi proc\u00e9s i prefer\u00e8ncies.\\n*   **Avaluaci\u00f3 del producte final:** S'utilitzar\u00e0 una diana d'avaluaci\u00f3 senzilla despr\u00e9s del \\\"Concert de Tardor\\\", on els mateixos alumnes valoraran (amb gomets de colors, per exemple) aspectes com: \\\"Hem escoltat al director/a?\\\", \\\"Ha sonat com una tempesta?\\\", \\\"Ens ho hem passat b\u00e9?\\\".\"\n    }\n  ],\n  \"role\": \"model\"\n}",
+        "intermediate_events": null,
+        "agent_data": "{\"agents\": {\"orquestrador\": {\"agent_id\": \"orquestrador\", \"agent_type\": \"LlmAgent\", \"description\": \"\", \"instruction\": \"Ets l'Agent Orquestrador Pedag\u00f2gic, un expert en l'elaboraci\u00f3 de Situacions d'Aprenentatge de m\u00fasica per a educaci\u00f3 prim\u00e0ria a Catalunya, complint la LOMLOE.\\nAbans de redactar la teva proposta, has d'utilitzar l'eina 'llegir_metodologia_situacio_aprenentatge' per con\u00e8ixer exactament el format i els principis pedag\u00f2gics requerits. Si l'usuari et demana recursos musicals per un curs concret, utilitza 'cercar_cancons_per_curs' per trobar idees del banc de recursos local.\\nRespon sempre en catal\u00e0 i en format Markdown.\", \"tools\": [{\"function_declarations\": [{\"description\": \"Cerca al banc de recursos de can\u00e7ons i audicions les propostes adients per al curs especificat.\\n\\nArgs:\\n    curs: Curs de prim\u00e0ria (ex: '3r', '4t', '5\u00e8', '6\u00e8', '1r', '2n').\\n    \\nReturns:\\n    Un text en format markdown amb les propostes de can\u00e7ons i audicions.\", \"name\": \"cercar_cancons_per_curs\", \"parameters_json_schema\": {\"properties\": {\"curs\": {\"title\": \"Curs\", \"type\": \"string\"}}, \"required\": [\"curs\"], \"title\": \"cercar_cancons_per_cursParams\", \"type\": \"object\"}, \"response_json_schema\": {\"type\": \"string\"}}]}, {\"function_declarations\": [{\"description\": \"Llegeix la Skill de metodologia per dissenyar situacions d'aprenentatge.\\n\\nReturns:\\n    El text amb la metodologia i estructura requerida a aplicar.\", \"name\": \"llegir_metodologia_situacio_aprenentatge\", \"response_json_schema\": {\"type\": \"string\"}}]}], \"sub_agents\": []}}, \"turns\": [{\"turn_index\": 0, \"turn_id\": \"turn_0\", \"events\": [{\"author\": \"orquestrador\", \"content\": {\"parts\": [{\"function_call\": {\"id\": \"adk-fbae55df-b37e-46a1-ae9e-769f4aec2323\", \"args\": {}, \"name\": \"llegir_metodologia_situacio_aprenentatge\"}}], \"role\": \"model\"}}, {\"author\": \"orquestrador\", \"content\": {\"parts\": [{\"function_response\": {\"id\": \"adk-fbae55df-b37e-46a1-ae9e-769f4aec2323\", \"name\": \"llegir_metodologia_situacio_aprenentatge\", \"response\": {\"result\": \"---\\nname: generador-situacions-aprenentatge\\ndescription: Skill per redactar pas a pas una situaci\u00f3 d'aprenentatge competencial i inclusiva, aplicant el cicle d'aprenentatge actiu segons la LOMLOE.\\n---\\n\\n# Instruccions per a l'Agent Redactor de Situacions d'Aprenentatge\\n\\nEts un expert en pedagogia i educaci\u00f3 musical. La teva tasca \u00e9s redactar una **Situaci\u00f3 d'Aprenentatge (SdA)** completa en catal\u00e0 per a l'educaci\u00f3 prim\u00e0ria, complint rigorosament amb els criteris normatius i metodol\u00f2gics actuals.\\n\\n## Directrius de Redacci\u00f3\\n1. **Llenguatge:** Empra un to professional i pedag\u00f2gic, centrat en l'alumnat. Usa exclusivament el catal\u00e0 i la terminologia oficial. Abst\u00e9n-te de fer servir expressions obsoletes com \\\"unitats did\u00e0ctiques\\\", \\\"objectius generals\\\" o \\\"coneixements\\\" purs. Fes servir sempre \\\"situacions d'aprenentatge\\\", \\\"compet\u00e8ncies\\\", \\\"sabers\\\" i \\\"criteris d'avaluaci\u00f3\\\".\\n2. **Enfocament Musical i Metodol\u00f2gic:** Les activitats han de ser eminentment vivencials i pr\u00e0ctiques. Has d'integrar org\u00e0nicament l'expressi\u00f3 musical mitjan\u00e7ant: el moviment, el cant, l'educaci\u00f3 de l'o\u00efda i la pr\u00e0ctica instrumental. Evita dissenyar classes magistrals o purament te\u00f2riques. Fomenta metodologies actives (com les basades en Orff, Kod\u00e1ly, Dalcroze, etc.).\\n3. **Cicle d'Aprenentatge:** Has de seq\u00fcenciar i estructurar les activitats de la SdA de forma rigorosa utilitzant les fases descrites a la plantilla (Inicials, Desenvolupament, Estructuraci\u00f3, Aplicaci\u00f3).\\n\\n## Informaci\u00f3 d'Entrada (Input)\\nRebr\u00e0s la informaci\u00f3 curricular pr\u00e8viament filtrada per part de l'Agent Expert Curricular. Aix\u00f2 inclour\u00e0, com a m\u00ednim:\\n- La tem\u00e0tica, repte o el curs proposat per l'usuari.\\n- Compet\u00e8ncies Espec\u00edfiques.\\n- Criteris d'Avaluaci\u00f3 associats.\\n- Sabers B\u00e0sics (Sabers).\\n- Vectors Transversals seleccionats per treballar.\\n\\n## Plantilla Obligat\u00f2ria (Output)\\nPer a cada SdA que generis, has d'estructurar el document final en format **Markdown**, respectant escrupolosament el seg\u00fcent esquema:\\n\\n### 1. Dades B\u00e0siques\\n- **T\u00edtol:** (Un t\u00edtol atractiu, suggeridor i proper per a l'alumnat).\\n- **Curs/Cicle:** (Nivell educatiu indicat al qual va adre\u00e7at).\\n- **\u00c0rea:** Educaci\u00f3 Art\u00edstica (M\u00fasica).\\n\\n### 2. Context i Repte\\n- **Context:** Descripci\u00f3 de l'escenari, centre d'inter\u00e8s, problema social, o observaci\u00f3 d'un fenomen que d\u00f3na lloc a la situaci\u00f3 d'aprenentatge. Ha de connectar amb la realitat de l'alumnat (ex: impacte a l'entorn, diversitat cultural, benestar).\\n- **Repte:** Quin \u00e9s el problema, pregunta a resoldre o demanda externa a atendre? Aquest repte ha de concloure sempre en un producte final tangible (ex: participar en un debat, una representaci\u00f3 musical, la creaci\u00f3 d'un p\u00f2dcast, construir un instrument, o prestar un servei).\\n\\n### 3. Connexi\u00f3 Curricular\\nEnumera clarament quins elements s'estan treballant, basant-te en els inputs rebuts:\\n- **Compet\u00e8ncies Espec\u00edfiques.**\\n- **Compet\u00e8ncies Transversals** (si n'hi ha).\\n- **Sabers B\u00e0sics.**\\n- **Criteris d'Avaluaci\u00f3.**\\n\\n### 4. Seq\u00fc\u00e8ncia Did\u00e0ctica (El Cicle d'Aprenentatge)\\nRedacta les activitats detallant breument la durada, l'agrupament (treball individual, grups petits, grup classe) i la metodologia. Agrupa-les obligat\u00f2riament en aquestes fases:\\n- **Activitats Inicials:** Exploraci\u00f3 de la situaci\u00f3/repte, pluja d'idees, formulaci\u00f3 de preguntes, activaci\u00f3 de coneixements previs i anticipaci\u00f3 de resultats.\\n- **Activitats de Desenvolupament:** Planificaci\u00f3, execuci\u00f3 de les accions i elaboraci\u00f3 del producte. Activitats purament musicals de recerca, cant, percussi\u00f3, audici\u00f3 activa. Fes servir estrat\u00e8gies de treball col\u00b7laboratiu i d'intercanvi de resultats.\\n- **Activitats d'Estructuraci\u00f3 i Reflexi\u00f3:** Reflexi\u00f3 sobre qu\u00e8 s'est\u00e0 aprenent, elaboraci\u00f3 de conclusions, enunciaci\u00f3 de significats i de les relacions entre els diversos conceptes musicals apresos.\\n- **Activitats d'Aplicaci\u00f3:** Utilitzaci\u00f3 d'all\u00f2 apr\u00e8s per resoldre situacions complexes o aplicar-ho a nous contextos.\\n\\n### 5. Atenci\u00f3 Educativa Inclusiva\\nDetalla com s'ha dissenyat la SdA tenint en compte el Disseny Universal per a l'Aprenentatge (DUA) i esmenta les mesures concretes per garantir la pres\u00e8ncia, participaci\u00f3 i progr\u00e9s de tot l'alumnat a l'aula de m\u00fasica (materials accessibles, diversitat d'opcions d'expressi\u00f3, agrupaments flexibles, etc.).\\n\\n### 6. Vectors del Curr\u00edculum\\nIndica i descriu com s'integren els vectors transversals en la situaci\u00f3 (ex: com l'enfocament competencial ajuda a la resoluci\u00f3 d'un repte real, com s'ha tingut en compte l'especial atenci\u00f3 al benestar emocional durant el proc\u00e9s, o la integraci\u00f3 de la perspectiva de g\u00e8nere en l'elecci\u00f3 de referents musicals).\\n\\n### 7. Avaluaci\u00f3 Formadora i Formativa\\nDetalla els moments, eines i instruments d'avaluaci\u00f3 que s'utilitzaran *al llarg de tot el proc\u00e9s d'aprenentatge* (no nom\u00e9s per qualificar al final), per obtenir informaci\u00f3 i ajustar la programaci\u00f3. Inclou pr\u00e0ctiques d'autoavaluaci\u00f3 i coavaluaci\u00f3 entre iguals (ex: diaris d'aprenentatge, r\u00fabriques per a l'execuci\u00f3 d'un patr\u00f3 r\u00edtmic, dianes d'avaluaci\u00f3).\\n\"}}}], \"role\": \"user\"}}, {\"author\": \"orquestrador\", \"content\": {\"parts\": [{\"function_call\": {\"id\": \"adk-866351b3-3a41-49e9-8f73-b0bdd9fb003d\", \"args\": {\"curs\": \"2n\"}, \"name\": \"cercar_cancons_per_curs\"}}], \"role\": \"model\"}}, {\"author\": \"orquestrador\", \"content\": {\"parts\": [{\"function_response\": {\"id\": \"adk-866351b3-3a41-49e9-8f73-b0bdd9fb003d\", \"name\": \"cercar_cancons_per_curs\", \"response\": {\"result\": \"### Fitxer: 02 - audios-cancons-segon-projecte-ninois.md\\n\\n# Projecte Ninois - M\u00fasica 2n\\n\\n## Llista dels \u00e0udios\\n\\n### CD 1\\n\\n- 1. El carreter (E. Mayans) [2.16]\\n- 2. El carreter (base instrumental) [2.16]\\n- 3. La tempesta* (I. Segarra, F. Bofill, A. Puig, F. Serrat) [1.05]\\n- 4. La tempesta* (base instrumental) [1.05]\\n- 5. Amb els esclops* (popular catalana) [2.09]\\n- 6. Amb els esclops* (base instrumental) [2.09]\\n- 7. Visca el foc* (popular francesa) [1.27]\\n- 8. Visca el foc* (base instrumental) [1.27]\\n- 9. El vaixell* (popular francesa) [1.08]\\n- 10. El vaixell* (base instrumental) [1.08]\\n- 11. Al jard\u00ed del pare* (popular francesa) [2.30]\\n- 12. Al jard\u00ed del pare* (base instrumental) [2.30]\\n- 13. V\u00e9s-te\u2019n, hivern!* (tradicional alemanya) [1.21]\\n- 14. V\u00e9s-te\u2019n, hivern!* (base instrumental) [1.21]\\n- 15. Fam\u00edlies instrumentals (piano) [1.06]\\n- 16. Fam\u00edlies instrumentals (acordi\u00f3) [0.52]\\n- 17. Fam\u00edlies instrumentals (orgue) [0.48]\\n- 18. Fam\u00edlies instrumentals (gong) [0.32]\\n- 19. Fam\u00edlies instrumentals (congues) [0.20]\\n- 20. Fam\u00edlies instrumentals (bateria) [1.44]\\n- 21. Fam\u00edlies instrumentals (violoncel) [1.34]\\n- 22. Fam\u00edlies instrumentals (guitarra) [1:14]\\n- 23. Fam\u00edlies instrumentals (arpa) [1.18]\\n- 24. Fam\u00edlies instrumentals (trompeta) [0.42]\\n- 25. Fam\u00edlies instrumentals (sax\u00f2fon) [0.59]\\n- 26. Fam\u00edlies instrumentals (fagot) [0.30]\\n- 27. Instruments de percussi\u00f3 d\u2019afinaci\u00f3 determinada (timbales) [0.41]\\n- 28. Instruments de percussi\u00f3 d\u2019afinaci\u00f3 determinada (marimba) [0.25]\\n- 29. Instruments de percussi\u00f3 d\u2019afinaci\u00f3 determinada (vibr\u00e0fon) [0.26]\\n- 30. Instruments de percussi\u00f3 d\u2019afinaci\u00f3 determinada (campanes tubulars) [0.16]\\n- 31. Instruments Orff de placa (xil\u00f2fons) [0.37]\\n- 32. Instruments Orff de placa (metal\u00b7l\u00f2fons) [0.38]\\n- 33. Instruments Orff de placa (carillons) [0.47]\\n- 34. Orquestra d\u2019instruments Orff de placa [0.57]\\n- 35. Hot cross buns* (popular anglesa) [1.52]\\n- 36. Hot cross buns* (base instrumental) [1.52]\\n- 37. La pastoreta* (popular catalana) [3.00]\\n- 38. La pastoreta* (base instrumental) [3.06]\\n- 39. Can\u00e7\u00f3 de l\u2019empi\\n\\n[...]\"}}}], \"role\": \"user\"}}, {\"author\": \"orquestrador\", \"content\": {\"parts\": [{\"text\": \"Perfecte! Aqu\u00ed tens una proposta de Situaci\u00f3 d'Aprenentatge sobre la tardor, dissenyada espec\u00edficament per a 2n de prim\u00e0ria i seguint la metodologia requerida.\\n\\n### **1. Dades B\u00e0siques**\\n*   **T\u00edtol:** Sons de Tardor: Creem una Tempesta Musical!\\n*   **Curs/Cicle:** 2n / Cicle Inicial de Prim\u00e0ria\\n*   **\u00c0rea:** Educaci\u00f3 Art\u00edstica (M\u00fasica)\\n\\n### **2. Context i Repte**\\n*   **Context:** L'arribada de la tardor transforma el paisatge i els sons del nostre entorn. Les fulles cauen, el vent bufa i, de vegades, esclaten fortes tempestes. Aquests sons naturals s\u00f3n una font d'inspiraci\u00f3 per a la m\u00fasica. A l'aula de m\u00fasica, hem estat parlant dels canvis que veiem i sentim a la tardor.\\n*   **Repte:** Com podem representar una tempesta de tardor utilitzant la nostra veu, el nostre cos i els instruments de l'aula? El nostre repte ser\u00e0 crear col\u00b7lectivament un paisatge sonor que representi una tempesta, inspirant-nos en la can\u00e7\u00f3 \\\"La tempesta\\\", i compartir la nostra creaci\u00f3 amb els companys i companyes de 1r.\\n\\n### **3. Connexi\u00f3 Curricular**\\n*   **Compet\u00e8ncies Espec\u00edfiques:**\\n    *   CE1: Explorar, seleccionar i combinar diverses t\u00e8cniques, recursos i materials per a la creaci\u00f3 de propostes art\u00edstiques i culturals, individuals o col\u00b7lectives, a trav\u00e9s del joc i la improvisaci\u00f3.\\n    *   CE2: Desenvolupar propostes art\u00edstiques i culturals, individuals o col\u00b7lectives, a partir de l\u2019assaig i la descoberta, per tal de donar resposta a un repte creatiu.\\n    *   CE3: Compartir les experi\u00e8ncies i creacions art\u00edstiques i culturals, a partir de l\u2019intercanvi i el di\u00e0leg, per tal de generar espais de gaudi compartit i de foment de la conviv\u00e8ncia.\\n*   **Sabers B\u00e0sics:**\\n    *   Reconeixement i representaci\u00f3 de l'entorn sonor natural (paisatge sonor).\\n    *   Exploraci\u00f3 de les qualitats del so (intensitat, durada, timbre) amb la veu, el cos i instruments.\\n    *   Interpretaci\u00f3 de can\u00e7ons i \u00fas de la percussi\u00f3 corporal.\\n    *   \u00das d'instruments de petita percussi\u00f3 (convencionals i no convencionals).\\n    *   La improvisaci\u00f3 i la creaci\u00f3 musical col\u00b7lectiva.\\n*   **Criteris d'Avaluaci\u00f3:**\\n    *   1.1. Experimentar amb els par\u00e0metres del so, el silenci i les seves possibilitats expressives.\\n    *   2.1. Participar en la creaci\u00f3, disseny i desenvolupament de propostes art\u00edstiques col\u00b7lectives.\\n    *   3.1. Descriure de manera senzilla les propostes art\u00edstiques pr\u00f2pies i alienes.\\n\\n### **4. Seq\u00fc\u00e8ncia Did\u00e0ctica (El Cicle d'Aprenentatge)**\\n*   **Activitats Inicials:**\\n    *   **Qu\u00e8 se sent a la tardor?** (Grup classe, 1 sessi\u00f3). Iniciem un di\u00e0leg: Qu\u00e8 passa a la tardor? Quins sons podem sentir? (vent, pluja, fulles seques...). Fem una pluja d'idees i els anotem o dibuixem a la pissarra. Activem coneixements previs sobre l'estaci\u00f3.\\n    *   **Audici\u00f3 activa \\\"La tempesta\\\":** (Individual/Grup classe, 1 sessi\u00f3). Escoltem la can\u00e7\u00f3 \\\"La tempesta\\\" (I. Segarra, F. Bofill, A. Puig, F. Serrat). Mentre sona, demanem que es moguin lliurement per l'espai imaginant que s\u00f3n fulles, el vent o la pluja. Despr\u00e9s de l'audici\u00f3, preguntem: Qu\u00e8 heu sentit? A qu\u00e8 us recorda aquesta m\u00fasica?\\n*   **Activitats de Desenvolupament:**\\n    *   **Aprenem la can\u00e7\u00f3:** (Grup classe, 2 sessions). Aprenem la lletra i la melodia de la can\u00e7\u00f3 \\\"La tempesta\\\" mitjan\u00e7ant el m\u00e8tode d'eco i repetici\u00f3. La cantem amb diferents intencions i intensitats (suau com les primeres gotes, fort com el tro).\\n    *   **Laboratori de sons de tempesta:** (Grups petits, 2 sessions). Dividim la classe en \\\"equips de so\\\". Cada equip ha d'explorar com crear un so de la tempesta utilitzant diferents fonts:\\n        *   **Equip Vent:** Amb la veu (bufar, xiular), papers de diari, tubs...\\n        *   **Equip Pluja:** Amb percussi\u00f3 corporal (picar de dits), instruments de petita percussi\u00f3 (maraques, pals de pluja), o objectes (llegums dins d'un pot).\\n        *   **Equip Trons:** Amb instruments de percussi\u00f3 de membrana (panderos, tambors), peus a terra, o colpejant superf\u00edcies amb les mans.\\n    *   **Creem el nostre paisatge sonor:** (Grup classe, 2 sessions). Un cop cada equip ha explorat i triat els seus sons, els ajuntem per crear la nostra pe\u00e7a musical. El/la mestre/a actua com a director/a d'orquestra. Practiquem l'estructura: calma -> comen\u00e7a la pluja (suau) -> vent -> pluja forta -> trons -> torna la calma. Assagem la seq\u00fc\u00e8ncia diverses vegades.\\n*   **Activitats d'Estructuraci\u00f3 i Reflexi\u00f3:**\\n    *   **El mapa de la nostra tempesta:** (Grups petits / Grup Classe, 1 sessi\u00f3). Creem un musicograma o partitura no convencional a la pissarra o en un paper gran. Dibuixem s\u00edmbols per a cada so (una espiral pel vent, punts per la pluja, un llamp pel tro). Repassem la seq\u00fc\u00e8ncia sonora seguint el mapa visual. Reflexionem: Com hem aconseguit que soni m\u00e9s fort? Qu\u00e8 passa quan tots sonem alhora?\\n    *   **Diari de so:** (Individual, 10 min al final de la sessi\u00f3). Cada alumne/a t\u00e9 una petita llibreta on dibuixa l'instrument o el so que m\u00e9s li ha agradat fer durant la sessi\u00f3 i per qu\u00e8.\\n*   **Activitats d'Aplicaci\u00f3:**\\n    *   **Concert de Tardor:** (Grup classe, 1 sessi\u00f3). El producte final. Convidem a la classe de 1r a la nostra aula. Els expliquem breument qu\u00e8 hem apr\u00e8s sobre els sons de la tardor i interpretem la nostra creaci\u00f3: primer cantem la can\u00e7\u00f3 \\\"La tempesta\\\" i despr\u00e9s representem el nostre paisatge sonor de la tempesta, seguint el nostre director/a i el musicograma.\\n\\n### **5. Atenci\u00f3 Educativa Inclusiva**\\nS'ha dissenyat la SdA tenint en compte el Disseny Universal per a l'Aprenentatge (DUA):\\n*   **M\u00faltiples formes de representaci\u00f3:** S'utilitzen canals auditius (can\u00e7\u00f3, sons), visuals (dibuixos, musicograma) i cinest\u00e8sics (moviment, percussi\u00f3 corporal).\\n*   **M\u00faltiples formes d'acci\u00f3 i expressi\u00f3:** L'alumnat pot triar com participar: cantant, movent-se, tocant un instrument senzill, creant sons amb el cos o objectes. No hi ha una \u00fanica manera correcta d'expressar-se. Els agrupaments flexibles permeten que cadasc\u00fa trobi el seu lloc.\\n*   **M\u00faltiples formes d'implicaci\u00f3:** El tema de la tardor \u00e9s proper i f\u00e0cil de connectar amb les seves viv\u00e8ncies. El repte de crear un \\\"concert\\\" \u00e9s motivador. L'elecci\u00f3 en els \\\"equips de so\\\" fomenta l'autonomia. Per a l'alumnat amb m\u00e9s necessitats, es proporcionaran instruments m\u00e9s f\u00e0cils de manipular (ex: un pal de pluja) o se'ls donar\u00e0 un rol de suport (ex: ajudar al director/a a senyalar el musicograma).\\n\\n### **6. Vectors del Curr\u00edculum**\\n*   **Enfocament competencial:** La SdA no se centra a aprendre una can\u00e7\u00f3 de mem\u00f2ria, sin\u00f3 a utilitzar-la com a pretext per explorar, crear i col\u00b7laborar per resoldre un repte real i tangible (crear un paisatge sonor).\\n*   **Benestar emocional:** Les activitats de moviment lliure, l'exploraci\u00f3 sonora i el treball en equip en un ambient de joc i sense judici fomenten un clima d'aula positiu i segur, on l'error es considera part de l'aprenentatge.\\n*   **Perspectiva de g\u00e8nere:** Es vetllar\u00e0 perqu\u00e8 en la distribuci\u00f3 de rols (director/a, solistes, instrumentistes) i en les intervencions a l'aula hi hagi una participaci\u00f3 equitativa de nens i nenes.\\n\\n### **7. Avaluaci\u00f3 Formadora i Formativa**\\n*   **Observaci\u00f3 directa:** El/la docent pren notes al llarg de les sessions sobre la participaci\u00f3, l'experimentaci\u00f3, la col\u00b7laboraci\u00f3 en grup i l'\u00fas de les qualitats del so, utilitzant una graella d'observaci\u00f3 senzilla.\\n*   **Coavaluaci\u00f3:** Despr\u00e9s del treball en grups petits (\\\"Laboratori de sons\\\"), cada equip mostra el seu so a la resta. Els altres grups diuen qu\u00e8 els ha agradat m\u00e9s o qu\u00e8 els suggereix aquell so, fomentant l'escolta respectuosa.\\n*   **Autoavaluaci\u00f3:** El \\\"Diari de so\\\" actua com una eina d'autoavaluaci\u00f3 senzilla i visual, on l'alumnat reflexiona sobre el seu propi proc\u00e9s i prefer\u00e8ncies.\\n*   **Avaluaci\u00f3 del producte final:** S'utilitzar\u00e0 una diana d'avaluaci\u00f3 senzilla despr\u00e9s del \\\"Concert de Tardor\\\", on els mateixos alumnes valoraran (amb gomets de colors, per exemple) aspectes com: \\\"Hem escoltat al director/a?\\\", \\\"Ha sonat com una tempesta?\\\", \\\"Ens ho hem passat b\u00e9?\\\".\"}], \"role\": \"model\"}}]}]}"
+      },
+      {
+        "prompt_display_text": "Vull una proposta de ritme i percussi\u00f3 corporal per a 4t de prim\u00e0ria",
+        "prompt_raw_json": "{\n  \"parts\": [\n    {\n      \"text\": \"Vull una proposta de ritme i percussi\u00f3 corporal per a 4t de prim\u00e0ria\"\n    }\n  ],\n  \"role\": \"user\"\n}",
+        "reference": "",
+        "reference_raw_json": "",
+        "response_display_text": "Perfecte! Aqu\u00ed tens una proposta de Situaci\u00f3 d'Aprenentatge (SdA) sobre ritme i percussi\u00f3 corporal per a 4t de prim\u00e0ria, dissenyada seguint l'enfocament competencial de la LOMLOE i aprofitant els recursos musicals disponibles.\n\n***\n\n### 1. Dades B\u00e0siques\n- **T\u00edtol:** Stomp a l'Escola: Creem Ritmes amb el Cos!\n- **Curs/Cicle:** 4t de Prim\u00e0ria\n- **\u00c0rea:** Educaci\u00f3 Art\u00edstica (M\u00fasica)\n\n### 2. Context i Repte\n- **Context:** Sab\u00edeu que el nostre cos pot ser un instrument musical incre\u00efble? Hi ha grups de m\u00fasica, com el fam\u00f3s \"Stomp\", que creen espectacles impressionants utilitzant nom\u00e9s els sons del seu cos i objectes quotidians. A la nostra escola, tamb\u00e9 podem convertir-nos en artistes del ritme!\n- **Repte:** El nostre repte ser\u00e0 crear, entre tota la classe, una composici\u00f3 de percussi\u00f3 corporal. Investigarem les possibilitats sonores del nostre cos, aprendrem a combinar ritmes i, finalment, dissenyarem una coreografia r\u00edtmica per presentar-la en un petit festival o mostra a la resta de l'escola. Serem el grup \"Stomp\" de 4t!\n\n### 3. Connexi\u00f3 Curricular\n- **Compet\u00e8ncies Espec\u00edfiques:**\n    - **CE2:** Interpretar propostes musicals i de dansa, a trav\u00e9s de la recepci\u00f3 i l'expressi\u00f3, per mostrar la comprensi\u00f3 i l'intercanvi d'idees i emocions.\n    - **CE3:** Crear i elaborar propostes musicals i multimodals, tot seleccionant i combinant els elements del llenguatge musical i les eines necess\u00e0ries, per enriquir i desenvolupar les pr\u00f2pies idees.\n- **Sabers B\u00e0sics:**\n    - Reconeixement, interpretaci\u00f3 i creaci\u00f3 de patrons r\u00edtmics senzills.\n    - L'exploraci\u00f3 de les possibilitats sonores del cos (percussi\u00f3 corporal).\n    - La interpretaci\u00f3 de repertori vocal i instrumental divers.\n    - L'escolta activa i el respecte per les produccions alienes.\n- **Criteris d'Avaluaci\u00f3:**\n    - 2.1. Interpretar propostes musicals, explorant les possibilitats expressives de la veu, el cos, els instruments i les eines digitals.\n    - 3.1. Participar en la creaci\u00f3 de propostes musicals senzilles, individuals i col\u00b7lectives, aplicant els elements del llenguatge musical.\n\n### 4. Seq\u00fc\u00e8ncia Did\u00e0ctica (El Cicle d'Aprenentatge)\n- **Activitats Inicials (Exploraci\u00f3):**\n    - **Audici\u00f3 i Di\u00e0leg:** Comencem veient alguns v\u00eddeos del grup \"Stomp\" (com \"Rooftop\" i \"Stomp House\" de la llista de recursos). Despr\u00e9s, fem una pluja d'idees: Quins sons fan? Amb quines parts del cos? Podr\u00edem fer-ho nosaltres?\n    - **Joc d'Escalfament:** Escoltem \"Rock al voltant del rellotge\" i seguim el pols amb palmades. Despr\u00e9s, fem un joc d'eco on el mestre/a proposa un ritme senzill amb el cos i el grup-classe el repeteix.\n    - **Inventari Sonor:** En grup classe, explorem tots els sons que podem fer amb el nostre cos: palmades (greus, agudes), pica amb els dits, cops al pit, cops a les cuixes, picar de peus... Creem un \"mapa sonor\" del cos a la pissarra.\n\n- **Activitats de Desenvolupament (Creaci\u00f3):**\n    - **Laboratori R\u00edtmic:** En petits grups de 4-5 alumnes, cada grup t\u00e9 la missi\u00f3 de crear una seq\u00fc\u00e8ncia r\u00edtmica de 8 temps combinant 3 sons corporals diferents. Es poden ajudar amb targetes de ritmes o notaci\u00f3 gr\u00e0fica senzilla.\n    - **Cadenes R\u00edtmiques:** Aprenem i practiquem patrons r\u00edtmics m\u00e9s complexos proposats pel mestre/a. Despr\u00e9s, en rotllana, cada alumne/a fa un ritme de 4 temps i el seg\u00fcent l'ha de continuar, creant una cadena.\n    - **Muntatge:** Cada grup ensenya la seva creaci\u00f3 a la resta de la classe. Amb l'ajuda del mestre/a, decidim com podem ordenar i ajuntar les diferents seq\u00fc\u00e8ncies per construir una pe\u00e7a m\u00e9s llarga i coherent. Hi podem afegir una introducci\u00f3 i un final potent.\n\n- **Activitats d'Estructuraci\u00f3 i Reflexi\u00f3 (An\u00e0lisi):**\n    - **Partitura Col\u00b7lectiva:** A la pissarra o en un paper gran, creem una partitura no convencional per a la nostra pe\u00e7a. Dibuixem s\u00edmbols senzills per a cada so corporal (ex: una m\u00e0 per palmada, un peu per cop de peu) i els ordenem en una l\u00ednia de temps. Aix\u00f2 ens ajuda a memoritzar l'estructura.\n    - **Di\u00e0leg Reflexiu:** Qu\u00e8 ha estat el m\u00e9s f\u00e0cil? I el m\u00e9s dif\u00edcil? Com hem solucionat els problemes quan no an\u00e0vem a la vegada? Aquesta reflexi\u00f3 ens ajuda a entendre el concepte de pols, ritme i treball en equip.\n\n- **Activitats d'Aplicaci\u00f3 (Assaig i Mostra):**\n    - **Assajos Generals:** Dediquem sessions a assajar la nostra composici\u00f3 completa, afegint-hi moviment i expressivitat. Ens gravem en v\u00eddeo per veure'ns des de fora i poder millorar aspectes de la coordinaci\u00f3 i la posada en escena.\n    - **L'Espectacle \"Stomp\":** Presentem la nostra creaci\u00f3 \"Stomp a l'Escola\" a un p\u00fablic (altres classes, durant una festa escolar, etc.).\n\n### 5. Atenci\u00f3 Educativa Inclusiva\nAquesta SdA es basa en els principis del DUA:\n- **M\u00faltiples formes de representaci\u00f3:** S'utilitzen est\u00edmuls visuals (v\u00eddeos, partitura gr\u00e0fica), auditius (audicions, demostracions) i cinest\u00e8sics (pr\u00f2pia pr\u00e0ctica).\n- **M\u00faltiples formes d'acci\u00f3 i expressi\u00f3:** L'alumnat pot escollir els sons amb qu\u00e8 se senti m\u00e9s c\u00f2mode, no hi ha una \u00fanica resposta correcta en les fases de creaci\u00f3. Es fomenta el treball en equip on cada membre pot aportar des de les seves fortaleses.\n- **M\u00faltiples formes d'implicaci\u00f3:** Es connecta amb un referent modern i motivador (Stomp), es fomenta l'autonomia dels grups i es treballa per a un objectiu final tangible i emocionant (l'actuaci\u00f3).\n\n### 6. Vectors del Curr\u00edculum\n- **Enfocament competencial:** Tota la seq\u00fc\u00e8ncia est\u00e0 dissenyada perqu\u00e8 l'alumnat apliqui els seus sabers musicals per resoldre un repte creatiu real.\n- **Benestar emocional:** Es treballa la confian\u00e7a, l'expressi\u00f3 personal no verbal, la cohesi\u00f3 de grup i la satisfacci\u00f3 de crear quelcom junts. Es gestiona l'error com una part de l'aprenentatge.\n- **Perspectiva de g\u00e8nere:** S'anima a tot l'alumnat per igual a explorar, liderar i expressar-se amb el cos, trencant qualsevol estereotip associat al moviment o la percussi\u00f3.\n\n### 7. Avaluaci\u00f3 Formadora i Formativa\n- **Observaci\u00f3 directa:** El/la mestre/a utilitza una graella d'observaci\u00f3 durant les sessions per valorar la participaci\u00f3, la capacitat de seguir el pols, la creativitat i el treball en equip.\n- **Autoavaluaci\u00f3:** Despr\u00e9s de la fase de creaci\u00f3, l'alumnat pot utilitzar una \"diana d'avaluaci\u00f3\" senzilla per reflexionar sobre la seva aportaci\u00f3 al grup i el seu aprenentatge.\n- **Coavaluaci\u00f3:** Els grups s'ofereixen comentaris constructius (\"dos estrelles i un desig\") despr\u00e9s de mostrar les seves primeres creacions.\n- **Avaluaci\u00f3 del producte final:** Es pot avaluar la representaci\u00f3 final mitjan\u00e7ant una r\u00fabrica senzilla que valori la coordinaci\u00f3 r\u00edtmica, l'originalitat i la posada en escena. La gravaci\u00f3 en v\u00eddeo \u00e9s una eina excel\u00b7lent per a l'autoavaluaci\u00f3 posterior.",
+        "response_raw_json": "{\n  \"parts\": [\n    {\n      \"text\": \"Perfecte! Aqu\u00ed tens una proposta de Situaci\u00f3 d'Aprenentatge (SdA) sobre ritme i percussi\u00f3 corporal per a 4t de prim\u00e0ria, dissenyada seguint l'enfocament competencial de la LOMLOE i aprofitant els recursos musicals disponibles.\\n\\n***\\n\\n### 1. Dades B\u00e0siques\\n- **T\u00edtol:** Stomp a l'Escola: Creem Ritmes amb el Cos!\\n- **Curs/Cicle:** 4t de Prim\u00e0ria\\n- **\u00c0rea:** Educaci\u00f3 Art\u00edstica (M\u00fasica)\\n\\n### 2. Context i Repte\\n- **Context:** Sab\u00edeu que el nostre cos pot ser un instrument musical incre\u00efble? Hi ha grups de m\u00fasica, com el fam\u00f3s \\\"Stomp\\\", que creen espectacles impressionants utilitzant nom\u00e9s els sons del seu cos i objectes quotidians. A la nostra escola, tamb\u00e9 podem convertir-nos en artistes del ritme!\\n- **Repte:** El nostre repte ser\u00e0 crear, entre tota la classe, una composici\u00f3 de percussi\u00f3 corporal. Investigarem les possibilitats sonores del nostre cos, aprendrem a combinar ritmes i, finalment, dissenyarem una coreografia r\u00edtmica per presentar-la en un petit festival o mostra a la resta de l'escola. Serem el grup \\\"Stomp\\\" de 4t!\\n\\n### 3. Connexi\u00f3 Curricular\\n- **Compet\u00e8ncies Espec\u00edfiques:**\\n    - **CE2:** Interpretar propostes musicals i de dansa, a trav\u00e9s de la recepci\u00f3 i l'expressi\u00f3, per mostrar la comprensi\u00f3 i l'intercanvi d'idees i emocions.\\n    - **CE3:** Crear i elaborar propostes musicals i multimodals, tot seleccionant i combinant els elements del llenguatge musical i les eines necess\u00e0ries, per enriquir i desenvolupar les pr\u00f2pies idees.\\n- **Sabers B\u00e0sics:**\\n    - Reconeixement, interpretaci\u00f3 i creaci\u00f3 de patrons r\u00edtmics senzills.\\n    - L'exploraci\u00f3 de les possibilitats sonores del cos (percussi\u00f3 corporal).\\n    - La interpretaci\u00f3 de repertori vocal i instrumental divers.\\n    - L'escolta activa i el respecte per les produccions alienes.\\n- **Criteris d'Avaluaci\u00f3:**\\n    - 2.1. Interpretar propostes musicals, explorant les possibilitats expressives de la veu, el cos, els instruments i les eines digitals.\\n    - 3.1. Participar en la creaci\u00f3 de propostes musicals senzilles, individuals i col\u00b7lectives, aplicant els elements del llenguatge musical.\\n\\n### 4. Seq\u00fc\u00e8ncia Did\u00e0ctica (El Cicle d'Aprenentatge)\\n- **Activitats Inicials (Exploraci\u00f3):**\\n    - **Audici\u00f3 i Di\u00e0leg:** Comencem veient alguns v\u00eddeos del grup \\\"Stomp\\\" (com \\\"Rooftop\\\" i \\\"Stomp House\\\" de la llista de recursos). Despr\u00e9s, fem una pluja d'idees: Quins sons fan? Amb quines parts del cos? Podr\u00edem fer-ho nosaltres?\\n    - **Joc d'Escalfament:** Escoltem \\\"Rock al voltant del rellotge\\\" i seguim el pols amb palmades. Despr\u00e9s, fem un joc d'eco on el mestre/a proposa un ritme senzill amb el cos i el grup-classe el repeteix.\\n    - **Inventari Sonor:** En grup classe, explorem tots els sons que podem fer amb el nostre cos: palmades (greus, agudes), pica amb els dits, cops al pit, cops a les cuixes, picar de peus... Creem un \\\"mapa sonor\\\" del cos a la pissarra.\\n\\n- **Activitats de Desenvolupament (Creaci\u00f3):**\\n    - **Laboratori R\u00edtmic:** En petits grups de 4-5 alumnes, cada grup t\u00e9 la missi\u00f3 de crear una seq\u00fc\u00e8ncia r\u00edtmica de 8 temps combinant 3 sons corporals diferents. Es poden ajudar amb targetes de ritmes o notaci\u00f3 gr\u00e0fica senzilla.\\n    - **Cadenes R\u00edtmiques:** Aprenem i practiquem patrons r\u00edtmics m\u00e9s complexos proposats pel mestre/a. Despr\u00e9s, en rotllana, cada alumne/a fa un ritme de 4 temps i el seg\u00fcent l'ha de continuar, creant una cadena.\\n    - **Muntatge:** Cada grup ensenya la seva creaci\u00f3 a la resta de la classe. Amb l'ajuda del mestre/a, decidim com podem ordenar i ajuntar les diferents seq\u00fc\u00e8ncies per construir una pe\u00e7a m\u00e9s llarga i coherent. Hi podem afegir una introducci\u00f3 i un final potent.\\n\\n- **Activitats d'Estructuraci\u00f3 i Reflexi\u00f3 (An\u00e0lisi):**\\n    - **Partitura Col\u00b7lectiva:** A la pissarra o en un paper gran, creem una partitura no convencional per a la nostra pe\u00e7a. Dibuixem s\u00edmbols senzills per a cada so corporal (ex: una m\u00e0 per palmada, un peu per cop de peu) i els ordenem en una l\u00ednia de temps. Aix\u00f2 ens ajuda a memoritzar l'estructura.\\n    - **Di\u00e0leg Reflexiu:** Qu\u00e8 ha estat el m\u00e9s f\u00e0cil? I el m\u00e9s dif\u00edcil? Com hem solucionat els problemes quan no an\u00e0vem a la vegada? Aquesta reflexi\u00f3 ens ajuda a entendre el concepte de pols, ritme i treball en equip.\\n\\n- **Activitats d'Aplicaci\u00f3 (Assaig i Mostra):**\\n    - **Assajos Generals:** Dediquem sessions a assajar la nostra composici\u00f3 completa, afegint-hi moviment i expressivitat. Ens gravem en v\u00eddeo per veure'ns des de fora i poder millorar aspectes de la coordinaci\u00f3 i la posada en escena.\\n    - **L'Espectacle \\\"Stomp\\\":** Presentem la nostra creaci\u00f3 \\\"Stomp a l'Escola\\\" a un p\u00fablic (altres classes, durant una festa escolar, etc.).\\n\\n### 5. Atenci\u00f3 Educativa Inclusiva\\nAquesta SdA es basa en els principis del DUA:\\n- **M\u00faltiples formes de representaci\u00f3:** S'utilitzen est\u00edmuls visuals (v\u00eddeos, partitura gr\u00e0fica), auditius (audicions, demostracions) i cinest\u00e8sics (pr\u00f2pia pr\u00e0ctica).\\n- **M\u00faltiples formes d'acci\u00f3 i expressi\u00f3:** L'alumnat pot escollir els sons amb qu\u00e8 se senti m\u00e9s c\u00f2mode, no hi ha una \u00fanica resposta correcta en les fases de creaci\u00f3. Es fomenta el treball en equip on cada membre pot aportar des de les seves fortaleses.\\n- **M\u00faltiples formes d'implicaci\u00f3:** Es connecta amb un referent modern i motivador (Stomp), es fomenta l'autonomia dels grups i es treballa per a un objectiu final tangible i emocionant (l'actuaci\u00f3).\\n\\n### 6. Vectors del Curr\u00edculum\\n- **Enfocament competencial:** Tota la seq\u00fc\u00e8ncia est\u00e0 dissenyada perqu\u00e8 l'alumnat apliqui els seus sabers musicals per resoldre un repte creatiu real.\\n- **Benestar emocional:** Es treballa la confian\u00e7a, l'expressi\u00f3 personal no verbal, la cohesi\u00f3 de grup i la satisfacci\u00f3 de crear quelcom junts. Es gestiona l'error com una part de l'aprenentatge.\\n- **Perspectiva de g\u00e8nere:** S'anima a tot l'alumnat per igual a explorar, liderar i expressar-se amb el cos, trencant qualsevol estereotip associat al moviment o la percussi\u00f3.\\n\\n### 7. Avaluaci\u00f3 Formadora i Formativa\\n- **Observaci\u00f3 directa:** El/la mestre/a utilitza una graella d'observaci\u00f3 durant les sessions per valorar la participaci\u00f3, la capacitat de seguir el pols, la creativitat i el treball en equip.\\n- **Autoavaluaci\u00f3:** Despr\u00e9s de la fase de creaci\u00f3, l'alumnat pot utilitzar una \\\"diana d'avaluaci\u00f3\\\" senzilla per reflexionar sobre la seva aportaci\u00f3 al grup i el seu aprenentatge.\\n- **Coavaluaci\u00f3:** Els grups s'ofereixen comentaris constructius (\\\"dos estrelles i un desig\\\") despr\u00e9s de mostrar les seves primeres creacions.\\n- **Avaluaci\u00f3 del producte final:** Es pot avaluar la representaci\u00f3 final mitjan\u00e7ant una r\u00fabrica senzilla que valori la coordinaci\u00f3 r\u00edtmica, l'originalitat i la posada en escena. La gravaci\u00f3 en v\u00eddeo \u00e9s una eina excel\u00b7lent per a l'autoavaluaci\u00f3 posterior.\"\n    }\n  ],\n  \"role\": \"model\"\n}",
+        "intermediate_events": null,
+        "agent_data": "{\"agents\": {\"orquestrador\": {\"agent_id\": \"orquestrador\", \"agent_type\": \"LlmAgent\", \"description\": \"\", \"instruction\": \"Ets l'Agent Orquestrador Pedag\u00f2gic, un expert en l'elaboraci\u00f3 de Situacions d'Aprenentatge de m\u00fasica per a educaci\u00f3 prim\u00e0ria a Catalunya, complint la LOMLOE.\\nAbans de redactar la teva proposta, has d'utilitzar l'eina 'llegir_metodologia_situacio_aprenentatge' per con\u00e8ixer exactament el format i els principis pedag\u00f2gics requerits. Si l'usuari et demana recursos musicals per un curs concret, utilitza 'cercar_cancons_per_curs' per trobar idees del banc de recursos local.\\nRespon sempre en catal\u00e0 i en format Markdown.\", \"tools\": [{\"function_declarations\": [{\"description\": \"Cerca al banc de recursos de can\u00e7ons i audicions les propostes adients per al curs especificat.\\n\\nArgs:\\n    curs: Curs de prim\u00e0ria (ex: '3r', '4t', '5\u00e8', '6\u00e8', '1r', '2n').\\n    \\nReturns:\\n    Un text en format markdown amb les propostes de can\u00e7ons i audicions.\", \"name\": \"cercar_cancons_per_curs\", \"parameters_json_schema\": {\"properties\": {\"curs\": {\"title\": \"Curs\", \"type\": \"string\"}}, \"required\": [\"curs\"], \"title\": \"cercar_cancons_per_cursParams\", \"type\": \"object\"}, \"response_json_schema\": {\"type\": \"string\"}}]}, {\"function_declarations\": [{\"description\": \"Llegeix la Skill de metodologia per dissenyar situacions d'aprenentatge.\\n\\nReturns:\\n    El text amb la metodologia i estructura requerida a aplicar.\", \"name\": \"llegir_metodologia_situacio_aprenentatge\", \"response_json_schema\": {\"type\": \"string\"}}]}], \"sub_agents\": []}}, \"turns\": [{\"turn_index\": 0, \"turn_id\": \"turn_0\", \"events\": [{\"author\": \"orquestrador\", \"content\": {\"parts\": [{\"function_call\": {\"id\": \"adk-2842ce2b-98f2-4f0e-a064-f5bcb1501df6\", \"args\": {}, \"name\": \"llegir_metodologia_situacio_aprenentatge\"}}], \"role\": \"model\"}}, {\"author\": \"orquestrador\", \"content\": {\"parts\": [{\"function_response\": {\"id\": \"adk-2842ce2b-98f2-4f0e-a064-f5bcb1501df6\", \"name\": \"llegir_metodologia_situacio_aprenentatge\", \"response\": {\"result\": \"---\\nname: generador-situacions-aprenentatge\\ndescription: Skill per redactar pas a pas una situaci\u00f3 d'aprenentatge competencial i inclusiva, aplicant el cicle d'aprenentatge actiu segons la LOMLOE.\\n---\\n\\n# Instruccions per a l'Agent Redactor de Situacions d'Aprenentatge\\n\\nEts un expert en pedagogia i educaci\u00f3 musical. La teva tasca \u00e9s redactar una **Situaci\u00f3 d'Aprenentatge (SdA)** completa en catal\u00e0 per a l'educaci\u00f3 prim\u00e0ria, complint rigorosament amb els criteris normatius i metodol\u00f2gics actuals.\\n\\n## Directrius de Redacci\u00f3\\n1. **Llenguatge:** Empra un to professional i pedag\u00f2gic, centrat en l'alumnat. Usa exclusivament el catal\u00e0 i la terminologia oficial. Abst\u00e9n-te de fer servir expressions obsoletes com \\\"unitats did\u00e0ctiques\\\", \\\"objectius generals\\\" o \\\"coneixements\\\" purs. Fes servir sempre \\\"situacions d'aprenentatge\\\", \\\"compet\u00e8ncies\\\", \\\"sabers\\\" i \\\"criteris d'avaluaci\u00f3\\\".\\n2. **Enfocament Musical i Metodol\u00f2gic:** Les activitats han de ser eminentment vivencials i pr\u00e0ctiques. Has d'integrar org\u00e0nicament l'expressi\u00f3 musical mitjan\u00e7ant: el moviment, el cant, l'educaci\u00f3 de l'o\u00efda i la pr\u00e0ctica instrumental. Evita dissenyar classes magistrals o purament te\u00f2riques. Fomenta metodologies actives (com les basades en Orff, Kod\u00e1ly, Dalcroze, etc.).\\n3. **Cicle d'Aprenentatge:** Has de seq\u00fcenciar i estructurar les activitats de la SdA de forma rigorosa utilitzant les fases descrites a la plantilla (Inicials, Desenvolupament, Estructuraci\u00f3, Aplicaci\u00f3).\\n\\n## Informaci\u00f3 d'Entrada (Input)\\nRebr\u00e0s la informaci\u00f3 curricular pr\u00e8viament filtrada per part de l'Agent Expert Curricular. Aix\u00f2 inclour\u00e0, com a m\u00ednim:\\n- La tem\u00e0tica, repte o el curs proposat per l'usuari.\\n- Compet\u00e8ncies Espec\u00edfiques.\\n- Criteris d'Avaluaci\u00f3 associats.\\n- Sabers B\u00e0sics (Sabers).\\n- Vectors Transversals seleccionats per treballar.\\n\\n## Plantilla Obligat\u00f2ria (Output)\\nPer a cada SdA que generis, has d'estructurar el document final en format **Markdown**, respectant escrupolosament el seg\u00fcent esquema:\\n\\n### 1. Dades B\u00e0siques\\n- **T\u00edtol:** (Un t\u00edtol atractiu, suggeridor i proper per a l'alumnat).\\n- **Curs/Cicle:** (Nivell educatiu indicat al qual va adre\u00e7at).\\n- **\u00c0rea:** Educaci\u00f3 Art\u00edstica (M\u00fasica).\\n\\n### 2. Context i Repte\\n- **Context:** Descripci\u00f3 de l'escenari, centre d'inter\u00e8s, problema social, o observaci\u00f3 d'un fenomen que d\u00f3na lloc a la situaci\u00f3 d'aprenentatge. Ha de connectar amb la realitat de l'alumnat (ex: impacte a l'entorn, diversitat cultural, benestar).\\n- **Repte:** Quin \u00e9s el problema, pregunta a resoldre o demanda externa a atendre? Aquest repte ha de concloure sempre en un producte final tangible (ex: participar en un debat, una representaci\u00f3 musical, la creaci\u00f3 d'un p\u00f2dcast, construir un instrument, o prestar un servei).\\n\\n### 3. Connexi\u00f3 Curricular\\nEnumera clarament quins elements s'estan treballant, basant-te en els inputs rebuts:\\n- **Compet\u00e8ncies Espec\u00edfiques.**\\n- **Compet\u00e8ncies Transversals** (si n'hi ha).\\n- **Sabers B\u00e0sics.**\\n- **Criteris d'Avaluaci\u00f3.**\\n\\n### 4. Seq\u00fc\u00e8ncia Did\u00e0ctica (El Cicle d'Aprenentatge)\\nRedacta les activitats detallant breument la durada, l'agrupament (treball individual, grups petits, grup classe) i la metodologia. Agrupa-les obligat\u00f2riament en aquestes fases:\\n- **Activitats Inicials:** Exploraci\u00f3 de la situaci\u00f3/repte, pluja d'idees, formulaci\u00f3 de preguntes, activaci\u00f3 de coneixements previs i anticipaci\u00f3 de resultats.\\n- **Activitats de Desenvolupament:** Planificaci\u00f3, execuci\u00f3 de les accions i elaboraci\u00f3 del producte. Activitats purament musicals de recerca, cant, percussi\u00f3, audici\u00f3 activa. Fes servir estrat\u00e8gies de treball col\u00b7laboratiu i d'intercanvi de resultats.\\n- **Activitats d'Estructuraci\u00f3 i Reflexi\u00f3:** Reflexi\u00f3 sobre qu\u00e8 s'est\u00e0 aprenent, elaboraci\u00f3 de conclusions, enunciaci\u00f3 de significats i de les relacions entre els diversos conceptes musicals apresos.\\n- **Activitats d'Aplicaci\u00f3:** Utilitzaci\u00f3 d'all\u00f2 apr\u00e8s per resoldre situacions complexes o aplicar-ho a nous contextos.\\n\\n### 5. Atenci\u00f3 Educativa Inclusiva\\nDetalla com s'ha dissenyat la SdA tenint en compte el Disseny Universal per a l'Aprenentatge (DUA) i esmenta les mesures concretes per garantir la pres\u00e8ncia, participaci\u00f3 i progr\u00e9s de tot l'alumnat a l'aula de m\u00fasica (materials accessibles, diversitat d'opcions d'expressi\u00f3, agrupaments flexibles, etc.).\\n\\n### 6. Vectors del Curr\u00edculum\\nIndica i descriu com s'integren els vectors transversals en la situaci\u00f3 (ex: com l'enfocament competencial ajuda a la resoluci\u00f3 d'un repte real, com s'ha tingut en compte l'especial atenci\u00f3 al benestar emocional durant el proc\u00e9s, o la integraci\u00f3 de la perspectiva de g\u00e8nere en l'elecci\u00f3 de referents musicals).\\n\\n### 7. Avaluaci\u00f3 Formadora i Formativa\\nDetalla els moments, eines i instruments d'avaluaci\u00f3 que s'utilitzaran *al llarg de tot el proc\u00e9s d'aprenentatge* (no nom\u00e9s per qualificar al final), per obtenir informaci\u00f3 i ajustar la programaci\u00f3. Inclou pr\u00e0ctiques d'autoavaluaci\u00f3 i coavaluaci\u00f3 entre iguals (ex: diaris d'aprenentatge, r\u00fabriques per a l'execuci\u00f3 d'un patr\u00f3 r\u00edtmic, dianes d'avaluaci\u00f3).\\n\"}}}], \"role\": \"user\"}}, {\"author\": \"orquestrador\", \"content\": {\"parts\": [{\"function_call\": {\"id\": \"adk-8b8d922a-dfd0-4b56-af85-e15db4ee0b06\", \"args\": {\"curs\": \"4t\"}, \"name\": \"cercar_cancons_per_curs\"}}], \"role\": \"model\"}}, {\"author\": \"orquestrador\", \"content\": {\"parts\": [{\"function_response\": {\"id\": \"adk-8b8d922a-dfd0-4b56-af85-e15db4ee0b06\", \"name\": \"cercar_cancons_per_curs\", \"response\": {\"result\": \"### Fitxer: 04 - musica4t-llista-i-lletres.md\\n\\n# M\u00fasica 4t \u2014 Llista dels \u00e0udios i lletres de les can\u00e7ons\\n\\n## Llista dels \u00e0udios\\n\\n1. Rock al voltant del rellotge* (M. C. Freedman, J. DeKnight) [1.21]\\n   Veu solista: Roc\u00edo Seligrat\\n2. Rock al voltant del rellotge* (base instrumental) [1.21]\\n3. Jolik\u00e0**** (popular) [1.38]\\n   Veus solistes: Laia Riera i J\u00falia Rocas\\n4. Jolik\u00e0**** (base instrumental) [1.38]\\n5. Tata \u00e9* (popular cubana / Adapt.: R. M. Montserrat) [1.29]\\n6. Tata \u00e9* (base instrumental) [1.29]\\n7. Ombra mai fu (G. F. H\u00e4ndel) [3.08]\\n   Interpreta: Yoshikarzu Mera\\n8. Magic Trumpet (B. K\u00e4mfert) [2.26] Interpreta: Herb Alpert & Tijuana Brass\\n9. De natura sonoris, n\u00fam. 1 (K. Penderecki) [3.44]\\n   Interpreta: London Symphony Orchestra\\n10. ABC (M. Parker) [5.16] Interpreta: Maceo Parker\\n11. Efig\u00e8nia (C. Cases) [5.06] Interpreta: Carles Cases\\n12. Smoke on the water (D. Purple) [2.20]\\n   Interpreta: Deep Purple\\n13. La can\u00e7\u00f3 del lladre* (tradicional catalana) [2.05]\\n   Interpreta: Santi Arisa\\n14. La can\u00e7\u00f3 del lladre* (base instrumental) [2.05]\\n15. Dalt del diri** (tradicional catalana) [1.02]\\n16. Caram, d\u2019on v\u00e9ns?***** (tradicional catalana) [1.28]\\n17. Jo s\u00f3c un pobre m\u00fasic* (F. Lorenz / M. Martorell) [1.56]\\n18. Jo s\u00f3c un pobre m\u00fasic* (base instrumental) [1.56]\\n19. Exercici a dues veus (R. M. Montserrat) [0.59]\\n   Interpreta: Rosa Maria Montserrat\\n20. My baby just cares for me (W. Donaldson) [3.42]\\n   Interpreta: Nina Simone\\n21. Fr\u00e8re Jacques** (popular francesa) [2.20]\\n   Interpreta: Eduard Mas\\n22. Fr\u00e8re Jacques** (base instrumental) [2.20]\\n23. Oh, Susanna! (S. Foster) [1.41]\\n   Interpreta: Santi Arisa\\n24. Heu sentit el rossinyol?*** (popular francesa) [1.12]\\n   Interpreta: Josep Mas\\n25. Rooftop (Stomp) [0.57] Interpreta: Stomp\\n26. Stomp House (Stomp) [1.34]\\n   Interpreta: Stomp\\n27. Els ocells han arribat***** (H. von Fallersleben / Adapt.: M. Carbonell) [2.43]\\n28. Els ocells han arribat***** (base instrumental) [2.43]\\n29. Al Tirol som alegres* (tradicional austr\u00edaca / Adapt.: E. Anglada) [1.50]\\n30. Al Tirol som ale\\n\\n[...]\"}}}], \"role\": \"user\"}}, {\"author\": \"orquestrador\", \"content\": {\"parts\": [{\"text\": \"Perfecte! Aqu\u00ed tens una proposta de Situaci\u00f3 d'Aprenentatge (SdA) sobre ritme i percussi\u00f3 corporal per a 4t de prim\u00e0ria, dissenyada seguint l'enfocament competencial de la LOMLOE i aprofitant els recursos musicals disponibles.\\n\\n***\\n\\n### 1. Dades B\u00e0siques\\n- **T\u00edtol:** Stomp a l'Escola: Creem Ritmes amb el Cos!\\n- **Curs/Cicle:** 4t de Prim\u00e0ria\\n- **\u00c0rea:** Educaci\u00f3 Art\u00edstica (M\u00fasica)\\n\\n### 2. Context i Repte\\n- **Context:** Sab\u00edeu que el nostre cos pot ser un instrument musical incre\u00efble? Hi ha grups de m\u00fasica, com el fam\u00f3s \\\"Stomp\\\", que creen espectacles impressionants utilitzant nom\u00e9s els sons del seu cos i objectes quotidians. A la nostra escola, tamb\u00e9 podem convertir-nos en artistes del ritme!\\n- **Repte:** El nostre repte ser\u00e0 crear, entre tota la classe, una composici\u00f3 de percussi\u00f3 corporal. Investigarem les possibilitats sonores del nostre cos, aprendrem a combinar ritmes i, finalment, dissenyarem una coreografia r\u00edtmica per presentar-la en un petit festival o mostra a la resta de l'escola. Serem el grup \\\"Stomp\\\" de 4t!\\n\\n### 3. Connexi\u00f3 Curricular\\n- **Compet\u00e8ncies Espec\u00edfiques:**\\n    - **CE2:** Interpretar propostes musicals i de dansa, a trav\u00e9s de la recepci\u00f3 i l'expressi\u00f3, per mostrar la comprensi\u00f3 i l'intercanvi d'idees i emocions.\\n    - **CE3:** Crear i elaborar propostes musicals i multimodals, tot seleccionant i combinant els elements del llenguatge musical i les eines necess\u00e0ries, per enriquir i desenvolupar les pr\u00f2pies idees.\\n- **Sabers B\u00e0sics:**\\n    - Reconeixement, interpretaci\u00f3 i creaci\u00f3 de patrons r\u00edtmics senzills.\\n    - L'exploraci\u00f3 de les possibilitats sonores del cos (percussi\u00f3 corporal).\\n    - La interpretaci\u00f3 de repertori vocal i instrumental divers.\\n    - L'escolta activa i el respecte per les produccions alienes.\\n- **Criteris d'Avaluaci\u00f3:**\\n    - 2.1. Interpretar propostes musicals, explorant les possibilitats expressives de la veu, el cos, els instruments i les eines digitals.\\n    - 3.1. Participar en la creaci\u00f3 de propostes musicals senzilles, individuals i col\u00b7lectives, aplicant els elements del llenguatge musical.\\n\\n### 4. Seq\u00fc\u00e8ncia Did\u00e0ctica (El Cicle d'Aprenentatge)\\n- **Activitats Inicials (Exploraci\u00f3):**\\n    - **Audici\u00f3 i Di\u00e0leg:** Comencem veient alguns v\u00eddeos del grup \\\"Stomp\\\" (com \\\"Rooftop\\\" i \\\"Stomp House\\\" de la llista de recursos). Despr\u00e9s, fem una pluja d'idees: Quins sons fan? Amb quines parts del cos? Podr\u00edem fer-ho nosaltres?\\n    - **Joc d'Escalfament:** Escoltem \\\"Rock al voltant del rellotge\\\" i seguim el pols amb palmades. Despr\u00e9s, fem un joc d'eco on el mestre/a proposa un ritme senzill amb el cos i el grup-classe el repeteix.\\n    - **Inventari Sonor:** En grup classe, explorem tots els sons que podem fer amb el nostre cos: palmades (greus, agudes), pica amb els dits, cops al pit, cops a les cuixes, picar de peus... Creem un \\\"mapa sonor\\\" del cos a la pissarra.\\n\\n- **Activitats de Desenvolupament (Creaci\u00f3):**\\n    - **Laboratori R\u00edtmic:** En petits grups de 4-5 alumnes, cada grup t\u00e9 la missi\u00f3 de crear una seq\u00fc\u00e8ncia r\u00edtmica de 8 temps combinant 3 sons corporals diferents. Es poden ajudar amb targetes de ritmes o notaci\u00f3 gr\u00e0fica senzilla.\\n    - **Cadenes R\u00edtmiques:** Aprenem i practiquem patrons r\u00edtmics m\u00e9s complexos proposats pel mestre/a. Despr\u00e9s, en rotllana, cada alumne/a fa un ritme de 4 temps i el seg\u00fcent l'ha de continuar, creant una cadena.\\n    - **Muntatge:** Cada grup ensenya la seva creaci\u00f3 a la resta de la classe. Amb l'ajuda del mestre/a, decidim com podem ordenar i ajuntar les diferents seq\u00fc\u00e8ncies per construir una pe\u00e7a m\u00e9s llarga i coherent. Hi podem afegir una introducci\u00f3 i un final potent.\\n\\n- **Activitats d'Estructuraci\u00f3 i Reflexi\u00f3 (An\u00e0lisi):**\\n    - **Partitura Col\u00b7lectiva:** A la pissarra o en un paper gran, creem una partitura no convencional per a la nostra pe\u00e7a. Dibuixem s\u00edmbols senzills per a cada so corporal (ex: una m\u00e0 per palmada, un peu per cop de peu) i els ordenem en una l\u00ednia de temps. Aix\u00f2 ens ajuda a memoritzar l'estructura.\\n    - **Di\u00e0leg Reflexiu:** Qu\u00e8 ha estat el m\u00e9s f\u00e0cil? I el m\u00e9s dif\u00edcil? Com hem solucionat els problemes quan no an\u00e0vem a la vegada? Aquesta reflexi\u00f3 ens ajuda a entendre el concepte de pols, ritme i treball en equip.\\n\\n- **Activitats d'Aplicaci\u00f3 (Assaig i Mostra):**\\n    - **Assajos Generals:** Dediquem sessions a assajar la nostra composici\u00f3 completa, afegint-hi moviment i expressivitat. Ens gravem en v\u00eddeo per veure'ns des de fora i poder millorar aspectes de la coordinaci\u00f3 i la posada en escena.\\n    - **L'Espectacle \\\"Stomp\\\":** Presentem la nostra creaci\u00f3 \\\"Stomp a l'Escola\\\" a un p\u00fablic (altres classes, durant una festa escolar, etc.).\\n\\n### 5. Atenci\u00f3 Educativa Inclusiva\\nAquesta SdA es basa en els principis del DUA:\\n- **M\u00faltiples formes de representaci\u00f3:** S'utilitzen est\u00edmuls visuals (v\u00eddeos, partitura gr\u00e0fica), auditius (audicions, demostracions) i cinest\u00e8sics (pr\u00f2pia pr\u00e0ctica).\\n- **M\u00faltiples formes d'acci\u00f3 i expressi\u00f3:** L'alumnat pot escollir els sons amb qu\u00e8 se senti m\u00e9s c\u00f2mode, no hi ha una \u00fanica resposta correcta en les fases de creaci\u00f3. Es fomenta el treball en equip on cada membre pot aportar des de les seves fortaleses.\\n- **M\u00faltiples formes d'implicaci\u00f3:** Es connecta amb un referent modern i motivador (Stomp), es fomenta l'autonomia dels grups i es treballa per a un objectiu final tangible i emocionant (l'actuaci\u00f3).\\n\\n### 6. Vectors del Curr\u00edculum\\n- **Enfocament competencial:** Tota la seq\u00fc\u00e8ncia est\u00e0 dissenyada perqu\u00e8 l'alumnat apliqui els seus sabers musicals per resoldre un repte creatiu real.\\n- **Benestar emocional:** Es treballa la confian\u00e7a, l'expressi\u00f3 personal no verbal, la cohesi\u00f3 de grup i la satisfacci\u00f3 de crear quelcom junts. Es gestiona l'error com una part de l'aprenentatge.\\n- **Perspectiva de g\u00e8nere:** S'anima a tot l'alumnat per igual a explorar, liderar i expressar-se amb el cos, trencant qualsevol estereotip associat al moviment o la percussi\u00f3.\\n\\n### 7. Avaluaci\u00f3 Formadora i Formativa\\n- **Observaci\u00f3 directa:** El/la mestre/a utilitza una graella d'observaci\u00f3 durant les sessions per valorar la participaci\u00f3, la capacitat de seguir el pols, la creativitat i el treball en equip.\\n- **Autoavaluaci\u00f3:** Despr\u00e9s de la fase de creaci\u00f3, l'alumnat pot utilitzar una \\\"diana d'avaluaci\u00f3\\\" senzilla per reflexionar sobre la seva aportaci\u00f3 al grup i el seu aprenentatge.\\n- **Coavaluaci\u00f3:** Els grups s'ofereixen comentaris constructius (\\\"dos estrelles i un desig\\\") despr\u00e9s de mostrar les seves primeres creacions.\\n- **Avaluaci\u00f3 del producte final:** Es pot avaluar la representaci\u00f3 final mitjan\u00e7ant una r\u00fabrica senzilla que valori la coordinaci\u00f3 r\u00edtmica, l'originalitat i la posada en escena. La gravaci\u00f3 en v\u00eddeo \u00e9s una eina excel\u00b7lent per a l'autoavaluaci\u00f3 posterior.\"}], \"role\": \"model\"}}]}]}"
+      }
+    ]
+  },
+  "agent_info": null
+}

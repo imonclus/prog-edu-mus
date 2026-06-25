@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "codi": "CD1",
+    "competencia": "Fer cerques guiades a Internet i usar estratègies senzilles per al tractament digital de la informació (paraules clau, selecció d’informació rellevant, organització de dades, etc.) amb una actitud crítica sobre els continguts que s’obtenen."
+  },
+  {
+    "id": 2,
+    "codi": "CD2",
+    "competencia": "Crear, integrar i reelaborar continguts digitals en diferents formats (text, taula, imatge, àudio, vídeo, programa informàtic, etc.) mitjànçant l’ús de diferents eines digitals per expressar idees, sentiments i coneixements, respectant la propietat intel·lectual i els drets d’autor dels continguts que es reutilitzen."
+  },
+  {
+    "id": 3,
+    "codi": "CD3",
+    "competencia": "Participar en activitats o projectes escolars mitjànçant l’ús d’eines o plataformes virtuals que permetin construir nou coneixement, comunicar-se, treballar col·laborativament, compartir dades i continguts en entorns digitals restringits i supervisats de manera segura i amb una actitud oberta i responsable davant el seu ús."
+  },
+  {
+    "id": 4,
+    "codi": "CD4",
+    "competencia": "Conèixer els riscos i adoptar, amb l’orientació del o de la docent, mesures preventives en l’ús de les tecnologies digitals per protegir els dispositius, les dades personals, la salut i el medi ambient, i iniciar-se en l’adopció d’hàbits d’ús crític, segur, saludable i sostenible d’aquestes tecnologies."
+  },
+  {
+    "id": 5,
+    "codi": "CD5",
+    "competencia": "Iniciar-se en el desenvolupament de solucions digitals senzilles i sostenibles (reutilització de materials tecnològics, programació informàtica per blocs, robòtica educativa, etc.) per resoldre problemes concrets o reptes proposats de manera creativa i sol·licitar ajuda en cas necessari."
+  }
+]

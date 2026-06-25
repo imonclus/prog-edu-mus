@@ -1,0 +1,66 @@
+{
+  "competencies": {
+    "C1": "Descobrir propostes artístiques de diferents cultures, èpoques i estils, mitjànçant la percepció i la vivència, per desenvolupar la curiositat, el respecte i el gaudi.",
+    "C2": "Investigar i analitzar diferents manifestacions culturals i artístiques i els seus contextos, emprant diversos canals i mitjàns d’accés a la informació, per desenvolupar el pensament propi, la identitat cultural i l'esperit crític.",
+    "C3": "Experimentar i crear amb les possibilitats del so, la imatge, el cos i els mitjàns digitals i multimodals, mitjànçant activitats i experiències que incorporin l’aprenentatge autoregulat per expressar i comunicar coneixements, idees, sentiments i emocions.",
+    "C4": "Dissenyar, elaborar i difondre creacions culturals i artístiques col·laboratives, assumint diferents rols, posant en valor el procés, per desenvolupar la creativitat, el sentit de pertinença i arribar a un resultat final."
+  },
+  "criteris_avaluacio": {
+    "C1": {
+      "inicial": {
+        "1.1": "Descobrir obres de manifestacions culturals i artístiques de diferents gèneres i estils, èpoques i cultures amb visió de perspectiva de gènere, evidenciant interès, curiositat i gaudi cap a aquestes, a través de la percepció i la vivència.",
+        "1.2": "Descriure manifestacions culturals i artístiques en diferents contextos a partir de l’exploració de les característiques amb actitud oberta i interès."
+      },
+      "mitjà": {
+        "1.1": "Reconèixer obres de manifestacions culturals i artístiques de diferents gèneres i estils, èpoques i cultures amb visió de perspectiva de gènere, evidenciant interès, curiositat i gaudi cap a aquestes, a través de la percepció i la vivència.",
+        "1.2": "Descriure manifestacions culturals i artístiques en diferents contextos a partir de l’exploració de les característiques amb actitud oberta i interès, establint relacions entre elles."
+      },
+      "superior": {
+        "1.1": "Distingir i valorar obres de manifestacions culturals i artístiques de diferents gèneres i estils, èpoques i cultures amb visió de perspectiva de gènere, evidenciant interès, curiositat i gaudi cap a aquestes, a través de la percepció i la vivència.",
+        "1.2": "Analitzar manifestacions culturals i artístiques en diferents contextos a partir de l’exploració de les seves característiques establint relacions entre elles i valorant la diversitat que les genera."
+      }
+    },
+    "C2": {
+      "inicial": {
+        "2.1": "Cercar i seleccionar informació senzilla sobre manifestacions culturals i artístiques de diferents èpoques i cultures, a través de canals i mitjàns segurs d'accés a la informació, mostrant una actitud de respecte.",
+        "2.2": "Reconèixer elements característics de manifestacions culturals i artístiques que formen part del patrimoni, de manera guiada, valorant la identitat cultural pròpia."
+      },
+      "mitjà": {
+        "2.1": "Cercar i seleccionar informació sobre manifestacions culturals i artístiques de diferents èpoques i cultures, de manera guiada, a través de diversos canals i mitjàns d'accés a la informació, integrant-la en el propi pensament i accions.",
+        "2.2": "Explicar els elements característics de manifestacions culturals i artístiques que formen part del patrimoni, a partir de la recerca d'informació, badminton l'esperit crític i el sentit de pertinença."
+      },
+      "superior": {
+        "2.1": "Cercar, seleccionar i organitzar informació sobre manifestacions culturals i artístiques de diferents èpoques i cultures, de manera autònoma, a través de diversos canals i mitjàns d'accés a la informació, integrant-la en el propi pensament i accions, amb esperit crític.",
+        "2.2": "Analitzar i valorar els elements característics de manifestacions culturals i artístiques que formen part del patrimoni, a partir de la recerca d'informació, desenvolupant la pròpia identitat cultural i el respecte per la diversitat."
+      }
+    },
+    "C3": {
+      "inicial": {
+        "3.1": "Experimentar amb les possibilitats del so, la imatge, el cos i els mitjàns digitals, a través d'activitats guiades, per expressar idees, sentiments i emocions de manera creativa.",
+        "3.2": "Participar en experiències de creació artística i musical que incorporin pautes senzilles d'autoregulació, mostrant interès pel procés i gaudi en l'expressió."
+      },
+      "mitjà": {
+        "3.1": "Experimentar i crear amb les possibilitats del so, la imatge, el cos i els mitjàns digitals, combinant diferents elements artístics, per expressar i comunicar coneixements, idees, sentiments i emocions.",
+        "3.2": "Aplicar estratègies d'aprenentatge autoregulat en els processos de creació musical i artística, avaluant les pròpies produccions i identificant aspectes de millora."
+      },
+      "superior": {
+        "3.1": "Experimentar, crear i produir obres combinant les possibilitats del so, la imatge, el cos i els mitjàns digitals i multimodals, seleccionant els recursos més adequats, per comunicar coneixements, idees, sentiments i emocions de manera eficaç i creativa.",
+        "3.2": "Desenvolupar processos de creació artística de manera autònoma utilitzant l'aprenentatge autoregulat, mostrant resiliència davant dels reptes i valorant críticament el resultat final i el procés seguit."
+      }
+    },
+    "C4": {
+      "inicial": {
+        "4.1": "Participar en la creació i difusió de produccions culturals i artístiques col·laboratives senzilles, assumint rols assignats i respectant les aportacions dels altres.",
+        "4.2": "Valorar el procés de travail col·laboratiu i gaudir del resultat final, mostrant interès per compartir les creacions amb la comunitat escolar."
+      },
+      "mitjà": {
+        "4.1": "Dissenyar i elaborar creacions culturals i artístiques col·laboratives, assumint diferents rols de manera responsable, valorant el treball en equip com a mitjà per desenvolupar la creativitat.",
+        "4.2": "Difondre les creacions col·laboratives utilitzant diferents mitjàns, posant en valor el procés compartit i fomentant el sentit de pertinença al grup."
+      },
+      "superior": {
+        "4.1": "Dissenyar, elaborar i coordinar creacions culturals i artístiques col·laboratives complexes, assumint i intercanviant rols amb flexibilitat, posant en valor les capacitats incentives al servei de l'equip per potenciar la creativitat col·lectiva.",
+        "4.2": "Planificar i dur a terme la difusió de les creacions utilitzant estratègies i mitjàns digitals o multimodals adequats, avaluant l'impacte en l'entorn i consolidant el sentit de pertinença social i cultural."
+      }
+    }
+  }
+}

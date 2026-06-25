@@ -1,0 +1,75 @@
+{
+  "titol": "Vectors del currículum",
+  "introduccio": "Els vectors del currículum són aquells elements de caràcter transversal que s’han de tenir presents i han d’articular totes i cadascuna de les decisions relatives al desplegament del currículum.",
+  "vectors": [
+    {
+      "id": 1,
+      "titol": "L’enfocament competencial",
+      "descripcio": "L’enfocament competencial s'orienta cap a un tipus d'aprenentatge profund i funcional, en què allò que s’aprèn es pot utilitzar en contextos diferents, perdura al llarg del temps i permet resoldre problemes en situacions reals.",
+      "com_ho_podem_fer": [
+        "Dissenyant contextos d’aprenentatge que demanen a l’alumnat una resposta global, justificada, contextualitzada, raonada i ajustada als reptes que se li plantegin.",
+        "Interrelacionant els coneixements fent-los alhora significatius i adequats a la realitat de cada alumne i de cada context educatiu.",
+        "Implicant l’alumnat en els propis aprenentatges."
+      ]
+    },
+    {
+      "id": 2,
+      "titol": "La qualitat de l’educació lingüística",
+      "descripcio": "La qualitat de l’educació lingüística és clau en tant que proporciona les eines i els recursos necessaris per comprendre la realitat, expressar el pensament, raonar, transmetre el coneixement i compartir una determinada manera de veure i entendre el món, i de relacionar-se amb els  altres.",
+      "com_ho_podem_fer": [
+        "Desenvolupant una ètica de la comunicació que se centri en pràctiques comunicatives no discriminatòries.",
+        "Usant la comunicació com un recurs imprescindible per gestionar els conflictes de forma dialogada i prevenir qualsevol tipus de violència.",
+        "Fomentant el respecte per la diversitat lingüística i el desig d’aprendre altres llengües i cultures.",
+        "Promovent l’ús de les llengües per conèixer la realitat, relacionar-nos amb els altres i expressar idees, sentiments i emocions."
+      ]
+    },
+    {
+      "id": 3,
+      "titol": "La universalitat del currículum",
+      "descripcio": "La universalitat del currículum fa possible l'accessibilitat de totes les persones a l'educació, marcant el camí cap a la inclusió efectiva, la igualtat d’oportunitats, l’equitat educativa, la plena participació i l’èxit educatiu.",
+      "com_ho_podem_fer": [
+        "Incloent la diferència i la singularitat com un dret dels infants i joves portadors d’una identitat pròpia.",
+        "Avaluant com és d'inclusiu el nostre centre.",
+        "Promovent processos per a la transformació inclusiva del centre.",
+        "Prenent decisions per organitzar un centre inclusiu.",
+        "Incorporant el disseny universal per a l'aprenentatge i la personalització dels aprenentatges."
+      ]
+    },
+    {
+      "id": 4,
+      "titol": "La incorporació de la coeducació",
+      "descripcio": "La incorporació de la coeducació, en tant que principi rector del sistema educatiu i criteri orientador de l’organització pedagògica dels centres a tots els nivells i modalitats, és cabdal per afavorir el desenvolupament de les persones al marge dels estereotips i rols en funció del sexe, l'orientació sexual, la identitat o l’expressió de gènere",
+      "com_ho_podem_fer": [
+        "Revisant sabers des d’una perspectiva de gènere per evitar les aproximacions androcèntriques i patriarcals que hi estableixen jerarquies.",
+        "Fomentant l'educació sexual de manera inclusiva i amb un enfocament integral i lliure des del plaer i els drets sexuals i reproductius.",
+        "Programant activitats amb un enfocament coeducador transversal que vagi més enllà d’una actuació puntual.",
+        "Identificant i intervenint en situacions de conflicte vinculades a comportaments sexistes i LGTBI-fòbics que causin violència o discriminació."
+      ]
+    },
+    {
+      "id": 5,
+      "titol": "L’especial atenció al benestar emocional",
+      "descripcio": "L’especial atenció al benestar emocional d’infants i joves, que inclou tant l’experiència subjectiva de sentir-se bé, en harmonia i amb tranquil·litat, com també l’experiència personal de satisfacció amb si mateix per poder fer front a les dificultats i superar-les en positiu.",
+      "com_ho_podem_fer": [
+        "Contribuint, des del procés d’ensenyament i aprenentatge, al benestar emocional de l’alumnat.",
+        "Tenint en compte el context, les necessitats i les expectatives de l’alumnat.",
+        "Fomentant l’expressió de les emocions des del respecte als altres.",
+        "Valorant l’impacte de les emocions en el procés d’aprenentatge.",
+        "Promovent la participació activa de tot l’alumnat, des de la col·laboració entre iguals.",
+        "Afavorint el desenvolupament de les habilitats de comunicació i d’interrelació.",
+        "Contribuint a la millora de les escoles per tal que esdevinguin espais per a tothom."
+      ]
+    },
+    {
+      "id": 6,
+      "titol": "La promoció d'una ciutadania democràtica, crítica i compromesa i amb consciència global",
+      "descripcio": "La promoció d'una ciutadania democràtica, crítica i compromesa i amb consciència global és clau per compartir mirades, desmuntar prejudicis i afrontar amb garanties els reptes i les oportunitats que ofereix el món hiperconnectat i global actual.",
+      "com_ho_podem_fer": [
+        "Educant persones implicades en la millora del seu entorn des d’una consciència local i global.",
+        "Oferint oportunitats per preparar-se i afrontar els reptes que impliquen els objectius de desenvolupament sostenible (ODS).",
+        "Col·laborant per assolir una societat més justa, democràtica i equitativa.",
+        "Preparant persones per treballar en equip amb respecte i actitud constructiva."
+      ]
+    }
+  ]
+}

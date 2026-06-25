@@ -1,0 +1,18 @@
+{
+  "eval_cases": [
+    {
+      "eval_case_id": "situacio_tardor_2n",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "Crea una situació d'aprenentatge musical sobre l'estació de la tardor per a 2n de primària"}]
+      }
+    },
+    {
+      "eval_case_id": "percussio_4t",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "Vull una proposta de ritme i percussió corporal per a 4t de primària"}]
+      }
+    }
+  ]
+}

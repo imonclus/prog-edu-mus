@@ -1,0 +1,58 @@
+{
+  "sabers": {
+    "inicial": {
+      "bloc_percepcio_i_interpretacio": [
+        "Descobriment i descripció de propostes musicals vocals i instrumentals de diferents corrents estètics, procedències i èpoques produïdes per creadores i creadors locals, regionals, nacionals i d’altres llocs a través del gaudi en audicions actives de concerts registrats o en viu.",
+        "Percepció i expressió de les sensacions i sentiments que ens evoquen les audicions i obres treballades.",
+        "Reconeixement de professions vinculades a la creació i interpretació musical, amb perspectiva de gènere, en les audicions i obres treballades.",
+        "Discriminació auditiva, classificació i representació del so i les seves qualitats a través de diferents grafies durant l’audició i la pràctica musical.",
+        "Discriminació visual i auditiva dels diferents materials sonors, de la veu i dels instruments musicals de les principals famílies i agrupacions per les seves característiques visuals i sonores de la pràctica musical i les audicions treballades.",
+        "Reconeixement i capacitat de relació del caràcter i el tempo en audicions en viu o gravades i en les interpretacions pròpies.",
+        "Adquisició d’hàbits de comportament i actitud positiva en la percepció de propostes musicals. El silenci com a element i condició indispensable per mantenir l’atenció durant l’audició i la pràctica musical."
+      ],
+      "bloc_creacio_i_expressio": [
+        "Experimentació, exploració creativa de les possibilitats sonores i expressives a través de la interpretació i improvisació vocal i corporal en contextos informals i d’aula.",
+        "Experimentació de les qualitats sonores construint diferents tipus d’instruments amb materials de l’entorn.",
+        "Coneixement i aplicació dels diferents conceptes dels llenguatges musicals a la interpretació de propostes sonores, vocals i instrumentals, practicades a l’aula, les representacions i/o els concerts, reconeixent el silenci musical com a element fonamental.",
+        "Ús d’aplicacions digitals d’enregistrament en creacions musicals tant personals com de grup per expressar idees o emocions.",
+        "Realització i interpretació d’una creació col·laborativa o d’una pràctica musical col·lectiva assumint diferents rols (direcció, interpretació) i respectant les aportacions de cadascú."
+      ]
+    },
+    "mitjà": {
+      "bloc_percepcio_i_interpretacio": [
+        "Descobriment i descripció de propostes musicals vocals i instrumentals de diferents corrents estètics, procedències i èpoques produïdes per creadores i creadors locals, regionals, nacionals i d’altres llocs a través del gaudi en audicions actives de concerts registrats o en viu.",
+        "Percepció i expressió de les sensacions i sentiments que ens evoquen les audicions i obres treballades.",
+        "Reconeixement de professions vinculades a la creació i interpretació musical amb perspectiva de gènere a les audicions i obres treballades.",
+        "Discriminació auditiva, classificació i representació del so i les seves qualitats a través de diferents grafies durant l’audició i la pràctica musical.",
+        "Discriminació visual i auditiva dels diferents materials sonors, de la veu i dels instruments musicals de les principals famílies i agrupacions per les seves característiques visuals i sonores de la pràctica musical i les audicions treballades.",
+        "Identificació i descripció del caràcter, el compàs i el tempo en audicions en viu o gravades i en les pròpies interpretacions.",
+        "Adquisició d’hàbits de comportament i actitud positiva en la percepció de propostes musicals. El silenci com a element i condició indispensable per mantenir l’atenció durant l’audició i la pràctica musical."
+      ],
+      "bloc_creacio_i_expressio": [
+        "Experimentació, exploració creativa de les possibilitats sonores i expressives a través de la interpretació i improvisació vocal i corporal en contextos informals i d’aula.",
+        "Experimentació de les qualitats sonores construint diferents tipus d’instruments amb materials de l’entorn.",
+        "Coneixement i aplicació dels diferents conceptes dels llenguatges musicals a la interpretació de propostes sonores, vocals i instrumentals practicades a l’aula, a les representacions i/o concerts reconeixent el silenci musical com a element fonamental.",
+        "Ús d’aplicacions digitals d’enregistrament i edició d’àudio i vídeo registrant creacions musicals personals o de grup per expressar idees o emocions o fent-les servir per al descobriment i l’anàlisi d’obres.",
+        "Realització i interpretació d’una creació col·laborativa d’una pràctica musical, identificant i documentant les diferents fases del procés creatiu i els rols assumits."
+      ]
+    },
+    "superior": {
+      "bloc_percepcio_i_interpretacio": [
+        "Descobriment i descripció de propostes musicals vocals i instrumentals de diferents corrents estètics, procedències i èpoques produïdes per creadores i creadors locals, regionals, nacionals i d’altres llocs a través del gaudi en audicions actives de concerts registrats o en viu.",
+        "Percepció i expressió de les sensacions i sentiments que ens evoquen les audicions i obres treballades.",
+        "Reconeixement de professions vinculades a la creació i interpretació musical amb perspectiva de gènere a les audicions i obres treballades.",
+        "Discriminació auditiva, classificació i representació del so i les seves qualitats a través de diferents grafies convencionals i no convencionals durant l’audició i la pràctica musical.",
+        "Discriminació visual i auditiva dels diferents materials sonors, de la veu i dels instruments musicals digitals o analògics de les principals famílies i agrupacions per les seves característiques visuals i sonores de la pràctica musical i les audicions treballades.",
+        "Reconeixement i capacitat de relació del caràcter i el tempo en audicions en viu o gravades i en les interpretacions pròpies.",
+        "Adquisició d’hàbits de comportament i actitud positiva en la percepció de propostes musicals. El silenci com a element i condició indispensable per mantenir l’atenció durant l’audició i la pràctica musical."
+      ],
+      "bloc_creacio_i_expressio": [
+        "Experimentació, exploració creativa de les possibilitats sonores i expressives a través de la interpretació i improvisació vocal i corporal en contextos informals i d’aula.",
+        "Experimentació de les qualitats sonores construint diferents tipus d’instruments amb materials de l’entorn.",
+        "Coneixement i aplicació dels diferents conceptes dels llenguatges musicals a la interpretació de propostes sonores, vocals i instrumentals practicades a l’aula, a les representacions i/o concerts reconeixent el silenci musical com a element fonamental.",
+        "Ús d’aplicacions digitals d’enregistrament i edició d’àudio i vídeo registrant creacions personals o de grup per expressar idees o emocions o fent-les servir per al descobriment i l’anàlisi d’obres.",
+        "Realització i interpretació d’una creació col·laborativa d’una pràctica musical, identificant i documentant les diferents fases del procés creatiu i els rols assumits mitjànçant un enfocament coeducatiu."
+      ]
+    }
+  }
+}
