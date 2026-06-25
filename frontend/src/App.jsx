@@ -4,7 +4,7 @@ import { MarkdownRenderer } from './components/MarkdownRenderer';
 import { PdfExportButton } from './components/PdfExportButton';
 import './App.css';
 
-const API_URL = 'http://localhost:8000'; // Define backend URL
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'; // Define backend URL
 
 function App() {
   const [activeTab, setActiveTab] = useState('sa'); // 'sa' | 'rubrica'
