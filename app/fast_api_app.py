@@ -14,7 +14,8 @@
 import os
 
 import google.auth
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
+from fastapi.responses import JSONResponse
 from google.adk.cli.fast_api import get_fast_api_app
 from google.cloud import logging as google_cloud_logging
 
@@ -46,6 +47,19 @@ app: FastAPI = get_fast_api_app(
     session_service_uri=session_service_uri,
     otel_to_cloud=True,
 )
+
+@app.middleware("http")
+async def check_access_pin(request: Request, call_next):
+    if request.method == "OPTIONS":
+        return await call_next(request)
+        
+    expected_pin = os.getenv("APP_ACCESS_PIN")
+    if expected_pin:
+        pin = request.headers.get("X-Access-PIN")
+        if pin != expected_pin:
+            return JSONResponse(status_code=401, content={"detail": "PIN d'accés incorrecte o no proporcionat"})
+            
+    return await call_next(request)
 app.title = "prog-musical-primaria"
 app.description = "API for interacting with the Agent prog-musical-primaria"
 

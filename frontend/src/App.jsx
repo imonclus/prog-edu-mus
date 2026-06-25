@@ -13,6 +13,7 @@ function App() {
   const [curs, setCurs] = useState('3r de primària');
   const [tema, setTema] = useState('La música tradicional i els instruments catalans');
   const [sessions, setSessions] = useState('3');
+  const [accessPin, setAccessPin] = useState('');
   const [saContent, setSaContent] = useState('');
   const [isGeneratingSa, setIsGeneratingSa] = useState(false);
   const [error, setError] = useState(null);
@@ -31,11 +32,17 @@ function App() {
       // 1. Create a session first
       const sessionResponse = await fetch(`${API_URL}/apps/app/users/${userId}/sessions`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'X-Access-PIN': accessPin
+        },
         body: JSON.stringify({})
       });
 
       if (!sessionResponse.ok) {
+        if (sessionResponse.status === 401) {
+          throw new Error("PIN d'accés incorrecte o no proporcionat.");
+        }
         throw new Error("No s'ha pogut crear la sessió amb el backend.");
       }
       
@@ -45,7 +52,10 @@ function App() {
       // 2. Invoke the agent
       const response = await fetch(`${API_URL}/run`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'X-Access-PIN': accessPin
+        },
         body: JSON.stringify({
           appName: "app",
           userId: userId,
@@ -58,6 +68,9 @@ function App() {
       });
 
       if (!response.ok) {
+        if (response.status === 401) {
+          throw new Error("PIN d'accés incorrecte o no proporcionat.");
+        }
         throw new Error("No s'ha pogut connectar amb l'agent. Assegura't que el backend està engegat.");
       }
 
@@ -97,11 +110,17 @@ function App() {
       // 1. Create a session first
       const sessionResponse = await fetch(`${API_URL}/apps/app/users/${userId}/sessions`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'X-Access-PIN': accessPin
+        },
         body: JSON.stringify({})
       });
 
       if (!sessionResponse.ok) {
+        if (sessionResponse.status === 401) {
+          throw new Error("PIN d'accés incorrecte o no proporcionat.");
+        }
         throw new Error("No s'ha pogut crear la sessió amb el backend.");
       }
       
@@ -111,7 +130,10 @@ function App() {
       // 2. Invoke the agent
       const response = await fetch(`${API_URL}/run`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'X-Access-PIN': accessPin
+        },
         body: JSON.stringify({
           appName: "app",
           userId: userId,
@@ -124,6 +146,9 @@ function App() {
       });
 
       if (!response.ok) {
+        if (response.status === 401) {
+          throw new Error("PIN d'accés incorrecte o no proporcionat.");
+        }
         throw new Error("No s'ha pogut connectar amb l'agent.");
       }
 
@@ -205,6 +230,17 @@ function App() {
                 value={sessions} 
                 onChange={(e) => setSessions(e.target.value)}
                 min="1" max="10"
+              />
+            </div>
+
+            <div className="control-group">
+              <label className="control-label">PIN d'accés</label>
+              <input 
+                type="password" 
+                className="input-field" 
+                value={accessPin} 
+                onChange={(e) => setAccessPin(e.target.value)}
+                placeholder="Introdueix el PIN"
               />
             </div>
 
